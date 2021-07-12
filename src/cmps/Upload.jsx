@@ -23,7 +23,7 @@ export class Upload extends Component {
   }
 
   render() {
-    const { imgUrl, width, height } = this.state
+    const { imgUrl} = this.state
     const previewStyle = {
       backgroundImage: `url(${imgUrl})`,
       // width: 100,

@@ -1,11 +1,12 @@
 import * as React from 'react';
-import InputLabel from '@material-ui/core/InputLabel';
 import MenuItem from '@material-ui/core/MenuItem';
-import ListSubheader from '@material-ui/core/ListSubheader';
-import FormControl from '@material-ui/core/FormControl';
-import Select from '@material-ui/core/Select';
 import { Component } from 'react';
 import { Button } from './Button.jsx'
+
+// import InputLabel from '@material-ui/core/InputLabel';
+// import ListSubheader from '@material-ui/core/ListSubheader';
+// import FormControl from '@material-ui/core/FormControl';
+// import Select from '@material-ui/core/Select';
 
 
 
@@ -21,7 +22,7 @@ export class AddGuest extends Component {
     incrementCountAdults = (ev) => {
         ev.stopPropagation()
         this.setState({
-            adults: this.state.guests.adults++
+            adults: {...this.state.guests.adults++}
         }, () => {
             this.props.setGuests(this.state.guests)
         });
@@ -41,7 +42,7 @@ export class AddGuest extends Component {
     incrementCountKids = (ev) => {
         ev.stopPropagation()
         this.setState({
-            kids: this.state.guests.kids++
+            kids: {...this.state.guests.kids++}
         }, () => {
             this.props.setGuests(this.state.guests)
         });
@@ -85,13 +86,13 @@ export class AddGuest extends Component {
                     <span className="p-span left-left">{this.state.guests.adults}</span>
                     <Button title={"+"} action={this.incrementCountAdults} />
                 </MenuItem>
-                
+
                 <MenuItem>
-                <p className="guest-title">Kids </p>
-                <Button  name="kids" value={kids} title={"-"} action={this.decrementCountKids} />
+                    <p className="guest-title">Kids </p>
+                    <Button name="kids" value={kids} title={"-"} action={this.decrementCountKids} />
                     <span min="0" className="p-span left-left">{this.state.guests.kids}</span>
                     <Button title={"+"} action={this.incrementCountKids} />
-                    </MenuItem>
+                </MenuItem>
                 {/* <MenuItem name="infants" value={0}><button onClick={this.down}>-</button>Infants{this.state.count}<button onClick={this.up}>+</button></MenuItem> */}
             </div>
 
@@ -171,10 +172,10 @@ export class AddGuest extends Component {
 
 
 
-{/* <div className="add-guests">
-    <select name="type" value={type} onChange={this.handleChange} required>
-        <option value="" disabled selected>Guests</option>
-                            <option value="Adults">Adults</option>
-                            <option value="Kids">Kids</option>
-    </select>
-</div > */}
+//  <div className="add-guests">
+//     <select name="type" value={type} onChange={this.handleChange} required>
+//         <option value="" disabled selected>Guests</option>
+//                             <option value="Adults">Adults</option>
+//                             <option value="Kids">Kids</option>
+//     </select>
+// </div > 

@@ -4,7 +4,7 @@
 }
 
 .main-footer {
-    
+
     // z-index: 50;
     // height: 80px;
     // position: relative;
@@ -21,7 +21,7 @@
     // grid-row-start: 2;
     // grid-row-end: 3;
 
-    
+
     // z-index: 50;
     // height: 80px;
     // background-color: rgb(173, 170, 170) !important;
@@ -35,18 +35,20 @@
         justify-content: space-between;
         align-items: center;
     }
-        // display: flex;
-        // justify-content: space-between;
-        // padding-top: 1.3rem;
-        // padding-bottom: 1.3rem;
-        // color: #222;
-        // font-size: 12px;
-    
-    
 
-    h1{ 
+    // display: flex;
+    // justify-content: space-between;
+    // padding-top: 1.3rem;
+    // padding-bottom: 1.3rem;
+    // color: #222;
+    // font-size: 12px;
+
+
+
+    h1 {
         margin: 0;
     }
+
     .logo {
         justify-content: center;
         // width: rem(330px);
@@ -55,12 +57,13 @@
         // transform: rotate(350deg);
         mix-blend-mode: multiply;
     }
+
     .social-nav {
         display: flex;
         // height: 100px;
         padding-left: 32px;
     }
-    
+
     .social-nav>a {
         display: flex;
         color: #fff;
@@ -71,56 +74,66 @@
         /* justify-content: center; */
         text-decoration: none;
     }
-    
+
     .social-nav>a:not(:last-child) {
         margin-inline-end: 1rem;
     }
-    
+
     .fa {
         font-family: brands;
     }
-    
+
     .fa.facebook {
         height: 30px;
         width: 30px;
         justify-content: center;
     }
-    
+
     .fa.twitter {
         height: 30px;
         width: 30px;
         justify-content: center;
     }
-    
+
     .fa.instegram {
         height: 30px;
         width: 30px;
         justify-content: center;
     }
-    
+
     .fa.facebook::before {
         content: "\f39e";
     }
-    
+
     .fa.facebook:hover {
         background-color: #516fad;
     }
-    
+
     .fa.twitter::before {
         content: "\f099";
     }
-    
+
     .fa.twitter:hover {
         background-color: #00acee;
     }
-    
+
     .fa.instegram::before {
         content: "\f16d";
     }
-    
+
     .fa.instegram:hover {
         background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
 
-    }    
+    }
 
+}
+
+@media (max-width: 480px) {
+
+    .main-footer {
+        padding: 10px;
+        .logo {
+            display: none;
+        }
+    }
 }

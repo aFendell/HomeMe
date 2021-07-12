@@ -11,7 +11,7 @@ export function ReviewsModal({ reviews, reviewsAvg, closeModal }) {
                 <FontAwesomeIcon onClick={closeModal} className="btn-close" icon={faTimes} />
                 <div className="modal-stats">
                     <ReviewsStats reviews={reviews} reviewsAvg={reviewsAvg} />
-                    <input type="text" placeholder="Search reviews" />
+                    {/* <input type="text" placeholder="Search reviews" /> */}
                 </div>
             </div>
             <div className="modal-main">

@@ -1,10 +1,10 @@
 import React from 'react'
-import { NavLink, Route, Switch } from 'react-router-dom'
+// import { NavLink, Route, Switch } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { StayAdd } from '../cmps/StayAdd'
 import { UserInbox } from '../cmps/UserInbox'
 import { UserStats } from '../cmps/UserStats'
-import { StayStatistics } from '../cmps/StayStatistics'
+// import { StayStatistics } from '../cmps/StayStatistics'
 
 class _UserProfile extends React.Component {
     state = {
@@ -35,7 +35,7 @@ class _UserProfile extends React.Component {
                 <div className="profile-content">
                 <div className="user-card">
                     <h5>{loggedInUser.fullname}</h5>
-                    <img className="user-avatar" src={loggedInUser.imgUrl} alt="user photo" />
+                    <img className="user-avatar" src={loggedInUser.imgUrl} alt="user" />
                     <h6>Update Photo</h6>
                 </div>
 

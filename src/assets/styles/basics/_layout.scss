@@ -33,6 +33,14 @@
     }
 }
 
+@media (max-width: 480px) {
+
+    .main-layout {
+        display: flex;
+        flex-direction: column;
+
+    }
+}
 // Main Header Layout
 
 // .card-grid {

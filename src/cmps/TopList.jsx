@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import React from 'react';
-import { loadStays } from '../store/actions/stay.actions.js'
+import { loadStays, setFilter } from '../store/actions/stay.actions.js'
 import { StayPreview } from './StayPreview'
 
 class _TopList extends React.Component {
@@ -11,10 +11,10 @@ class _TopList extends React.Component {
 
     async componentDidMount() {
         await this.props.loadStays()
-        this.topRated()
+        this.topReviews()
     }
 
-    topRated() {
+    topReviews() {
         const { stays } = this.props
         const n = 3
 
@@ -57,6 +57,7 @@ function mapStateToProps(state) {
 }
 const mapDispatchToProps = {
     loadStays,
+    setFilter
 }
 
 export const TopList = connect(mapStateToProps, mapDispatchToProps)(_TopList)

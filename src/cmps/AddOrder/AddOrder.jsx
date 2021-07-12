@@ -4,12 +4,13 @@ import React from 'react';
 
 import { saveOrder } from '../../store/actions/order.actions.js'
 import TableDatePicker from './DatePicker.jsx'
-import SimpleModal from './SimpleModal.jsx'
-import FaildModal from './FaildModal.jsx'
 import { ChecksModal } from './ChecksModal.jsx'
-import { GroupedSelect } from './AddGuest.jsx'
-import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 import { GuestsModal } from './GuestsModal'
+
+// import SimpleModal from './SimpleModal.jsx'
+// import FaildModal from './FaildModal.jsx'
+// import { GroupedSelect } from './AddGuest.jsx'
+// import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 
 
 

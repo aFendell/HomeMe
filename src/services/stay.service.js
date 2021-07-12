@@ -4,17 +4,17 @@ import Geocode from "react-geocode";
 import { httpService } from './http.service.js'
 
 
-const data = require('../data/stays.json')
-let gStays = data.stay
+// const data = require('../data/stays.json')
+// let gStays = data.stay
 window.storageService = storageService;
 
 Geocode.setApiKey("AIzaSyBicrFlwKD-lW0_kqfkTRcJI1O2YrTS1GQ");
 // const STOR
 
-const axios = require('axios');
+// const axios = require('axios');
 
 // - // for Deverlop without backend
-const STORAGE_KEY = 'stay'
+// const STORAGE_KEY = 'stay'
 
 export const stayService = {
     query,

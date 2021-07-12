@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import { StayList } from '../cmps/StayList'
 import { StayFilterSort } from '../cmps/StayFilterSort.jsx'
 // import { StayFilterSearch } from '../cmps/StayFilterSearch.jsx'
-import { loadStays, removeStay, setFilter } from '../store/actions/stay.actions.js'
+import { loadStays, setFilter } from '../store/actions/stay.actions.js'
 
 
 export const StayApp = () => {

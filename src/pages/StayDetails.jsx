@@ -1,17 +1,23 @@
 import { connect } from 'react-redux'
 
 import React from 'react';
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import { removeStay, saveStay, setSelectedStay, /*onAddToCart*/ } from '../store/actions/stay.actions.js'
 import { stayService } from '../services/stay.service.js'
 import { ReviewsStats } from '../cmps/ReviewsStats'
 
+import { ImgsCarousel } from '../cmps/ImgsCarousel'
+
+
+// import {StaticDateRangePickerDemo} from '../cmps/AddOrder/DatePicker2.jsx' 
+
+
 import { StayMap } from '../cmps/StayMap'
 import { StayReviews } from '../cmps/StayReviews'
 import { AddOrder } from '../cmps/AddOrder/AddOrder.jsx'
-import { Divider } from '@material-ui/core';
+// import { Divider } from '@material-ui/core';
 
-import { faWifi, faTv, faSnowflake, faSmoking, faPaw, faUtensils, faBed, faRecycle, faMusic, faStar } from '@fortawesome/free-solid-svg-icons'
+import { faWifi, faTv, faSnowflake, faSmoking, faPaw, faUtensils, faBed, faRecycle, faMusic } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 class _StayDetails extends React.Component {
@@ -53,7 +59,7 @@ class _StayDetails extends React.Component {
 
     loadPic = (imgUrls) => {
         for (var i = 0; i < 5; i++) {
-            return <img src={imgUrls[i]} />
+            return <img src={imgUrls[i]} alt=""/>
         }
     }
     reviewsAvg = () => {
@@ -73,21 +79,22 @@ class _StayDetails extends React.Component {
 
     render() {
         // const { user, stayToShow, isLoading, err } = this.props
-        const { stay, isEditMode } = this.state
+        const { stay } = this.state
         if (!stay) return <p>Loading...</p>
         return (
             <div className="stay-details flex column">
+                <section className="phone-stay-imgs full" hidden>
+                <ImgsCarousel imgUrls={stay.imgUrls} />
+                </section>
                 <p className="details-stay-name">{stay.name}</p>
                 <section className="details-stay-info">
                     {stay.reviews?.length && <ReviewsStats reviews={stay.reviews} reviewsAvg={this.reviewsAvg} />}
                     <span className="details-stay-location">{stay.loc.address}</span>
                 </section>
                 <section className="details-stay-imgs">
-                    {stay.imgUrls.map(src => <img src={src} className="stay-img" />)}
-                    {/* <img src={stay.imgUrls[0]} />
-                    <img src={stay.imgUrls[1]} />
-                    <img src={stay.imgUrls[2]} /> */}
-                </section>
+                    {stay.imgUrls.map((src, index) => <img src={src} key={index} className="stay-img" alt=""/>)}
+                    </section>
+                
                 <div className="booking-modal-container flex">
                     <div className="booking-details-container">
                         <div className="top-details flex">
@@ -95,7 +102,7 @@ class _StayDetails extends React.Component {
                                 <h1>{stay.type} hosted by {stay.host.fullname}</h1>
                                 <h5>{stay.capacity} guests  · {stay.bedroom} bedroom · {stay.bath} bath</h5>
                             </div>
-                            <img className="host-avatar" src={stay.host.imgUrl} />
+                            <img className="host-avatar" src={stay.host.imgUrl} alt=""/>
                         </div>
                         <div className="summary">
                             <h1>About us</h1>
@@ -121,13 +128,14 @@ class _StayDetails extends React.Component {
                                     <li><FontAwesomeIcon icon={faSmoking} /> <span>Smoking allowed</span> </li>
                                     <li><FontAwesomeIcon icon={faPaw} /> <span>Pets allowed</span> </li>
                                     <li><FontAwesomeIcon icon={faUtensils} /> <span>Cooking basics</span> </li>
-                                    <li><FontAwesomeIcon icon={faRecycle} /> <span>Environmentally friendly</span> </li>
-                                    <li><FontAwesomeIcon icon={faMusic} /> <span>Surround sound system</span> </li>
+                                    <li><FontAwesomeIcon icon={faRecycle} /> <span>Eco friendly</span> </li>
+                                    <li><FontAwesomeIcon icon={faMusic} /> <span>Sound system</span> </li>
                                 </div>
 
                             </ul>
                             {/* {stay.amenities.map(src => <li>{src}</li>)} */}
                         </div>
+                        {/* <StaticDateRangePickerDemo/> */}
                     </div>
                     <div className="order-container flex">
                         <div className="order-top flex">
@@ -198,24 +206,7 @@ class _StayDetails extends React.Component {
                     <StayMap className=" stay-map" stay={stay} />
                 </div>
 
-                {/* <h1>{stay}</h1> */}
-                {/* {isLoading && <p>Loading...</p>}
-                {err && <p>ERROR: {err}</p>}
-                <img src={stayToShow.img} alt="img"/>
-                <h2>{stayToShow.name}</h2>
-                <p>Price: {stayToShow.price}</p>
-                <p>Date Added: {new Date(stayToShow.createdAt).toLocaleDateString("en-GB")}</p>
-                <p>Updated date: {new Date(stayToShow.updatedAt).toLocaleDateString("en-GB")}</p>
-                <p>{(stayToShow.onStock)?'in Stock' : 'Out of stock'}</p>
-                <div className="controler flex space-around">
-                    {user && !user.isAdmin && <button>add to Cart</button>}
-                    {user && user.isAdmin && 
-                    <button onClick={this.onRemoveStay}>remove</button>}
-                    {user && user.isAdmin && 
-                    <Link to="/stay/edit" onClick={()=> setSelectedStay(stayToShow._id)}>Edit</Link>}
-                    <Link to="/stay">Back</Link>
-                </div>
-                <hr /> */}
+               
             </div>
         )
     }
@@ -235,3 +226,25 @@ const mapDispatchToProps = {
     setSelectedStay,
 }
 export const StayDetails = connect(mapStateToProps, mapDispatchToProps)(_StayDetails)
+
+
+
+
+ {/* <h1>{stay}</h1> */}
+                {/* {isLoading && <p>Loading...</p>}
+                {err && <p>ERROR: {err}</p>}
+                <img src={stayToShow.img} alt="img"/>
+                <h2>{stayToShow.name}</h2>
+                <p>Price: {stayToShow.price}</p>
+                <p>Date Added: {new Date(stayToShow.createdAt).toLocaleDateString("en-GB")}</p>
+                <p>Updated date: {new Date(stayToShow.updatedAt).toLocaleDateString("en-GB")}</p>
+                <p>{(stayToShow.onStock)?'in Stock' : 'Out of stock'}</p>
+                <div className="controler flex space-around">
+                    {user && !user.isAdmin && <button>add to Cart</button>}
+                    {user && user.isAdmin && 
+                    <button onClick={this.onRemoveStay}>remove</button>}
+                    {user && user.isAdmin && 
+                    <Link to="/stay/edit" onClick={()=> setSelectedStay(stayToShow._id)}>Edit</Link>}
+                    <Link to="/stay">Back</Link>
+                </div>
+                <hr /> */}

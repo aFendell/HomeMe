@@ -1,5 +1,5 @@
 import { SignIn } from './cmps/SignIn.jsx'
-import { StayAdd } from './cmps/StayAdd.jsx'
+// import { StayAdd } from './cmps/StayAdd.jsx'
 import { Home } from './pages/Home.jsx'
 // import { About } from './pages/About.jsx'
 import { StayApp } from './pages/StayApp.jsx'

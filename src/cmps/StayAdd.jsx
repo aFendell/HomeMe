@@ -36,7 +36,7 @@ export class _StayAdd extends React.Component {
     }
 
     toggleCheckbox = ({ target }) => {
-        const { name, value, checked } = target
+        const { name, checked } = target
         const { amenities } = this.state.stay
         if (checked === true) amenities.push(name)
         else {
@@ -92,7 +92,7 @@ export class _StayAdd extends React.Component {
 
 
     render() {
-        const { name, loc, type, price, capacity, amenities, summary } = this.state.stay
+        const { name, loc, type, price, capacity, summary } = this.state.stay
         return (
             <div >
                 <form className="add-form" onSubmit={(ev) => this.onAddStay(ev)}>
@@ -168,7 +168,7 @@ export class _StayAdd extends React.Component {
                     </div>
                     <div className="form-controlls">
                         <button>Save</button>
-                        <a href="">cancel</a>
+                        <a href="/">cancel</a>
                     </div>
                 </form>
             </div>

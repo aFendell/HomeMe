@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from '@material-ui/core/Button';
+// import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import MenuIcon from '@material-ui/icons/Menu';
@@ -21,14 +21,14 @@ export default function SimpleMenu({loggedInUser}) {
     };
 
     return (
-        <div className="header-nav">
+        <div className="simple-menu-css">
             {/* <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
         Open Menu
       </Button> */}
             <div onClick={handleClick} className="avatar-icon">
                 <MenuIcon />
                 {!loggedInUser && <AccountCircleIcon />}
-                {loggedInUser && <img src={loggedInUser.imgUrl} />}
+                {loggedInUser && <img src={loggedInUser.imgUrl} alt="" />}
             </div>
             <Menu
                 id="simple-menu"

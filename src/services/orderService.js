@@ -1,17 +1,17 @@
 import { storageService } from './async-storage.service.js'
 import { httpService } from './http.service.js'
 
-const data = require('../data/stays.json')
+// const data = require('../data/stays.json')
 
-let gOrders = data.order
+// let gOrders = data.order
 window.storageService = storageService;
 
 // const STOR
 
-const axios = require('axios');
+// const axios = require('axios');
 
 // - // for Deverlop without backend
-const STORAGE_KEY = 'order'
+// const STORAGE_KEY = 'order'
 
 export const orderService = {
     query,

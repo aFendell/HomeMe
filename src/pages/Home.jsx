@@ -57,7 +57,7 @@ export function Home() {
                 </div> */}
                 <div className="explore-banner">
                     <p>Home is where you'll be</p>
-                    <button><Link exact to="/stay">Explore</Link></button>
+                    <button><Link to="/stay">Explore</Link></button>
                 </div>
             </div>
         </div>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import { ReactComponent as AngleLeft } from '../assets/img/icons/angle-left.svg'
 import { ReactComponent as AngleRight } from '../assets/img/icons/angle-right.svg'
 
@@ -34,25 +34,28 @@ export function ImgsCarousel({ imgUrls }) {
 
     // imgUrls.style.transform = `translateX(${translateX}px)` //
 
-    if (!imgUrls || imgUrls <= 0) return <div>Loading</div>
+    if (!imgUrls || imgUrls <= 0) return <div>Loading</div> 
     return (
 
         <div className="slider">
+            <section className="arrows">
+
             <AngleLeft className="left-arrow" onClick={prevSlide} />
+            <AngleRight className="right-arrow" onClick={nextSlide} />
+            </section>
 
             <div className="imgs">
 
                 {imgUrls.map((img, index) => {
                     return (
                         <div className={index === current ? 'slide active' : 'slide'} key={index}>
-                            {index === current && (<img src={img} alt="stay image" />)}
+                            {index === current && (<img src={img} alt="stay" />)}
                         </div>
                     )
                 })}
 
             </div>
 
-            <AngleRight className="right-arrow" onClick={nextSlide} />
             <div className="indicators">
                 {imgUrls.map((img, index) => {
                     return (

@@ -1,7 +1,7 @@
 .main-header {
     z-index: 50;
     height: 80px;
-    background-color: #fff !important;
+    background-color: #fff;
     position: sticky;
     top: 0;
     box-shadow: 0 10px 10px -10px rgb(33 35 38 / 10%);
@@ -56,6 +56,7 @@
             border: 1px solid lightgray;
             border-radius: 999px;
             cursor: pointer;
+
             .navbar-search-btn {
                 border: none;
                 outline: none;
@@ -66,22 +67,25 @@
                 // ._1xq16jy:focus-within {
                 //     border: none ;
                 // }
-               
-                input  {
-                    color: #717171!important ;
-            
+
+                input {
+                    color: #717171 !important;
+
                 }
-            
+
             }
+
             span {
                 cursor: pointer;
                 border: none;
                 // color: #ff385c;
                 max-width: 12vw;
+
                 &:focus-visible {
                     outline: none;
                 }
             }
+
             svg {
                 border-radius: 50%;
                 background-color: #ff385c;
@@ -95,11 +99,18 @@
 
         .header-nav {
             align-items: center;
-
+            justify-content: space-between;
+            
             &>*:not(:last-child) {
                 margin-inline-end: 10px;
             }
 
+            .explore {
+                span {
+                    display: none;
+
+                }
+            }
             &>a {
                 color: black;
                 padding: 10px;
@@ -137,6 +148,10 @@
                     height: 30px;
                     object-fit: cover;
                 }
+            }
+
+            .explor2 {
+                display: none;
             }
         }
 
@@ -189,33 +204,84 @@
     background-color: #FF385C !important;
 
 }
+
 .search-waka {
     // padding: 0 0 0 2rem;
-            color: #1e1e1e;
-            font-size: .9rem;
-            font-weight: 700;
-            background-color: snow;
-            // position: absolute;
-            // z-index: 101;
-            border: 1px solid black;
-            border-color: #717171!important ;
+    color: #1e1e1e;
+    font-size: .9rem;
+    font-weight: 700;
+    background-color: snow;
+    // position: absolute;
+    // z-index: 101;
+    border: 1px solid black;
+    border-color: #717171 !important;
 
-            border-radius: 200px;
-            line-height: 49px;
-            display: flex;
-            top: 10.5px;
-            height: 49px;
-            // position: absolute;
-            box-shadow: none;
-            transition: .15s ease-in-out;
-            
-            ._w64aej {
-             padding: 0 0 0 2rem;
+    border-radius: 200px;
+    line-height: 49px;
+    display: flex;
+    top: 10.5px;
+    height: 49px;
+    // position: absolute;
+    box-shadow: none;
+    transition: .15s ease-in-out;
+
+    ._w64aej {
+        padding: 0 0 0 2rem;
 
 
+    }
+
+
+}
+
+
+@media (max-width: 480px) {
+
+    .main-header {
+        height: 10vh;
+        justify-content: center;
+        // background-color: transparent;
+        // color: white;
+
+        .header-expends {
+            flex-direction: row;
+            .nav-container {
+                width: 100%;
+                .logo-container {
+                    padding-left: 10px;
+                        span {
+                            display: none;
+                        }
+                    
+                    
+                }
+                
+                .search-container {
+                    display: none;
+
+                }
+                .header-nav {
+                    width: 85%;
+                    align-items: center;
+                    // justify-content: space-between;
+                    
+                    // .explore {
+                    //     a {
+                    //         color: white;
+
+                    //     }
+                    // }
+                    .host {
+                        display: none;
+                    }
+                    .user {
+                        padding-right: 10px;
+                    }
+                }
             }
-
-            
         }
-         
 
+    }
+
+
+}

@@ -20,7 +20,7 @@ export class StayReviews extends React.Component {
         // console.log(this.targetRef)
         const {stay} = this.props
         this.setState({ stay },()=>{
-            this.targetRef = React.forwardRef(<ReviewsModal ref={this.targetRef} reviews={this.state.stay.reviews} reviewsAvg={this.reviewsAvg} closeModal={this.closeModal}/>);
+            this.targetRef = React.forwardRef(() => <ReviewsModal ref={this.targetRef} reviews={this.state.stay.reviews} reviewsAvg={this.reviewsAvg} closeModal={this.closeModal}/>);
             this.targetElement = this.targetRef.current;
         })
     }

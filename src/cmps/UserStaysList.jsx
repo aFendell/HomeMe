@@ -13,7 +13,7 @@ class _UserStaysList extends React.Component {
 
     async componentDidMount() {
         console.log("hi")
-        const stays = await this.props.loadStays()
+        await this.props.loadStays()
         this.currentUserStays()
     }
 
