@@ -1,0 +1,209 @@
+{
+  "order": [
+    {
+      "hostId": "60bbdd7519a5e8e7640ea1d9",
+      "createdAt": "2021-06-08T16:40:27.089Z",
+      "buyer": {
+        "_id": "udsfeae3sd1",
+        "fullname": "Cassemiro Delgado",
+        "imgUrl": "https://a0.muscache.com/im/pictures/user/d8233356-98cf-4c38-8672-26104adbe5ac.jpg?im_w=240"
+      },
+      "nightCount": 17,
+      "totalPrice": 1853,
+      "guests": {
+        "adults": 1,
+        "kids": 0
+      },
+      "stay": {
+        "_id": "60bf96e319a5e8e764392fe0",
+        "name": "Suíte Geribá",
+        "price": 29
+      },
+      "status": "Done"
+    },
+    {
+      "hostId": "60bbdd7519a5e8e7640ea1d9",
+      "createdAt": "2021-06-08T16:40:27.089Z",
+      "buyer": {
+        "_id" : "udsfeae3sd2",
+        "fullname" : "Milena Sorta",
+        "imgUrl" : "https://a0.muscache.com/im/pictures/user/d3281b06-3128-4996-a04a-d94214dced50.jpg?im_w=240"
+      },
+      "startDate": "2021-05-24T16:40:27.000Z",
+      "endDate": "2021-05-29T16:40:27.000Z",
+      "nightCount": 17,
+      "totalPrice": 1853,
+      "guests": {
+        "adults": 2,
+        "kids": 1
+      },
+      "stay": {
+        "_id": "60bf96e319a5e8e764392fe0",
+        "name": "Suíte Geribá",
+        "price": 29
+      },
+      "status": "Done"
+    },
+    {
+      "hostId": "60bbdd7519a5e8e7640ea1d9",
+      "createdAt": "2021-06-08T16:40:27.089Z",
+      "buyer": {
+        "_id" : "udsfeae3sd3",
+        "fullname" : "Lívia Balawish",
+        "imgUrl" : "https://a0.muscache.com/im/pictures/user/ff09bad9-5ed1-4c98-89bd-1e3615b84f8c.jpg?im_w=240"
+      },
+      "startDate": "2021-05-15T16:40:27.000Z",
+      "endDate": "2021-05-23T16:40:27.000Z",
+      "nightCount": 17,
+      "totalPrice": 1853,
+      "guests": {
+        "adults": 2,
+        "kids": 1
+      },
+      "stay": {
+        "_id": "60bf96e319a5e8e764392fe0",
+        "name": "Suíte Geribá",
+        "price": 29
+      },
+      "status": "Done"
+    },
+    {
+      "hostId": "60bbdd7519a5e8e7640ea1d9",
+      "createdAt": "2021-06-08T16:40:27.089Z",
+      "buyer": {
+        "_id" : "u63q043esf",
+        "fullname" : "Felipe Toledo",
+        "imgUrl" : "https://a0.muscache.com/im/pictures/user/2c9e1b34-6144-496c-b752-092cd2faaf8e.jpg?im_w=240"
+      },
+      "startDate": "2021-04-7T16:40:27.000Z",
+      "endDate": "2021-04-11T16:40:27.000Z",
+      "nightCount": 17,
+      "totalPrice": 1853,
+      "guests": {
+        "adults": 2,
+        "kids": 2
+      },
+      "stay": {
+        "_id": "60bf96e319a5e8e764392fe0",
+        "name": "Suíte Geribá",
+        "price": 29
+      },
+      "status": "Done"
+    },
+    {
+      "hostId": "60bbdd7519a5e8e7640ea1d9",
+      "createdAt": "2021-06-08T16:40:27.089Z",
+      "buyer": {
+        "_id" : "u63q043esf1",
+        "fullname" : "Adriana Colmary",
+        "imgUrl" : "https://a0.muscache.com/im/pictures/user/9bb48619-bc82-46a0-a480-c669f03e44aa.jpg?im_w=240"
+      },
+      "startDate": "2021-04-01T16:40:27.000Z",
+      "endDate": "2021-04-04T16:40:27.000Z",
+      "nightCount": 17,
+      "totalPrice": 1853,
+      "guests": {
+        "adults": 2,
+        "kids": 1
+      },
+      "stay": {
+        "_id": "60bf96e319a5e8e764392fe0",
+        "name": "Suíte Geribá",
+        "price": 29
+      },
+      "status": "Done"
+    },
+    {
+      "hostId": "60bbdd7519a5e8e7640ea1d9",
+      "createdAt": "2021-06-08T16:40:27.089Z",
+      "buyer": {
+        "_id" : "u63q043esf2",
+        "fullname" : "Filipos Tortoro",
+        "imgUrl" : "https://a0.muscache.com/im/pictures/user/67f95c86-77c6-4ca2-9cc3-635283979147.jpg?im_w=240"
+      },
+      "startDate": "2021-03-24T16:40:27.000Z",
+      "endDate": "2021-03-29T16:40:27.000Z",
+      "nightCount": 17,
+      "totalPrice": 1853,
+      "guests": {
+        "adults": 2,
+        "kids": 1
+      },
+      "stay": {
+        "_id": "60bf96e319a5e8e764392fe0",
+        "name": "Suíte Geribá",
+        "price": 29
+      },
+      "status": "Done"
+    },
+    {
+      "hostId": "60bbdd7519a5e8e7640ea1d9",
+      "createdAt": "2021-06-08T16:40:27.089Z",
+      "buyer": {
+        "_id" : "u24tvc02",
+        "fullname" : "Tom Bridgerton",
+        "imgUrl" : "https://a0.muscache.com/im/pictures/user/ff3e0819-67cf-4b54-b833-bb98febc4ff4.jpg?im_w=240"
+      },
+      "startDate": "2021-03-02T16:40:27.000Z",
+      "endDate": "2021-03-12T16:40:27.000Z",
+      "nightCount": 17,
+      "totalPrice": 1853,
+      "guests": {
+        "adults": 2,
+        "kids": 3
+      },
+      "stay": {
+        "_id": "60bf96e319a5e8e764392fe0",
+        "name": "Suíte Geribá",
+        "price": 29
+      },
+      "status": "Done"
+    },
+    {
+      "hostId": "60bbdd7519a5e8e7640ea1d9",
+      "createdAt": "2021-06-08T16:40:27.089Z",
+      "buyer": {
+        "_id" : "u24tvc01",
+        "fullname" : "Hedy Genouva",
+        "imgUrl" : "https://a0.muscache.com/im/pictures/user/40ab3bd5-33f6-49ef-b46f-aa45f667beee.jpg?im_w=240"
+      },
+      "startDate": "2021-02-21T16:40:27.000Z",
+      "endDate": "2021-02-27T16:40:27.000Z",
+      "nightCount": 17,
+      "totalPrice": 1853,
+      "guests": {
+        "adults": 2,
+        "kids": 0
+      },
+      "stay": {
+        "_id": "60bf96e319a5e8e764392fe0",
+        "name": "Suíte Geribá",
+        "price": 29
+      },
+      "status": "Done"
+    },
+    {
+      "hostId": "60bbdd7519a5e8e7640ea1d9",
+      "createdAt": "2021-06-08T16:40:27.089Z",
+      "buyer": {
+        "_id" : "u24tvc0",
+        "fullname" : "Tiyumba Hafiz",
+        "imgUrl" : "https://a0.muscache.com/im/pictures/user/69597d27-3183-4d2d-b83d-a2af2d42b157.jpg?im_w=240"
+      },
+      "startDate": "2021-02-05T16:40:27.000Z",
+      "endDate": "2021-02-18T16:40:27.000Z",
+      "nightCount": 17,
+      "totalPrice": 1853,
+      "guests": {
+        "adults": 2,
+        "kids": 3
+      },
+      "stay": {
+        "_id": "60bf96e319a5e8e764392fe0",
+        "name": "Suíte Geribá",
+        "price": 29
+      },
+      "status": "Done"
+    }
+  ]
+}

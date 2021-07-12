@@ -1,0 +1,178 @@
+.date-picker {
+    // border: 1px solid #717171 !important;
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin: 0px;
+    color: rgb(34, 34, 34);
+    background-color: transparent;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    box-shadow: none;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    outline: 0px;
+
+
+
+    .react-datepicker__input-container {
+
+        .end-date { 
+            width: 100% !important;
+            height: 50px;
+            box-shadow: unset;
+            text-align: center;
+            cursor: pointer;
+            border: 1px solid #b0b0b0 ;
+            border-top-right-radius: 8px;
+            border-left: none!important;
+        }
+        .start-date {
+            // border-right: 1px solid #717171 !important;
+            // border-top-right-radius: 8px;
+            width: 100% !important;
+
+            height: 50px;
+            // padding: 6px 10px;
+            // border: 1px solid transparent;
+            // border-top: 1px solid grey;
+            box-shadow: unset;
+            text-align: center;
+            cursor: pointer;
+            border: 1px solid #b0b0b0 !important;
+            border-top-left-radius: 8px;
+
+        }
+
+    }
+
+}
+
+.react-datepicker-wrapper {
+
+    // display: none;
+    :first-child {}
+
+}
+
+.add-guests {
+    display: flex;
+    // flex-direction: column;
+    align-items: baseline;
+    border: 1px solid #717171;
+    border-top: none transparent;
+    height: 50px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+
+
+
+    p {
+        margin-top: 5px;
+        margin-right: 5px;
+    }
+
+    .kids {
+        align-self: flex-end;
+    }
+
+    input {
+        // display: flex;
+        width: 30%;
+        border: 1px solid transparent;
+        align-items: baseline;
+        border-radius: 4px;
+        padding: 3px 0 3px;
+        margin-bottom: 5px;
+    }
+
+}
+
+.css-uyi1zz-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+    color: rgba(34, 34, 34, 0.938) !important;
+    font-weight: 600;
+}
+
+.order-guests-btn {
+
+    -webkit-box-pack: center !important;
+    -webkit-box-align: center !important;
+    -webkit-box-flex: 0 !important;
+    width: 32px !important;
+    height: 32px !important;
+    flex-grow: 0 !important;
+    flex-shrink: 0 !important;
+    cursor: pointer !important;
+    display: inline-flex !important;
+    margin: 0px !important;
+    padding: 0px !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    border-width: 1px !important;
+    border-style: solid !important;
+    border-color: rgb(176, 176, 176) !important;
+    color: rgb(113, 113, 113) !important;
+    font-family: inherit !important;
+    outline: none !important;
+    touch-action: manipulation !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background: rgb(255, 255, 255) !important;
+    border-radius: 50% !important;
+
+}
+
+.p-span {
+    padding: 8px !important;
+    // display: none !important;
+}
+
+.add-guests-modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 260px;
+
+    li {
+        .guest-title {
+            // margin-right: 40%;
+            width: 65%;
+        }
+
+        // justify-content: space-between;
+    }
+}
+
+// .css-4ssu7w-MuiButtonBase-root-MuiListItem-root-MuiMenuItem-root.Mui-selected {
+//     background-color: transparent !important;
+// }
+
+.css-4ssu7w-MuiButtonBase-root-MuiListItem-root-MuiMenuItem-root.Mui-selected:after {
+    background-color: transparent !important;
+}
+
+.css-w27m94-MuiInputBase-root-MuiInput-root:after {
+    border-bottom: none !important;
+}
+
+.css-w27m94-MuiInputBase-root-MuiInput-root:before {
+    border-bottom: none !important;
+}
+
+.css-1869usk-MuiFormControl-root {
+    width: 100%;
+    border: 1px solid #717171 !important;
+    margin: 0 !important;
+    border-top: none !important;
+}
+
+.css-hfs5yo-MuiFormLabel-root-MuiInputLabel-root {
+    left: 15px !important;
+    top: -6px !important;
+}
+
+.css-1gh76dd-MuiSvgIcon-root-MuiSelect-icon {
+    top: -3px !important;
+}

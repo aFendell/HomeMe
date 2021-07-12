@@ -1,0 +1,438 @@
+{
+  "trip": {
+    "startDate": "2025/10/15",
+    "endDate": "2025/10/17",
+    "guests": {
+      "adults": 2,
+      "kids": 1
+    },
+    "loc": {
+      "country": "Portugal",
+      "countryCode": "PT",
+      "address": "Porto, Portugal",
+      "lat": -8.61308,
+      "lng": 41.1413
+    }
+  },
+  "stay": [
+    {
+      "_id": "10006545",
+      "name": "Ribeira Charming Duplex",
+      "type": "Duplex",
+      "imgUrls": [
+        "https://a0.muscache.com/im/pictures/eb31d864-6c0b-44f8-a829-61bc6058ea03.jpg?aki_policy=xx_large",
+        "https://a0.muscache.com/im/pictures/7a29b7e4-ab79-40d2-badb-02ba06cbe8e0.jpg",
+        "https://a0.muscache.com/im/pictures/3151d9df-1174-4ca5-b94c-d57d033e1b37.jpg"
+        
+      ],
+      "price": 80.00,
+      "summary": "Fantastic duplex apartment with three bedrooms, located in the historic area of Porto, Ribeira (Cube)...",
+      "capacity": 8,
+      "amenities": [
+        "TV",
+        "Wifi",
+        "Kitchen",
+        "Smoking allowed",
+        "Pets allowed",
+        "Cooking basics"
+      ],
+      "host": {
+        "_id": "51399391",
+        "fullname": "Davit Pok",
+        "imgUrl": "https://a0.muscache.com/im/pictures/fab79f25-2e10-4f0f-9711-663cb69dc7d8.jpg"
+      },
+      "loc": {
+        "country": "Portugal",
+        "countryCode": "PT",
+        "address": "Porto, Portugal",
+        "lat": -8.61308,
+        "lng": 41.1413
+      },
+      "reviews": [
+        {
+          "id": "madeId",
+          "txt": "Very helpful hosts. Cooked traditional...",
+          "rate": 4,
+          "by": {
+            "_id": "u102",
+            "fullname": "user2",
+            "imgUrl": "https://a0.muscache.com/im/pictures/fab79f25-2e10-4f0f-9711-663cb69dc7d8.jpg"
+          }
+        }
+      ],
+      "likedByUserIds": [
+        "u101",
+        "u102"
+      ]
+    },
+    {
+      "_id": "10006546",
+      "name": "Rodrigo cachorro Villa",
+      "type": "Villa",
+      "imgUrls": [
+        "https://a0.muscache.com/im/pictures/b64eb765-aaa8-41b1-a3f7-379ae0be9390.jpg?aki_policy=xx_large",
+        "https://a0.muscache.com/im/pictures/3e7a3039-55e0-484e-9e29-74776daba127.jpg?aki_policy=xx_large",
+        "https://a0.muscache.com/im/pictures/695ea3b0-9935-45d1-b907-c0bac9ed325f.jpg?aki_policy=xx_large"
+        
+      ],
+      "price": 90.00,
+      "summary": "Fantastic duplex apartment with three bedrooms, located in the historic area of Porto, Ribeira (Cube)...",
+      "capacity": 8,
+      "amenities": [
+        "TV",
+        "Wifi",
+        "Kitchen",
+        "Smoking allowed",
+        "Pets allowed",
+        "Cooking basics"
+      ],
+      "host": {
+        "_id": "51399391",
+        "fullname": "Davit Pok",
+        "imgUrl": "https://a0.muscache.com/im/pictures/fab79f25-2e10-4f0f-9711-663cb69dc7d8.jpg"
+      },
+      "loc": {
+        "country": "Portugal",
+        "countryCode": "PT",
+        "address": "Porto, Portugal",
+        "lat": -8.61308,
+        "lng": 41.1413
+      },
+      "reviews": [
+        {
+          "id": "madeId",
+          "txt": "Very helpful hosts. Cooked traditional...",
+          "rate": 4,
+          "by": {
+            "_id": "u102",
+            "fullname": "user2",
+            "imgUrl": "/img/img2.jpg"
+          }
+        }
+      ],
+      "likedByUserIds": [
+        "u101",
+        "u102"
+      ]
+    },
+    {
+      "_id": "10023232",
+      "name": "Paradise caravan",
+      "type": "Caravan",
+      "imgUrls": [
+        "https://a0.muscache.com/im/pictures/e926a2ed-af6a-4264-b1dc-0fdca0b782e5.jpg?im_w=1200",
+        "https://a0.muscache.com/im/pictures/bee2ba35-182b-4c1a-ac51-7fc1f1b5bf68.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/7a15f782-eba6-439a-b6cb-848feb278235.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/f0cf6643-6351-47b9-96b9-38683fcaa5ed.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/478a5f61-b801-4364-8d38-a82cbd63e47c.jpg?im_w=720"
+        
+      ],
+      "price": 225.00,
+      "summary": "Nestled on the hill in the beautiful village of Hat Head, surrounded by national park and world class beaches, is your private refurbished caravan and deck. Swim or paddle board in the crystal clear water of the creek, surf at one of the many stunning, secluded beaches or bush walk in the national park.",
+  
+      "capacity": 2,
+      "amenities": [
+        "Wifi",
+        "Kitchen",
+        "Backyard",
+        "Air conditioning",
+        "Fire pit",
+        "Smoking allowed",
+        "Pets allowed",
+        "Cooking basics"
+  
+      ],
+      "host": {
+        "_id": "51399391",
+        "fullname": "Julie Fish",
+        "imgUrl": "https://a0.muscache.com/im/pictures/user/f2b1a42c-4655-4aee-ae1c-26564baf6f46.jpg"
+      },
+      "loc": {
+        "country": "Australia",
+        "countryCode": "AUS",
+        "address": "Hat Head, New South Wales, Australia",
+        "lat": -31.0499998,
+        "lng": 153.0499998
+      },
+      "reviews": [
+        {
+          "id": "38383484",
+          "txt": "This place feels like home. Clean, and organized with so many nice homely touches. It really does feel like you're stepping into nature. Such a great space and will be back next time I'm in Hat Head! Thank you!!",
+          "rate": 4,
+          "by": {
+            "_id": "u102",
+            "fullname": "Stan",
+            "imgUrl": "https://a0.muscache.com/im/users/42435631/profile_pic/1440476747/original.jpg?im_w=240"
+          }
+        },
+        {
+          "id": "5683484",
+          "txt": "Great little place, with everything you need... loved our stay. Fenced off area for my dog. Peaceful, tranquil and just lovely to wake up there! ⭐️⭐️⭐️⭐️⭐️",
+          "rate": 5,
+          "by": {
+            "_id": "u276",
+            "fullname": "Kerry",
+            "imgUrl": "https://a0.muscache.com/im/pictures/user/60ba2abe-5757-4626-93ff-754095985fcf.jpg?im_w=240"
+          }
+        },
+        {
+          "id": "1983724",
+          "txt": "This place was paradise, did not disappoint.",
+          "rate": 5,
+          "by": {
+            "_id": "u233",
+            "fullname": "Kirsti",
+            "imgUrl": "https://a0.muscache.com/im/pictures/user/a0f01720-2f1b-41b6-b42b-f1c5919a0934.jpg?im_w=240"
+          }
+        }
+      ],
+      "likedByUserIds": [
+        "u101",
+        "u102"
+      ]
+    },
+    {
+      "_id": "23452875",
+      "name": "Bambra tropical hideaway",
+      "type": "Hideaway",
+      "imgUrls": [
+        "https://a0.muscache.com/im/pictures/c3b0cde5-2648-4e52-8d25-649f10d24a9b.jpg?im_w=1200",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-48288587/original/83afbc58-7da0-45a4-9711-4a7f407593b6.jpeg?im_w=720",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-48288587/original/37108a5b-6345-409f-b4f1-593657884e03.jpeg?im_w=720",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-48288587/original/26683a77-75d5-4997-850a-a3f20e1501e6.jpeg?im_w=720",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-48288587/original/5cb15792-5262-48ae-b224-9d6538d09da2.jpeg?im_w=720"
+        
+      ],
+      "price": 920.00,
+      "summary": "Bambra tropical hideaway is a unique self contained villa set amongst a tropical garden with huge private salt water swimming pool.",
+  
+      "capacity": 4,
+      "amenities": [
+        "Wifi",
+        "Kitchen",
+        "Dryer",
+        "Washer",
+        "Pool",
+        "Air conditioning",
+        "Fire pit",
+        "Pets allowed",
+        "Free parking on premises"
+  
+      ],
+      "host": {
+        "_id": "51247391",
+        "fullname": "Janette Rodgers",
+        "imgUrl": "https://a0.muscache.com/im/users/16226284/profile_pic/1408229390/original.jpg"
+      },
+      "loc": {
+        "country": "Australia",
+        "countryCode": "AUS",
+        "address": "Larrakeyah, Northern Territory, Australia",
+        "lat": -12.4586,
+        "lng": 130.8304
+      },
+      "reviews": [
+        {
+          "id": "93747284",
+          "txt": "Janette is super lovely and the place is very serene but despite it having a kitchen don’t expect any amenities. You will need to BYO cooking oil, salt, pepper etc. that being said, would still stay here again.",
+          "rate": 5,
+          "by": {
+            "_id": "u134",
+            "fullname": "Liz",
+            "imgUrl": "https://a0.muscache.com/im/pictures/user/95926f4c-d9c7-4d84-aa5b-9455443ebac6.jpg?im_w=240"
+          }
+        },
+        {
+          "id": "98554",
+          "txt": "Lovely place really close to everything",
+          "rate": 4,
+          "by": {
+            "_id": "u984",
+            "fullname": "Josh",
+            "imgUrl": "https://a0.muscache.com/im/pictures/user/27c59cd5-2d77-495a-bdfe-86fef0554857.jpg?im_w=240"
+          }
+        }
+      ],
+      "likedByUserIds": [
+        "u134",
+        "u102"
+      ]
+    },
+    {
+      "_id": "1783475",
+      "name": "Betty the Caravan",
+      "type": "Caravan",
+      "imgUrls": [
+        "https://a0.muscache.com/im/pictures/83becc9f-e56a-4b9e-9746-653b2c97618a.jpg?im_w=1200",
+        "https://a0.muscache.com/im/pictures/abb779a3-0dd8-463e-82ce-84c98172ed7d.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/daaaaa3f-7220-42e2-8ae0-3e9fb1989fd4.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/42370cfe-6ba4-42c0-b4c1-d914ee4e1b88.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/157e1a9d-c784-4573-81f2-60423003e91d.jpg?im_w=720"
+        
+      ],
+      "price": 403.00,
+      "summary": "Meet Betty your new home on wheels! Betty is a renovated 1980's retro caravan. She screams FUN & has a colourful & vibrant character, causing heart explosions from all that see her. She has all the gypsy/nomad vibes of camping but with the added glamour and comfort of a nicely finished interior! With a comfy queen size bed, electricity, a mini fridge, a fan, a gas stove its the ultimate glamping experience!",
+  
+      "capacity": 2,
+      "amenities": [
+        "Breakfast",
+        "Long term stays allowed",
+        "Pets allowed",
+        "Free parking on premises"
+  
+      ],
+      "host": {
+        "_id": "51247391",
+        "fullname": "Beck Morison",
+        "imgUrl": "https://a0.muscache.com/im/users/17494283/profile_pic/1407890609/original.jpg"
+      },
+      "loc": {
+        "country": "Australia",
+        "countryCode": "AUS",
+        "address": "Byron Bay, New South Wales, Australia",
+        "lat": -28.643057,
+        "lng": 153.615005
+      },
+      "reviews": [
+        {
+          "id": "93747284",
+          "txt": "Beck and Joel were amazing! So helpful and flexible with having to change dates from out original trip and with what site to book. We also had to cancel the end of our stay due to illness and they were so understanding! Betty is very cute and comfortable and fitted out family of 3 in perfectly!",
+          "rate": 5,
+          "by": {
+            "_id": "u1244",
+            "fullname": "Lachlan",
+            "imgUrl": "https://a0.muscache.com/im/pictures/user/b4b07a5e-8b5e-471b-8bf8-c6a2cacb7467.jpg"
+          }
+        },
+        {
+          "id": "26097284",
+          "txt": "It was a great extra space for our family holiday - very cute retro caravan and great communication with hosts",
+          "rate": 4,
+          "by": {
+            "_id": "u7144",
+            "fullname": "Rebecca",
+            "imgUrl": "https://a0.muscache.com/im/pictures/user/52de1dde-8683-4b7e-907f-ff7a3c85adb5.jpg"
+          }
+        },
+        {
+          "id": "2603464",
+          "txt": "The host canceled this reservation 3 days before arrival. This is an automated posting.",
+          "rate": 4,
+          "by": {
+            "_id": "u3404",
+            "fullname": "Christine",
+            "imgUrl": "https://a0.muscache.com/im/pictures/user/aef20e62-a5c0-47eb-befd-57d29fdaca86.jpg"
+          }
+        }
+      ],
+      "likedByUserIds": [
+        "u134",
+        "u1244"
+      ]
+    },
+    {
+      "_id": "1037456",
+      "name": "Romance apatment # Burgas center & Parking # New",
+      "imgUrls": [
+        "https://a0.muscache.com/im/pictures/aa30ac07-f7af-4a53-9045-1b3cd645c374.jpg?aki_policy=xx_large",
+        "https://a0.muscache.com/im/pictures/14af1591-5ef6-452a-ae82-745eb7e16200.jpg",
+        "https://a0.muscache.com/im/pictures/637f52ae-ca9e-462d-bb22-be782ac733f8.jpg",
+        "https://a0.muscache.com/im/pictures/ecf7472c-ae9b-4e45-89e2-8715d106a55a.jpg",
+        "https://a0.muscache.com/im/pictures/29455114-df34-41e1-a7c1-af3916627d6d.jpg",
+        "otherImg.jpg"
+      ],
+      "price": 110,
+      "summary": "Welcome to our brand new apartment in the center of Burgas, only within a 5 minutes’ walk from Alexandrovska Street – the main city street packed with commercial centers, retail stores, banks, administrative buildings, super markets, pharmacies, etc. Close to the flat there are a small park, a modern fitness center, a bicycle rent, coffee shops and restaurants. A great flat for...",
+      "capacity": 8,
+      "amenities": [
+        "TV",
+        "Wifi",
+        "Kitchen",
+        "Free parking on premises",
+        "Elevator"
+      ],
+      "host": {
+        "_id": "10927435",
+        "fullname": "vaselein judi",
+        "imgUrl": "https://a0.muscache.com/im/pictures/user/006a241a-36c2-4311-bde4-7c01d9761de0.jpg"
+      },
+      "loc": {
+        "country": "Bolgaria",
+        "countryCode": "BG",
+        "address": "Burgas, Bolgaria",
+        "lat": 42.698334,
+        "lng": 23.319941
+      },
+      "reviews": [
+        {
+          "id": "p901",
+          "txt": "Very spacious and beautiful apartment. Recommended!",
+          "rate": 5,
+          "by": {
+            "_id": "u104",
+            "fullname": "Meave Bon",
+            "imgUrl": "https://a0.muscache.com/im/users/9889324/profile_pic/1383928074/original.jpg"
+          }
+        },
+        {
+          "id": "p902",
+          "txt": "GReat place, good location, stylish, sparkling clean, lots of light, this exceeded my expectations, by far",
+          "rate": 4,
+          "by": {
+            "_id": "u106",
+            "fullname": "Jean Marie",
+            "imgUrl": "https://a0.muscache.com/im/pictures/user/ed633597-365b-49dc-a533-b1d19dcfcf63.jpg"
+          }
+        }
+      ],
+      "likedByUserIds": [
+        "u101",
+        "u104"
+      ]
+    }
+    
+    
+  ],
+  "order": [
+    {
+      "_id": "o1225",
+      "hostId": "u101",
+      "createdAt": 9898989,
+      "buyer": {
+        "_id": "u101",
+        "fullname": "User 1"
+      },
+      "totalPrice": 160,
+      "startDate": "2025/10/15",
+      "endDate": "2025/10/17",
+      "guests": {
+        "adults": 2,
+        "kids": 1
+      },
+      "stay": {
+        "_id": "h102",
+        "name": "House Of Uncle My",
+        "price": 80.00
+      },
+      "status": "pending"
+    }
+  ],
+  "user": [
+    {
+      "_id": "u101",
+      "fullname": "User 1",
+      "imgUrl": "/img/img1.jpg",
+      "isHost": false,
+      "username": "user1",
+      "password": "secret"
+    },
+    {
+      "_id": "u102",
+      "fullname": "User 2",
+      "imgUrl": "/img/img2.jpg",
+      "isHost": false,
+      "username": "user2",
+      "password": "secret"
+    }
+  ]
+}

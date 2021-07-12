@@ -1,0 +1,1033 @@
+{
+  "trip": {
+    "startDate": "2025/10/15",
+    "endDate": "2025/10/17",
+    "guests": {
+      "adults": 2,
+      "kids": 1
+    },
+    "loc": {
+      "country": "Portugal",
+      "countryCode": "PT",
+      "address": "Porto, Portugal",
+      "lat": -8.61308,
+      "lng": 41.1413
+    }
+  },
+  "stay": [
+    {
+      "_id": "dfd44t5",
+      "name": "Finnicky Guest House",
+      "type": "Guesthouse",
+      "imgUrls": [
+        "https://a0.muscache.com/im/pictures/a138220e-9953-4bdf-9cde-5dc9194ee841.jpg?im_w=1200",
+        "https://a0.muscache.com/im/pictures/e10322e8-dd24-49a3-be7f-6c8039c21f6d.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/6fda546b-dc1c-4908-9166-472b4d703d6d.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/334f551d-3694-4839-b669-dd4af47b52af.jpg?im_w=1200",
+        "https://a0.muscache.com/im/pictures/e8f6c38c-8bc5-4028-a33d-f1df42805dbc.jpg?im_w=1200"
+        
+      ],
+      "price": 74.00,
+      "summary": "This small cosy cottage nestled below shady trees surrounded by beautiful flower filled gardens and only a short stroll to magnificent Forresters Beach.This simple but stylish cottage has all your needs to provide you with a comfy and relaxed weekend away. The bathroom is attached to the main house directly opposite the guest house.",
+      "capacity": 2,
+      "bedroom": 1,
+      "bath": 1,
+      "amenities": [
+        "TV",
+        "Wifi",
+        "Kitchen",
+        "Bathtub",
+        "Pets allowed",
+        "Backyard",
+        "Air conditioning",
+        "Free parking on premises"
+      ],
+      "host": {
+        "_id": "51399391",
+        "fullname": "Mandi & Russell",
+        "imgUrl": "https://a0.muscache.com/im/pictures/user/ebf1b041-1a87-4eef-b364-f9131f8b13aa.jpg?im_w=240"
+      },
+      "loc": {
+        "country": "Austrlia",
+        "countryCode": "Aus",
+        "address": "Sydney, Austrlia",
+        "lat": -33.8688,
+        "lng": 151.2093
+      },
+      "reviews": [
+        {
+          "id": "rde3m",
+          "txt": "Great spot! Perfect for a few quiet days away from home.",
+          "rate": 4,
+          "by": {
+            "_id": "uds23d",
+            "fullname": "Andrea",
+            "imgUrl": "https://a0.muscache.com/im/users/9023119/profile_pic/1410013147/original.jpg?im_w=240"
+          }
+          },
+        {
+          "id": "rde3m1",
+          "txt": "Highly recommend the Finnicky Guest House too anyone!! Mandi and Russell were so friendly and welcoming, their cat Ziggy is an angel, and the guest house itself was clean and spot-on to how it was shown",
+          "rate": 5,
+          "by": {
+            "_id": "uds23d1",
+            "fullname": "Chelsee",
+            "imgUrl": "https://a0.muscache.com/im/pictures/user/dc425682-ca1a-42b1-9760-1d8996df7ecc.jpg?im_w=240"
+        }},
+        {
+          "id": "rde3m2",
+          "txt": "Thank you so much for having us, it's such a beautiful cottage! Super clean, very quiet, nice place outside to have some wine, cheese plate and relax!",
+          "rate": 5,
+          "by": {
+            "_id": "uds23d2",
+            "fullname": "Rafa",
+            "imgUrl": "https://a0.muscache.com/im/pictures/user/0f6e885c-11df-4e11-b0dd-a0223e90567b.jpg?im_w=240"
+          }
+        }
+      ],
+      "likedByUserIds": [
+        "u101",
+        "u102"
+      ]
+    },
+    {
+      "_id": "sdf44yn",
+      "name": "Self contained studio",
+      "type": "Studio",
+      "imgUrls": [
+        "https://a0.muscache.com/im/pictures/eff8bc31-1413-48cb-b902-5dec6f630fcd.jpg?im_w=1200",
+        "https://a0.muscache.com/im/pictures/d7787d69-3f0c-4979-ac2d-7c9978c7bd63.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/e7580be2-6684-4244-9965-98e5c408cb2a.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/6d4049f5-628c-4ac3-bce5-bcdd396367f2.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/1b97a75c-ed48-4169-8867-6911c8cb9f01.jpg?im_w=720"
+        
+      ],
+      "price": 80.00,
+      "summary": "Self-contained studio opening to lush back garden. It is at the back of our double-fronted traditional Balmain cottage on a quiet street and has separate access. Street parking is available.",
+      "capacity": 2,
+      "bedroom": 1,
+      "bath": 1,
+      "amenities": [
+        "TV",
+        "Wifi",
+        "Kitchen",
+        "Smoking allowed",
+        "Pets allowed",
+        "Free street parking"
+      ],
+      "host": {
+        "_id": "51399391",
+        "fullname": "Jhonny O Mate",
+        "imgUrl": "https://a0.muscache.com/im/pictures/user/59e090f8-5d22-46ba-8c2d-4153f38dc7ad.jpg?im_w=240"
+      },
+      "loc": {
+        "country": "Austrlia",
+        "countryCode": "Aus",
+        "address": "Sydney, Austrlia",
+        "lat": -33.8688,
+        "lng": 151.2093
+      },
+      "reviews": [
+        {
+          "id": "rmslfj",
+          "txt": "Perfect location, beautiful space, and thoughtful additional touches (bottle of wine, coffee, and apples!)",
+          "rate": 4,
+          "by": {
+            "_id": "udfml5",
+            "fullname": "Rachel",
+            "imgUrl": "https://a0.muscache.com/im/pictures/user/3edc6a05-7190-4033-8cb1-712270f8926c.jpg?im_w=240"
+          }
+        },
+        {
+          "id": "rmslfj1",
+          "txt": "Not my first stay here & certainly won’t be my last. Everything you could need & such a convenient location.",
+          "rate": 5,
+          "by": {
+            "_id": "udfml51",
+            "fullname": "Kim",
+            "imgUrl": "https://a0.muscache.com/im/pictures/user/6c9c14f8-bafd-40f5-ba0d-a34006d50f23.jpg?im_w=240"
+          }
+        },
+        {
+          "id": "rmslfj",
+          "txt": " stay at many places in Sydney , a first time here . Excellent , I will be back . Safe , clean , local to cafes etc , close to ferry , off street parking . Lovely host . Will revisit .",
+          "rate": 4,
+          "by": {
+            "_id": "udfml5",
+            "fullname": "Adrienne",
+            "imgUrl": "https://a0.muscache.com/im/pictures/user/1dbf7eca-840c-458f-be5f-f238a1d14d8b.jpg?im_w=240"
+          }
+        }
+      ],
+      "likedByUserIds": [
+        "u101",
+        "u102"
+      ]
+    },
+    {
+      "_id": "10023232",
+      "name": "Paradise caravan",
+      "type": "Caravan",
+      "imgUrls": [
+        "https://a0.muscache.com/im/pictures/e926a2ed-af6a-4264-b1dc-0fdca0b782e5.jpg?im_w=1200",
+        "https://a0.muscache.com/im/pictures/bee2ba35-182b-4c1a-ac51-7fc1f1b5bf68.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/7a15f782-eba6-439a-b6cb-848feb278235.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/f0cf6643-6351-47b9-96b9-38683fcaa5ed.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/478a5f61-b801-4364-8d38-a82cbd63e47c.jpg?im_w=720"
+        
+      ],
+      "price": 125.00,
+      "summary": "Nestled on the hill in the beautiful village of Hat Head, surrounded by national park and world class beaches, is your private refurbished caravan and deck. Swim or paddle board in the crystal clear water of the creek, surf at one of the many stunning, secluded beaches or bush walk in the national park.",
+  
+      "capacity": 2,
+      "bedroom": 1,
+      "bath": 1,
+      "amenities": [
+        "Wifi",
+        "Kitchen",
+        "Backyard",
+        "Air conditioning",
+        "Fire pit",
+        "Smoking allowed",
+        "Pets allowed",
+        "Cooking basics"
+  
+      ],
+      "host": {
+        "_id": "51399391",
+        "fullname": "Julie Fish",
+        "imgUrl": "https://a0.muscache.com/im/pictures/user/f2b1a42c-4655-4aee-ae1c-26564baf6f46.jpg"
+      },
+      "loc": {
+        "country": "Austrlia",
+        "countryCode": "Aus",
+        "address": "Sydney, Austrlia",
+        "lat": -33.8688,
+        "lng": 151.2093
+      },
+      "reviews": [
+        {
+          "id": "38383484",
+          "txt": "This place feels like home. Clean, and organized with so many nice homely touches. It really does feel like you're stepping into nature. Such a great space and will be back next time I'm in Hat Head! Thank you!!",
+          "rate": 4,
+          "by": {
+            "_id": "u102",
+            "fullname": "Stan",
+            "imgUrl": "https://a0.muscache.com/im/users/42435631/profile_pic/1440476747/original.jpg?im_w=240"
+          }
+        },
+        {
+          "id": "5683484",
+          "txt": "Great little place, with everything you need... loved our stay. Fenced off area for my dog. Peaceful, tranquil and just lovely to wake up there! ⭐️⭐️⭐️⭐️⭐️",
+          "rate": 5,
+          "by": {
+            "_id": "u276",
+            "fullname": "Kerry",
+            "imgUrl": "https://a0.muscache.com/im/pictures/user/60ba2abe-5757-4626-93ff-754095985fcf.jpg?im_w=240"
+          }
+        },
+        {
+          "id": "1983724",
+          "txt": "This place was paradise, did not disappoint.",
+          "rate": 5,
+          "by": {
+            "_id": "u233",
+            "fullname": "Kirsti",
+            "imgUrl": "https://a0.muscache.com/im/pictures/user/a0f01720-2f1b-41b6-b42b-f1c5919a0934.jpg?im_w=240"
+          }
+        },
+        {
+          "id": "93747284",
+          "txt": "Janette is super lovely and the place is very serene but despite it having a kitchen don’t expect any amenities. You will need to BYO cooking oil, salt, pepper etc. that being said, would still stay here again.",
+          "rate": 5,
+          "by": {
+            "_id": "u134",
+            "fullname": "Liz",
+            "imgUrl": "https://a0.muscache.com/im/pictures/user/95926f4c-d9c7-4d84-aa5b-9455443ebac6.jpg?im_w=240"
+          }
+        },
+        {
+          "id": "98554",
+          "txt": "Lovely place really close to everything",
+          "rate": 4,
+          "by": {
+            "_id": "u984",
+            "fullname": "Josh",
+            "imgUrl": "https://a0.muscache.com/im/pictures/user/27c59cd5-2d77-495a-bdfe-86fef0554857.jpg?im_w=240"
+          }
+        }
+      ],
+      "likedByUserIds": [
+        "u101",
+        "u102"
+      ]
+    },
+    {
+      "_id": "23452875",
+      "name": "Bambra tropical hideaway",
+      "type": "Hideaway",
+      "imgUrls": [
+        "https://a0.muscache.com/im/pictures/c3b0cde5-2648-4e52-8d25-649f10d24a9b.jpg?im_w=1200",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-48288587/original/83afbc58-7da0-45a4-9711-4a7f407593b6.jpeg?im_w=720",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-48288587/original/37108a5b-6345-409f-b4f1-593657884e03.jpeg?im_w=720",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-48288587/original/26683a77-75d5-4997-850a-a3f20e1501e6.jpeg?im_w=720",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-48288587/original/5cb15792-5262-48ae-b224-9d6538d09da2.jpeg?im_w=720"
+        
+      ],
+      "price": 220.00,
+      "summary": "Bambra tropical hideaway is a unique self contained villa set amongst a tropical garden with huge private salt water swimming pool.",
+  
+      "capacity": 4,
+      "bedroom": 2,
+      "bath": 1,
+      "amenities": [
+        "Wifi",
+        "Kitchen",
+        "Dryer",
+        "Washer",
+        "Pool",
+        "Air conditioning",
+        "Fire pit",
+        "Pets allowed",
+        "Free parking on premises"
+  
+      ],
+      "host": {
+        "_id": "51247391",
+        "fullname": "Janette Rodgers",
+        "imgUrl": "https://a0.muscache.com/im/users/16226284/profile_pic/1408229390/original.jpg"
+      },
+      "loc": {
+        "country": "Austrlia",
+        "countryCode": "Aus",
+        "address": "Sydney, Austrlia",
+        "lat": -33.8688,
+        "lng": 151.2093
+      },
+      "reviews": [
+        {
+          "id": "93747284",
+          "txt": "Janette is super lovely and the place is very serene but despite it having a kitchen don’t expect any amenities. You will need to BYO cooking oil, salt, pepper etc. that being said, would still stay here again.",
+          "rate": 5,
+          "by": {
+            "_id": "u134",
+            "fullname": "Liz",
+            "imgUrl": "https://a0.muscache.com/im/pictures/user/95926f4c-d9c7-4d84-aa5b-9455443ebac6.jpg?im_w=240"
+          }
+        },
+        {
+          "id": "98554",
+          "txt": "Lovely place really close to everything",
+          "rate": 4,
+          "by": {
+            "_id": "u984",
+            "fullname": "Josh",
+            "imgUrl": "https://a0.muscache.com/im/pictures/user/27c59cd5-2d77-495a-bdfe-86fef0554857.jpg?im_w=240"
+          }
+        }
+      ],
+      "likedByUserIds": [
+        "u134",
+        "u102"
+      ]
+    },
+    {
+      "_id": "1783475",
+      "name": "Betty the Caravan",
+      "type": "Caravan",
+      "imgUrls": [
+        "https://a0.muscache.com/im/pictures/83becc9f-e56a-4b9e-9746-653b2c97618a.jpg?im_w=1200",
+        "https://a0.muscache.com/im/pictures/abb779a3-0dd8-463e-82ce-84c98172ed7d.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/daaaaa3f-7220-42e2-8ae0-3e9fb1989fd4.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/42370cfe-6ba4-42c0-b4c1-d914ee4e1b88.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/157e1a9d-c784-4573-81f2-60423003e91d.jpg?im_w=720"
+        
+      ],
+      "price": 103.00,
+      "summary": "Meet Betty your new home on wheels! Betty is a renovated 1980's retro caravan. She screams FUN & has a colourful & vibrant character, causing heart explosions from all that see her. She has all the gypsy/nomad vibes of camping but with the added glamour and comfort of a nicely finished interior! With a comfy queen size bed, electricity, a mini fridge, a fan, a gas stove its the ultimate glamping experience!",
+  
+      "capacity": 2,
+      "bedroom": 1,
+      "bath": 1,
+      "amenities": [
+        "Breakfast",
+        "Long term stays allowed",
+        "Pets allowed",
+        "Free parking on premises"
+  
+      ],
+      "host": {
+        "_id": "51247391",
+        "fullname": "Beck Morison",
+        "imgUrl": "https://a0.muscache.com/im/users/17494283/profile_pic/1407890609/original.jpg"
+      },
+      "loc": {
+        "country": "Austrlia",
+        "countryCode": "Aus",
+        "address": "Sydney, Austrlia",
+        "lat": -33.8688,
+        "lng": 151.2093
+      },
+      "reviews": [
+        {
+          "id": "93747284",
+          "txt": "Beck and Joel were amazing! So helpful and flexible with having to change dates from out original trip and with what site to book. We also had to cancel the end of our stay due to illness and they were so understanding! Betty is very cute and comfortable and fitted out family of 3 in perfectly!",
+          "rate": 5,
+          "by": {
+            "_id": "u1244",
+            "fullname": "Lachlan",
+            "imgUrl": "https://a0.muscache.com/im/pictures/user/b4b07a5e-8b5e-471b-8bf8-c6a2cacb7467.jpg"
+          }
+        },
+        {
+          "id": "26097284",
+          "txt": "It was a great extra space for our family holiday - very cute retro caravan and great communication with hosts",
+          "rate": 4,
+          "by": {
+            "_id": "u7144",
+            "fullname": "Rebecca",
+            "imgUrl": "https://a0.muscache.com/im/pictures/user/52de1dde-8683-4b7e-907f-ff7a3c85adb5.jpg"
+          }
+        },
+        {
+          "id": "2603464",
+          "txt": "The host canceled this reservation 3 days before arrival. This is an automated posting.",
+          "rate": 4,
+          "by": {
+            "_id": "u3404",
+            "fullname": "Christine",
+            "imgUrl": "https://a0.muscache.com/im/pictures/user/aef20e62-a5c0-47eb-befd-57d29fdaca86.jpg"
+          }
+        },{
+          "id": "rde3m",
+          "txt": "Great spot! Perfect for a few quiet days away from home.",
+          "rate": 4,
+          "by": {
+            "_id": "uds23d",
+            "fullname": "Andrea",
+            "imgUrl": "https://a0.muscache.com/im/users/9023119/profile_pic/1410013147/original.jpg?im_w=240"
+          }
+          },
+        {
+          "id": "rde3m1",
+          "txt": "Highly recommend the Finnicky Guest House too anyone!! Mandi and Russell were so friendly and welcoming, their cat Ziggy is an angel, and the guest house itself was clean and spot-on to how it was shown",
+          "rate": 5,
+          "by": {
+            "_id": "uds23d1",
+            "fullname": "Chelsee",
+            "imgUrl": "https://a0.muscache.com/im/pictures/user/dc425682-ca1a-42b1-9760-1d8996df7ecc.jpg?im_w=240"
+        }},
+        {
+          "id": "rde3m2",
+          "txt": "Thank you so much for having us, it's such a beautiful cottage! Super clean, very quiet, nice place outside to have some wine, cheese plate and relax!",
+          "rate": 5,
+          "by": {
+            "_id": "uds23d2",
+            "fullname": "Rafa",
+            "imgUrl": "https://a0.muscache.com/im/pictures/user/0f6e885c-11df-4e11-b0dd-a0223e90567b.jpg?im_w=240"
+          }
+        }
+      ],
+      "likedByUserIds": [
+        "u134",
+        "u1244"
+      ]
+    },
+    {
+      "_id": "1037456",
+      "name": "Romance Apartment ",
+      "type": "Apartment ",
+      "imgUrls": [
+        "https://a0.muscache.com/im/pictures/aa30ac07-f7af-4a53-9045-1b3cd645c374.jpg?aki_policy=xx_large",
+        "https://a0.muscache.com/im/pictures/14af1591-5ef6-452a-ae82-745eb7e16200.jpg",
+        "https://a0.muscache.com/im/pictures/637f52ae-ca9e-462d-bb22-be782ac733f8.jpg",
+        "https://a0.muscache.com/im/pictures/ecf7472c-ae9b-4e45-89e2-8715d106a55a.jpg",
+        "https://a0.muscache.com/im/pictures/29455114-df34-41e1-a7c1-af3916627d6d.jpg"
+        
+      ],
+      "price": 110,
+      "summary": "Welcome to our brand new apartment in the center of Burgas, only within a 5 minutes’ walk from Alexandrovska Street – the main city street packed with commercial centers, retail stores, banks, administrative buildings, super markets, pharmacies, etc. Close to the flat there are a small park, a modern fitness center, a bicycle rent, coffee shops and restaurants. A great flat for...",
+      "capacity": 8,
+      "bedroom": 4,
+      "bath": 2,
+      "amenities": [
+        "TV",
+        "Wifi",
+        "Kitchen",
+        "Free parking on premises",
+        "Elevator",
+        "Air conditioning",
+        "Pool"
+      ],
+      "host": {
+        "_id": "10927435",
+        "fullname": "vaselein judi",
+        "imgUrl": "https://a0.muscache.com/im/pictures/user/006a241a-36c2-4311-bde4-7c01d9761de0.jpg"
+      },
+      "loc": {
+        "country": "Austrlia",
+        "countryCode": "Aus",
+        "address": "Sydney, Austrlia",
+        "lat": -33.8688,
+        "lng": 151.2093
+      },
+      "reviews": [
+        {
+          "id": "p901",
+          "txt": "Very spacious and beautiful apartment. Recommended!",
+          "rate": 5,
+          "by": {
+            "_id": "u104",
+            "fullname": "Meave Bon",
+            "imgUrl": "https://a0.muscache.com/im/users/9889324/profile_pic/1383928074/original.jpg"
+          }
+        },
+        {
+          "id": "p902",
+          "txt": "GReat place, good location, stylish, sparkling clean, lots of light, this exceeded my expectations, by far",
+          "rate": 4,
+          "by": {
+            "_id": "u106",
+            "fullname": "Jean Marie",
+            "imgUrl": "https://a0.muscache.com/im/pictures/user/ed633597-365b-49dc-a533-b1d19dcfcf63.jpg"
+          }
+        }
+      ],
+      "likedByUserIds": [
+        "u101",
+        "u104"
+      ]
+    },
+    {
+      "_id": "83683f5",
+      "name": "Villa Palm Beach",
+      "type": "Villa",
+      "imgUrls": [
+        "https://a0.muscache.com/4ea/air/v2/pictures/393570af-c1cf-484d-9478-9e10293499c5.jpg?t=c:w16-h9-go,r:w2000,e:fjpg-c75",
+        "https://a0.muscache.com/im/pictures/de3f70fe-9b95-4548-b603-b510db6cb757.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/e7e21757-d58a-4f62-aca9-5a0eb1440b62.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/9239571b-7376-4d80-bb78-98a0a4ce5b03.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/90435cd1-a324-439a-9c78-c651925f49ef.jpg?im_w=1200"
+      ],
+      "price": 1812.00,
+      "summary": "This outstanding villa is situated within walking distance of Whale Beach along the Pacific coast north of Sydney. Built in the 1930s and enhanced with state-of-the-art amenities, the light-filled home is perched on a hillside with views of Pittwater and features expansive outdoor living areas.",
+      "capacity": 8,
+      "bedroom": 5,
+      "bath": 3,
+      "amenities": [
+        "TV",
+        "Wifi",
+        "Fully equipped kitchen",
+        "Smoking allowed",
+        "Pets allowed",
+        "Ice maker",
+        "Formal dining area with seating for 10",
+        "Decorative fireplace",
+        "Pool room"
+      ],
+      "host": {
+        "_id": "51399391",
+        "fullname": "Thais Jones",
+        "imgUrl": "https://a0.muscache.com/im/pictures/user/794cdf58-2ae5-4726-944b-c7e76698c9bc.jpg?im_w=240"
+      },
+      "loc": {
+        "country": "Austrlia",
+        "countryCode": "Aus",
+        "address": "Sydney, Austrlia",
+        "lat": -33.8688,
+        "lng": 151.2093
+      },
+      "reviews": [
+        {
+          "id": "r144",
+          "txt": "Great location, lovely space. No curtains to block out the light in the morning, but everything else was awesome. Very clean and great communication.",
+          "rate": 5,
+          "by": {
+            "_id": "u74d",
+            "fullname": "Ella",
+            "imgUrl": "https://a0.muscache.com/im/pictures/user/fa7e5524-fa01-4909-b5dd-f27a16897993.jpg?im_w=240"
+          }
+        },
+        {
+          "id": "r214",
+          "txt": "Great location, very clean and provides a great home away from home. Perfect for a solo traveller.",
+          "rate": 5,
+          "by": {
+            "_id": "u74dssr",
+            "fullname": "Gemma",
+            "imgUrl": "https://a0.muscache.com/im/pictures/user/b0aabef2-3512-4756-8f9c-1faf6a6f79f4.jpg?im_w=240"
+          }
+        },
+        {
+          "id": "r2166",
+          "txt": "This place is in such a fantastic location! Great place for a short Sydney stay",
+          "rate": 4,
+          "by": {
+            "_id": "u74dssr",
+            "fullname": "Olivia",
+            "imgUrl": "https://a0.muscache.com/im/pictures/user/75d4bcd0-eed6-492b-9e80-0a76309b8776.jpg?im_w=240"
+          }
+        },
+        {
+          "id": "rmslfj",
+          "txt": "Perfect location, beautiful space, and thoughtful additional touches (bottle of wine, coffee, and apples!)",
+          "rate": 4,
+          "by": {
+            "_id": "udfml5",
+            "fullname": "Rachel",
+            "imgUrl": "https://a0.muscache.com/im/pictures/user/3edc6a05-7190-4033-8cb1-712270f8926c.jpg?im_w=240"
+          }
+        },
+        {
+          "id": "rmslfj1",
+          "txt": "Not my first stay here & certainly won’t be my last. Everything you could need & such a convenient location.",
+          "rate": 5,
+          "by": {
+            "_id": "udfml51",
+            "fullname": "Kim",
+            "imgUrl": "https://a0.muscache.com/im/pictures/user/6c9c14f8-bafd-40f5-ba0d-a34006d50f23.jpg?im_w=240"
+          }
+        },
+        {
+          "id": "rmslfj",
+          "txt": " stay at many places in Sydney , a first time here . Excellent , I will be back . Safe , clean , local to cafes etc , close to ferry , off street parking . Lovely host . Will revisit .",
+          "rate": 4,
+          "by": {
+            "_id": "udfml5",
+            "fullname": "Adrienne",
+            "imgUrl": "https://a0.muscache.com/im/pictures/user/1dbf7eca-840c-458f-be5f-f238a1d14d8b.jpg?im_w=240"
+          }
+        }
+      ],
+      "likedByUserIds": [
+        "u74d",
+        "u74ds",
+        "u74dssr"
+      ]
+    },
+    {
+      "_id": "8ks83fo5",
+      "name": "Leafy garden chalet",
+      "type": "Guesthouse ",
+      "imgUrls": [
+        "https://a0.muscache.com/im/pictures/miso/Hosting-48405942/original/f1095df9-853e-4bcf-aa77-28cab36dff48.jpeg?im_w=1200",
+        "https://a0.muscache.com/im/pictures/747e70de-fae2-4d82-a55b-9a2eeb37f4dc.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/bc530286-7eee-4709-a04c-e107a3080460.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-48405942/original/f90a2f27-caa6-445b-8804-b8b0a79661a5.jpeg?im_w=720",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-48405942/original/7bc24fd1-858d-4081-910f-3dc5d7d720f5.jpeg?im_w=1440"
+      ],
+      "price": 70.00,
+      "summary": "Charming Inner West self-contained garden chalet in Glebe, close to Sydney CBD overlooking Blackwattle Bay. Cul-de-sac off Glebe Pt Rd with cafes, bookshops and all amenities including Broadway Shopping Centre and cinemas. 10 min walk thru park to TramSheds & lightrail to fish markets, the casino & Lyric Theatre, Darling Harbour, Paddy’s Markets & Central. Sydney Uni and UTS close by.",
+      "capacity": 2,
+      "bedroom": 1,
+      "bath": 1,
+      "amenities": [
+        "TV",
+        "Wifi",
+        "Fully equipped kitchen",
+        "Smoking allowed",
+        "Pets allowed",
+        "Waterfront",
+        "Backyard",
+        "Free parking on premises"
+      ],
+      "host": {
+        "_id": "4r34nfs",
+        "fullname": "Louise Jimbo",
+        "imgUrl": "https://a0.muscache.com/im/pictures/user/449564f2-b932-4a32-ac74-099ccc37252c.jpg?im_w=240"
+      },
+      "loc": {
+        "country": "Austrlia",
+        "countryCode": "Aus",
+        "address": "Sydney, Austrlia",
+        "lat": -33.8688,
+        "lng": 151.2093
+      },
+      "reviews": [
+        {
+          "id": "r12mfo",
+          "txt": "Perfect Airbnb! The location is ideal, minutes to the bus stop and Glebe Point Road shops and cafes, not to mention the water at Blackwater Bay. ",
+          "rate": 5,
+          "by": {
+            "_id": "ucb45",
+            "fullname": "Margaret",
+            "imgUrl": "https://a0.muscache.com/im/pictures/user/78b19d87-e06f-4617-b1cb-2c95f43f4732.jpg?im_w=240"
+          }
+        },
+        {
+          "id": "r12mfo",
+          "txt": "Nice quiet oasis close to the city. Great communication from Louise. A warm and welcoming host .",
+          "rate": 5,
+          "by": {
+            "_id": "r12mfo2",
+            "fullname": "Bill",
+            "imgUrl": "https://a0.muscache.com/im/pictures/user/f5ca34d7-9227-4e1d-9793-37a00f5757b5.jpg?im_w=240"
+          }
+        },
+        {
+          "id": "r12mfo",
+          "txt": "Really good and clean place. Louise, the host is kind and approachable, I would definitely come back!",
+          "rate": 5,
+          "by": {
+            "_id": "r12mfo1",
+            "fullname": "Yongmoon",
+            "imgUrl": "https://a0.muscache.com/im/pictures/user/d5e6c298-eeef-489f-8763-c9d503335c40.jpg?im_w=240"
+          }
+        }
+      ],
+      "likedByUserIds": [
+        "r12mfo",
+        "r12mfo1",
+        "r12mfo2"
+      ]
+    },
+    {
+      "_id": "dfod87os",
+      "name": "Spacious 2 Bedroom",
+      "type": "Apartment  ",
+      "imgUrls": [
+        "https://a0.muscache.com/im/pictures/122f1764-a49f-422b-bd57-05b096c1b492.jpg?im_w=1200",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-49409612/original/0da7e22b-90b7-4bf5-bef9-e76a38a1b0ca.jpeg?im_w=720",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-49409612/original/eb596198-35da-4a59-9b9f-2bac91cb3332.jpeg?im_w=720",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-49409612/original/337e0886-bad5-4f3d-82cf-97651732dcaa.jpeg?im_w=720",
+        "https://a0.muscache.com/im/pictures/miso/Hosting-49409612/original/337e0886-bad5-4f3d-82cf-97651732dcaa.jpeg?im_w=720"
+      ],
+      "price": 106.00,
+      "summary": "Guests enjoy weekly maid and laundry service in this chic Upper East Side 1-bedroom, new kitchen with hi-end appliances, dedicated workspace, high-speed wifi throughout.All in an uber secure smart-access building in Manhattan's most top market neighborhood.",
+      "capacity": 3,
+      "bedroom": 1,
+      "bath": 1,
+      "amenities": [
+        "TV",
+        "Wifi",
+        "Fully equipped kitchen",
+        "Washer ",
+        "Pets allowed",
+        "Air conditioning",
+        "Backyard",
+        "Indoor fireplace"
+      ],
+      "host": {
+        "_id": "4r34nfs",
+        "fullname": "Joshua DeMarcus",
+        "imgUrl": "https://a0.muscache.com/im/users/24641078/profile_pic/1418102042/original.jpg?im_w=240"
+      },
+      "loc": {
+        "country": "U.S.A",
+        "countryCode": "US",
+        "address": "New York, U.S.A",
+        "lat": 40.7128,
+        "lng": -74.0060
+      },
+      "reviews": [
+        {
+          "id": "r13585s",
+          "txt": "This place is a great place to stay! It’s so close to Times Square and the subway, so it’s easy to get around the city from here. The apartment itself is comfortable and welcoming!",
+          "rate": 5,
+          "by": {
+            "_id": "u12b6ds",
+            "fullname": "Abbie",
+            "imgUrl": "https://a0.muscache.com/im/pictures/user/f971f629-5887-4b3c-b06f-ddfbe042f375.jpg?im_w=240"
+          }
+        },
+        {
+          "id": "r13585s1",
+          "txt": "A great two bedroom in a fantastic location. Plenty of elbow room in a quiet building!",
+          "rate": 4,
+          "by": {
+            "_id": "u12b6ds1",
+            "fullname": "Matthew",
+            "imgUrl": "https://a0.muscache.com/im/pictures/user/d8f2bbad-0e6a-4d60-84e0-3f9e3a0ea272.jpg?im_w=240"
+          }
+        },
+        {
+          "id": "r13585s2",
+          "txt": "This apartment was really wonderful. It's in a typical older Hell's Kitchen building but with great modern touches and in such an amazing location.",
+          "rate": 5,
+          "by": {
+            "_id": "u12b6ds2",
+            "fullname": "Walter ",
+            "imgUrl": "https://a0.muscache.com/im/pictures/user/636b8fc7-7dae-430f-9646-ac2176c627bb.jpg?im_w=240"
+          }
+        }
+      ],
+      "likedByUserIds": [
+        "r12mfo",
+        "u12b6ds2",
+        "r13585s1"
+      ]
+    },
+    {
+      "_id": "scdfxol9",
+      "name": "Amazing Loft",
+      "type": "Loft ",
+      "imgUrls": [
+        "https://a0.muscache.com/im/pictures/23505014/c1495e3d_original.jpg?im_w=1200",
+        "https://a0.muscache.com/im/pictures/23505012/48c9ba2c_original.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/23505013/6c10f337_original.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/23505004/807920cc_original.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/23505002/ffb95a08_original.jpg?im_w=720"
+      ],
+      "price": 89.00,
+      "summary": "The loft features a large open floor plan with a brand new kitchen featuring stainless steel appliances including dishwasher. There is a bathroom with a large shower. The alcove bedroom area features a queen sized bed. The living area has sleeper sofa that converts to 2 twin beds or another queen size bed depending on your needs. There is a 37 flat screen TV with free cable provided.",
+      "capacity": 4,
+      "bedroom": 1,
+      "bath": 1,
+      "amenities": [
+        "TV",
+        "Wifi",
+        "Fully equipped kitchen",
+        "Washer ",
+        "Pets allowed",
+        "Air conditioning",
+        "Dryer",
+        "Free street parking"
+      ],
+      "host": {
+        "_id": "4r34nfs",
+        "fullname": "Vida la Vida",
+        "imgUrl": "https://a0.muscache.com/im/pictures/user/36e372fa-99ee-4451-b3fb-74f023f7d9a0.jpg?im_w=240"
+      },
+      "loc": {
+        "country": "U.S.A",
+        "countryCode": "US",
+        "address": "New York, U.S.A",
+        "lat": 40.7128,
+        "lng": -74.0060
+      },
+      "reviews": [
+        {
+          "id": "r1mcie09",
+          "txt": "Very nice stay. Clean, convenient,and excellent communication.",
+          "rate": 4,
+          "by": {
+            "_id": "usafm3e",
+            "fullname": "Adrienne",
+            "imgUrl": "https://a0.muscache.com/im/pictures/user/49d66cdf-f68f-4420-b2d5-b8bcabb1ca81.jpg?im_w=240"
+          }
+        },
+        {
+          "id": "r1mcie08",
+          "txt": "Very nice place to stay and strategically located as well. Staff very helpful and friendly.",
+          "rate": 4,
+          "by": {
+            "_id": "usafm3e1",
+            "fullname": "Chris",
+            "imgUrl": "https://a0.muscache.com/im/users/40710957/profile_pic/1438886299/original.jpg?im_w=240"
+          }
+        },
+        {
+          "id": "r1mcie07",
+          "txt": "Would highly recommend. This is a great apartment in a great location. Only an 8 minute walk to the subway station and a short walk to great bars and restaurants",
+          "rate": 4,
+          "by": {
+            "_id": "usafm3e2",
+            "fullname": "Jennifer ",
+            "imgUrl": "https://a0.muscache.com/im/pictures/user/fe4b77a2-b897-4455-9695-43f43ce00478.jpg?im_w=240"
+          }
+        }
+      ],
+      "likedByUserIds": [
+        "usafm3e1",
+        "usafm3e2",
+        "usafm3e"
+      ]
+    },
+    {
+      "_id": "alpqzx56",
+      "name": "Amazing Chalet",
+      "type": "Chalet ",
+      "imgUrls": [
+        "https://a0.muscache.com/im/pictures/5e0b0dea-787a-49cc-b887-5a4c24481b96.jpg?im_w=1200",
+        "https://a0.muscache.com/im/pictures/6f76fff0-9510-4fd4-9c82-ecea6fb7dc5a.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/92431a33-dee6-4f22-9e3b-17ef6ff5ed35.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/034b7dd3-da3d-4d7f-b041-8317ab9cad52.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/2abab343-8a6e-4ebf-80e2-26d07594f569.jpg?im_w=720"
+      ],
+      "price": 39.00,
+      "summary": "In the rural area of ​​São Pedro da Serra, it is the perfect place to get into the rhythm of the countryside in comfort. To rest or work in the tranquility of the mountains. Wooden chalet, exclusively designed by Ernani, the village's carpenter, has 2 floors, suite, kitchen, with stove and fridge, living room with sofa and TV, balcony overlooking the mountains, parking at the door and excellent Wifi.",
+      "capacity": 2,
+      "bedroom": 1,
+      "bath": 1,
+      "amenities": [
+        "TV",
+        "Wifi",
+        "Fully equipped kitchen",
+        "Waterfront ",
+        "Pets allowed",
+        "Air conditioning",
+        "Backyard",
+        "Free street parking"
+      ],
+      "host": {
+        "_id": "4r34nfs",
+        "fullname": "Thaís H",
+        "imgUrl": "https://a0.muscache.com/im/pictures/user/9deb3997-eef0-47b1-8531-30523002fd63.jpg?im_w=240"
+      },
+      "loc": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "address": "Rio de Janeiro, Brazil",
+        "lat": -22.9068,
+        "lng": -43.1729
+      },
+      "reviews": [
+        {
+          "id": "rRioz30",
+          "txt": "Passamos um final de semana maravilhoso, o lugar é perfeito e exatamente como nas fotos. Quem quiser passar uns dias na tranquilidade vale super a pena ir, voltaremos com certeza!!!",
+          "rate": 5,
+          "by": {
+            "_id": "u23vra0",
+            "fullname": "Israel",
+            "imgUrl": "https://a0.muscache.com/im/pictures/user/02b62f1b-803b-47b6-9579-25d0a735085a.jpg?im_w=240"
+          }
+        },
+        {
+          "id": "rRioz31",
+          "txt": "Espaço como descrito no anúncio. O chalé é bem aconchegante, 2 ambientes, bem bacana. A localização é um pouco íngrime, mas dá pra entrar e sair tranquilamente. E a vista é bem bacana para a mata.",
+          "rate": 3,
+          "by": {
+            "_id": "u23vra1",
+            "fullname": "Francisco",
+            "imgUrl": "https://a0.muscache.com/im/users/4336548/profile_pic/1354762057/original.jpg?im_w=240"
+          }
+        },
+        {
+          "id": "rRioz32",
+          "txt": "Fds incrível. Super recomendo e ctz voltarei !",
+          "rate": 3,
+          "by": {
+            "_id": "u23vra2",
+            "fullname": "Mel ",
+            "imgUrl": "https://a0.muscache.com/im/pictures/user/b991fb6a-997f-43c0-ae64-11a8ca390e51.jpg?im_w=240"
+          }
+        }
+      ],
+      "likedByUserIds": [
+        "u23vra1",
+        "u23vra2",
+        "usafm3e"
+      ]
+    },
+    {
+      "_id": "adsfneld8a",
+      "name": "Cabana da Mata",
+      "type": "Chalet ",
+      "imgUrls": [
+        "https://a0.muscache.com/im/pictures/9c784eb5-b49b-41f8-9b19-bc00343b3a59.jpg?im_w=1200",
+        "https://a0.muscache.com/im/pictures/e78f16fe-01e3-4dcf-b786-06c7946f86fd.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/efddf7f8-c13f-4f41-8e47-8ebf4d6b8f62.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/8bdee915-9de6-4684-9d03-ef76e35b5924.jpg?im_w=720",
+        "https://a0.muscache.com/im/pictures/8d4c7023-3727-4efa-b9e5-ae553c699218.jpg?im_w=720"
+      ],
+      "price": 35.00,
+      "summary": "The ideal place to escape the routine and enjoy incredible and romantic days in the forest. It will be your refuge in the midst of nature! We are located in the region of Ilha de Guaratiba in Rio de Janeiro in a closed condominium. We have bed linen and towels, everything is ready for guests' arrival.",
+      "capacity": 2,
+      "bedroom": 1,
+      "bath": 1,
+      "amenities": [
+        "TV",
+        "Wifi",
+        "Fully equipped kitchen",
+        "Hot tub ",
+        "Pets allowed",
+        "Air conditioning",
+        "Pool",
+        "Free street parking"
+      ],
+      "host": {
+        "_id": "4r34nfs",
+        "fullname": "Vivian Ja",
+        "imgUrl": "https://a0.muscache.com/im/pictures/user/bf301f86-c851-4d56-9171-81ce5e09c25a.jpg?im_w=240"
+      },
+      "loc": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "address": "Rio de Janeiro, Brazil",
+        "lat": -22.9068,
+        "lng": -43.1729
+      },
+      "reviews": [
+        {
+          "id": "rRios33",
+          "txt": "It’s a great place ,clean,close to amenities ,restaurants, the airport ,beautiful view,quick response and very helpful ,glad she had activated channels on the tv subscription, worth it",
+          "rate": 4,
+          "by": {
+            "_id": "u24tvc0",
+            "fullname": "Tiyumba Hafiz",
+            "imgUrl": "https://a0.muscache.com/im/pictures/user/69597d27-3183-4d2d-b83d-a2af2d42b157.jpg?im_w=240"
+          }
+        },
+        {
+          "id": "rRios34",
+          "txt": "The house was beyond expectations, awesome decoration, great view, location is close to all means of transportation, calm, I have enjoyed pretty far everything from view, to beach, to sightseeing, amazing host, instant replies !! 10000% recommended",
+          "rate": 4,
+          "by": {
+            "_id": "u24tvc01",
+            "fullname": "Hedy",
+            "imgUrl": "https://a0.muscache.com/im/pictures/user/40ab3bd5-33f6-49ef-b46f-aa45f667beee.jpg?im_w=240"
+          }
+        },
+        {
+          "id": "rRios35",
+          "txt": "Great little flat in the center of Rio!",
+          "rate": 4,
+          "by": {
+            "_id": "u24tvc02",
+            "fullname": "Tom ",
+            "imgUrl": "https://a0.muscache.com/im/pictures/user/ff3e0819-67cf-4b54-b833-bb98febc4ff4.jpg?im_w=240"
+          }
+        }
+      ],
+      "likedByUserIds": [
+        "u24tvc02",
+        "usafm3e2",
+        "u24tvc01"
+      ]
+    }
+    
+    
+  ],
+  "order": [
+    {
+      "_id": "o1225",
+      "hostId": "u101",
+      "createdAt": 9898989,
+      "buyer": {
+        "_id": "u101",
+        "fullname": "User 1"
+      },
+      "totalPrice": 160,
+      "startDate": "2025/10/15",
+      "endDate": "2025/10/17",
+      "guests": {
+        "adults": 2,
+        "kids": 1
+      },
+      "stay": {
+        "_id": "h102",
+        "name": "House Of Uncle My",
+        "price": 80.00
+      },
+      "status": "pending"
+    }
+  ],
+  "user": [
+    {
+      "_id": "u101",
+      "fullname": "User 1",
+      "imgUrl": "/img/img1.jpg",
+      "isHost": false,
+      "username": "user1",
+      "password": "secret"
+    },
+    {
+      "_id": "u102",
+      "fullname": "User 2",
+      "imgUrl": "/img/img2.jpg",
+      "isHost": false,
+      "username": "user2",
+      "password": "secret"
+    }
+  ]
+}

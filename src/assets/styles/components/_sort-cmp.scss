@@ -1,0 +1,29 @@
+.filter-css {
+    padding-top: 30px;
+
+    .MuiSelect-select:focus {
+        background-color: transparent !important;
+    }
+
+    .MuiFormLabel-root.Mui-focused {
+        color: black;
+    }
+
+    .MuiOutlinedInput-root .Mui-focused {
+        color: black;
+    }
+
+    .MuiOutlinedInput-root {
+        
+        border-radius: 30px !important;
+        margin-right: 10px !important;
+    }
+    
+   
+    // .MuiInputBase-root.MuiOutlinedInput-root.Mui-focused.Mui-focused.MuiInputBase-formControl.MuiInputBase-marginDense.MuiOutlinedInput-marginDense{
+    //     border-color: gold !important;
+    //     color: palevioletred!important;
+    //     // display: none !important;
+    // }
+
+}

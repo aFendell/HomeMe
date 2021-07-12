@@ -1,0 +1,211 @@
+{
+  "order": [
+    {
+      "hostId": "60bbdd7519a5e8e7640ea1d9",
+      "createdAt": "2021-06-08T16:40:27.089Z",
+      "buyer": {
+        "_id": "Ukdasfld2",
+        "fullname": "Gabrielle Salgado",
+        "imgUrl": "https://a0.muscache.com/im/pictures/user/95b9db75-bc32-4528-a12b-b884c53da0e5.jpg?im_w=240"
+      },
+      "startDate": "2021-02-02T16:40:27.000Z",
+      "endDate": "2021-02-09T16:40:27.000Z",
+      "nightCount": 17,
+      "totalPrice": 1853,
+      "guests": {
+        "adults": 2,
+        "kids": 0
+      },
+      "stay": {
+        "_id": "60bf9d6919a5e8e7643c38e0",
+        "name": "Central Park Nest, High Above The Trees!",
+        "price": 109
+      },
+      "status": "Done"
+    },
+    {
+      "hostId": "60bbdd7519a5e8e7640ea1d9",
+      "createdAt": "2021-06-08T16:40:27.089Z",
+      "buyer": {
+        "_id": "Ukdasfld1",
+        "fullname": "Daesha Moral",
+        "imgUrl": "https://a0.muscache.com/im/pictures/user/e8f868e0-8a80-4899-9ef5-6dfbf749facc.jpg?im_w=240"
+      },
+      "startDate": "2021-02-21T16:40:27.000Z",
+      "endDate": "2021-02-27T16:40:27.000Z",
+      "nightCount": 17,
+      "totalPrice": 1853,
+      "guests": {
+        "adults": 2,
+        "kids": 1
+      },
+      "stay": {
+        "_id": "60bf9d6919a5e8e7643c38e0",
+        "name": "Central Park Nest, High Above The Trees!",
+        "price": 109
+      },
+      "status": "Done"
+    },
+    {
+      "hostId": "60bbdd7519a5e8e7640ea1d9",
+      "createdAt": "2021-06-08T16:40:27.089Z",
+      "buyer": {
+        "_id": "Ukdasfld3",
+        "fullname": "Lucas Mateos",
+        "imgUrl": "https://a0.muscache.com/im/pictures/user/e9b78db4-04b0-48e4-9e6c-e24d34be44e8.jpg?im_w=240"
+      },
+      "startDate": "2021-03-03T16:40:27.000Z",
+      "endDate": "2021-03-13T16:40:27.000Z",
+      "nightCount": 17,
+      "totalPrice": 1853,
+      "guests": {
+        "adults": 2,
+        "kids": 1
+      },
+      "stay": {
+        "_id": "60bf9d6919a5e8e7643c38e0",
+        "name": "Central Park Nest, High Above The Trees!",
+        "price": 109
+      },
+      "status": "Done"
+    },
+    {
+      "hostId": "60bbdd7519a5e8e7640ea1d9",
+      "createdAt": "2021-06-08T16:40:27.089Z",
+      "buyer": {
+        "_id": "Unewyorkass1",
+        "fullname": "Joe Adams",
+        "imgUrl": "https://a0.muscache.com/im/users/170400/profile_pic/1279448943/original.jpg?im_w=240"
+      },
+      "startDate": "2021-03-17T16:40:27.000Z",
+      "endDate": "2021-03-30T16:40:27.000Z",
+      "nightCount": 17,
+      "totalPrice": 1853,
+      "guests": {
+        "adults": 2,
+        "kids": 1
+      },
+      "stay": {
+        "_id": "60bf9d6919a5e8e7643c38e0",
+        "name": "Central Park Nest, High Above The Trees!",
+        "price": 109
+      },
+      "status": "Done"
+    },
+    {
+      "hostId": "60bbdd7519a5e8e7640ea1d9",
+      "createdAt": "2021-06-08T16:40:27.089Z",
+      "buyer": {
+        "_id": "Unewyorkass1",
+        "fullname": "Joe Adams",
+        "imgUrl": "https://a0.muscache.com/im/users/170400/profile_pic/1279448943/original.jpg?im_w=240"
+      },
+      "startDate": "2021-04-11T16:40:27.000Z",
+      "endDate": "2021-04-14T16:40:27.000Z",
+      "nightCount": 17,
+      "totalPrice": 1853,
+      "guests": {
+        "adults": 2,
+        "kids": 1
+      },
+      "stay": {
+        "_id": "60bf9d6919a5e8e7643c38e0",
+        "name": "Central Park Nest, High Above The Trees!",
+        "price": 109
+      },
+      "status": "Done"
+    },
+    {
+      "hostId": "60bbdd7519a5e8e7640ea1d9",
+      "createdAt": "2021-06-08T16:40:27.089Z",
+      "buyer": {
+        "_id": "Unewyorkass2",
+        "fullname": "Amir Kaplan",
+        "imgUrl": "https://a0.muscache.com/im/pictures/user/1779b130-fe95-4bdf-abc8-21bdc0b80dcc.jpg?im_w=240"
+      },
+      "startDate": "2021-04-22T16:40:27.000Z",
+      "endDate": "2021-04-26T16:40:27.000Z",
+      "nightCount": 17,
+      "totalPrice": 1853,
+      "guests": {
+        "adults": 2,
+        "kids": 1
+      },
+      "stay": {
+        "_id": "60bf9d6919a5e8e7643c38e0",
+        "name": "Central Park Nest, High Above The Trees!",
+        "price": 109
+      },
+      "status": "Done"
+    },
+    {
+      "hostId": "60bbdd7519a5e8e7640ea1d9",
+      "createdAt": "2021-06-08T16:40:27.089Z",
+      "buyer": {
+        "_id": "Unewyorkass3",
+        "fullname": "Laura Hanover",
+        "imgUrl": "https://a0.muscache.com/im/pictures/user/5a1c576f-65e8-46fd-bbff-e8da44109bdf.jpg?im_w=240"
+      },
+      "startDate": "2021-05-02T16:40:27.000Z",
+      "endDate": "2021-05-05T16:40:27.000Z",
+      "nightCount": 17,
+      "totalPrice": 1853,
+      "guests": {
+        "adults": 2,
+        "kids": 0
+      },
+      "stay": {
+        "_id": "60bf9d6919a5e8e7643c38e0",
+        "name": "Central Park Nest, High Above The Trees!",
+        "price": 109
+      },
+      "status": "Done"
+    },
+    {
+      "hostId": "60bbdd7519a5e8e7640ea1d9",
+      "createdAt": "2021-06-08T16:40:27.089Z",
+      "buyer": {
+        "_id": "Unewyorkass4",
+        "fullname": "Christy Richards",
+        "imgUrl": "https://a0.muscache.com/im/pictures/user/b5e8f73e-3bef-4fee-b5db-27477796f898.jpg?im_w=240"
+      },
+      "startDate": "2021-05-09T16:40:27.000Z",
+      "endDate": "2021-05-16T16:40:27.000Z",
+      "nightCount": 17,
+      "totalPrice": 1853,
+      "guests": {
+        "adults": 2,
+        "kids": 0
+      },
+      "stay": {
+        "_id": "60bf9d6919a5e8e7643c38e0",
+        "name": "Central Park Nest, High Above The Trees!",
+        "price": 109
+      },
+      "status": "Done"
+    },
+    {
+      "hostId": "60bbdd7519a5e8e7640ea1d9",
+      "createdAt": "2021-06-08T16:40:27.089Z",
+      "buyer": {
+        "_id": "Unewyorkass5",
+        "fullname": "Danica Malishova",
+        "imgUrl": "https://a0.muscache.com/im/pictures/user/62645eb4-cb05-42e3-90b0-a82e38da2425.jpg?im_w=240"
+      },
+      "startDate": "2021-05-25T16:40:27.000Z",
+      "endDate": "2021-05-28T16:40:27.000Z",
+      "nightCount": 17,
+      "totalPrice": 1853,
+      "guests": {
+        "adults": 2,
+        "kids": 0
+      },
+      "stay": {
+        "_id": "60bf9d6919a5e8e7643c38e0",
+        "name": "Central Park Nest, High Above The Trees!",
+        "price": 109
+      },
+      "status": "Done"
+    }
+  ]
+}

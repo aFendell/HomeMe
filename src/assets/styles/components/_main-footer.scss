@@ -1,0 +1,126 @@
+@font-face {
+    font-family: brands;
+    src: url(../../fonts/awsome/fa-brands-400.ttf)
+}
+
+.main-footer {
+    
+    // z-index: 50;
+    // height: 80px;
+    // position: relative;
+    // bottom: 0;
+    // left: 0px;
+    // width: 100%;
+    background-color: $clr4;
+    box-shadow: 0 10px 10px -10px rgb(33 35 38 / 10%);
+
+    clear: both;
+    position: relative;
+    height: 80px;
+    margin-bottom: -200px;
+    // grid-row-start: 2;
+    // grid-row-end: 3;
+
+    
+    // z-index: 50;
+    // height: 80px;
+    // background-color: rgb(173, 170, 170) !important;
+    // position: sticky;
+    // bottom: 0;
+    // box-shadow: 0 10px 10px -10px rgb(33 35 38 / 10%);
+    .footer-content {
+        // z-index: 50;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+        // display: flex;
+        // justify-content: space-between;
+        // padding-top: 1.3rem;
+        // padding-bottom: 1.3rem;
+        // color: #222;
+        // font-size: 12px;
+    
+    
+
+    h1{ 
+        margin: 0;
+    }
+    .logo {
+        justify-content: center;
+        // width: rem(330px);
+        align-items: center;
+        margin-right: 100px;
+        // transform: rotate(350deg);
+        mix-blend-mode: multiply;
+    }
+    .social-nav {
+        display: flex;
+        // height: 100px;
+        padding-left: 32px;
+    }
+    
+    .social-nav>a {
+        display: flex;
+        color: #fff;
+        background-color: #e5e5e5;
+        width: 40px;
+        height: 40px;
+        align-items: center;
+        /* justify-content: center; */
+        text-decoration: none;
+    }
+    
+    .social-nav>a:not(:last-child) {
+        margin-inline-end: 1rem;
+    }
+    
+    .fa {
+        font-family: brands;
+    }
+    
+    .fa.facebook {
+        height: 30px;
+        width: 30px;
+        justify-content: center;
+    }
+    
+    .fa.twitter {
+        height: 30px;
+        width: 30px;
+        justify-content: center;
+    }
+    
+    .fa.instegram {
+        height: 30px;
+        width: 30px;
+        justify-content: center;
+    }
+    
+    .fa.facebook::before {
+        content: "\f39e";
+    }
+    
+    .fa.facebook:hover {
+        background-color: #516fad;
+    }
+    
+    .fa.twitter::before {
+        content: "\f099";
+    }
+    
+    .fa.twitter:hover {
+        background-color: #00acee;
+    }
+    
+    .fa.instegram::before {
+        content: "\f16d";
+    }
+    
+    .fa.instegram:hover {
+        background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+
+    }    
+
+}

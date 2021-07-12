@@ -1,0 +1,327 @@
+.host-avatar {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+
+.stay-details {
+    padding-top: 20px;
+
+    h1 {
+        font-family: Circular-medium;
+        font-size: 1.625rem;
+        line-height: 30px;
+        display: block;
+        color: #1e1e1e;
+    }
+}
+
+.details-stay-name {
+    font-family: Circular-medium;
+    font-size: 1.625rem;
+    line-height: 30px;
+    display: block;
+    color: #1e1e1e;
+
+
+
+}
+
+.details-stay-info {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 0;
+    margin-top: 0.7rem;
+    // line-height: 20px;
+
+
+}
+
+.details-stay-location {
+    text-decoration: underline;
+    color: #6b6a6a;
+    margin-left: 20px;
+}
+
+.details-stay-imgs {
+
+    margin-top: 10px;
+    width: 100%;
+    // height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 165px 165px;
+    gap: 8px;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+.details-stay-imgs :first-child {
+    grid-column: 1/span 2;
+    grid-row: 1/span 2;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.details-stay-imgs :nth-child(3) {
+    border-top-right-radius: 15px;
+}
+
+.details-stay-imgs :nth-child(5) {
+    border-bottom-right-radius: 15px;
+}
+
+.stay-img {
+    object-fit: cover;
+    height: 100%;
+    border-radius: 0
+}
+
+.booking-modal-container {
+    justify-content: space-between;
+    padding-top: 30px;
+
+    // height: 1000px;
+}
+
+.booking-details-container {
+    width: 75%;
+    padding-right: 75px;
+    border-bottom: 1px solid #d3d3d3;
+
+}
+
+.order-container {
+    object-fit: contain;
+    flex-direction: column;
+    width: 33%;
+    position: sticky;
+    top: 200px;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 6px 16px rgb(0 0 0 / 12%);
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    border: 1px solid #ddd;
+
+    .order-top {
+        justify-content: space-between;
+        margin-bottom: 10px;
+
+        .price {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+
+            .price-num {
+                color: #222222;
+                font-weight: 600;
+                font-size: 22px;
+                padding-right: 4px!important;
+                
+            }
+        }
+
+    }
+}
+
+.top-details {
+
+
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 30px;
+    // margin-bottom: 20px;
+
+
+
+    img {
+        margin-right: 20px;
+    }
+
+
+}
+
+.summary {
+    border-bottom: 1px solid #ddd;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 50px;
+
+    .sum-span {
+        line-height: 1.3;
+    }
+
+}
+
+.slep-arr-container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 50px;
+    border-bottom: 1px solid #ddd;
+
+
+    .slep-arr {
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10px;
+        border: 1px solid rgb(221, 221, 221);
+        border-radius: 12px;
+        height: 100%;
+        padding: 24px;
+        // width: 100%;
+
+        .arr-icon {
+            height: 24px;
+            width: 24px;
+            color: black;
+        }
+
+        .arr-icon2 {
+            color: black;
+            font-weight: 600;
+        }
+
+
+    }
+}
+
+.amen-title {
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.amenities {
+
+
+    padding-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 50px;
+    color: #222222;
+
+    li span {
+        padding-left: 10px;
+
+    }
+
+    h1 {
+        font-family: Circular-medium;
+        font-size: 1.625rem;
+        line-height: 30px;
+        display: block;
+        color: #1e1e1e;
+    }
+}
+
+.reviews-rate {
+
+    margin-bottom: 20px;
+
+    .rev-layout {
+
+
+        margin-bottom: 20px;
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 30px;
+        color: #222222;
+
+        .rev-stats {
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+
+            .rev-subj {
+                width: 33%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+
+            .meter-container {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                // justify-content: space-around;
+                margin-left: 12px;
+                width: 66%;
+
+                .meter1 {
+                    background-color: rgb(26, 25, 25);
+                    padding: 0.01em 16px;
+                    border-radius: 16px;
+                    width: 95%;
+                    height: 5px;
+                }
+
+                .meter-bcg1 {
+                    background-color: rgba(26, 25, 25, 0.233);
+                    border-radius: 16px;
+                    width: 45%;
+                    height: 5px;
+
+                }
+                .meter2 {
+                    background-color: rgb(26, 25, 25);
+                    padding: 0.01em 16px;
+                    border-radius: 16px;
+                    width: 90%;
+                    height: 5px;
+                }
+
+                .meter-bcg2 {
+                    background-color: rgba(26, 25, 25, 0.233);
+                    border-radius: 16px;
+                    width: 45%;
+                    height: 5px;
+
+                }
+                .meter3 {
+                    background-color: rgb(26, 25, 25);
+                    padding: 0.01em 16px;
+                    border-radius: 16px;
+                    width: 85%;
+                    height: 5px;
+                }
+
+                .meter-bcg3 {
+                    background-color: rgba(26, 25, 25, 0.233);
+                    border-radius: 16px;
+                    width: 45%;
+                    height: 5px;
+
+                }
+                
+
+                
+
+                .meter-rate {
+                    font-size: 12px;
+                    margin-left: 10px;
+
+                }
+            }
+        }
+    }
+
+}
+
+.map-container {
+    padding-top: 30px;
+}

@@ -1,0 +1,39 @@
+// Setup
+@import "setup/variables.scss";
+@import "setup/functions.scss";
+@import "setup/mixins.scss";
+@import "setup/typography.scss";
+
+// Basics
+@import "basics/reset.scss";
+@import "basics/helpers.scss";
+@import "basics/layout.scss";
+@import "basics/base.scss";
+@import "basics/buttons.scss";
+
+// Components
+@import "components/main-header.scss";
+@import "components/stay-preview.scss";
+@import "components/stay-list.scss";
+@import "components/add-order.scss";
+@import "components/date-picker.scss";
+@import "components/main-footer.scss";
+@import "components/user-stay-preview.scss";
+@import "components/sort-cmp.scss";
+@import "components/main-search-cmp.scss";
+
+
+@import "components/stay-reviews.scss";
+@import "components/stay-add.scss";
+@import "components/ImgsCarousel.scss";
+
+@import "components/reviews-modal.scss";
+@import "components/stay-map.scss";
+@import "components/add-guests.scss";
+
+
+// Pages
+
+@import "pages/StayDetails.scss";
+@import "pages/UserProfile.scss";
+@import "pages/Home.scss";
