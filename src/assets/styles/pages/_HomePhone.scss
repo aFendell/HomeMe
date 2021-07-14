@@ -65,12 +65,12 @@
 
         .hero {
             // width: 100vw;
-
+            justify-content: flex-end;
 
             .hero-txt {
                 font-size: 3rem;
                 width: 90%;
-                margin-top: 27rem;
+                margin-bottom: 20px;
                 margin-left: 10px;
             }
         }
