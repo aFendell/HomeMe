@@ -63,9 +63,7 @@ export class _AddOrder extends React.Component {
     setDates = (startDate, endDate) => {
         let nightCount = this.getTripTime(startDate, endDate)
         if (nightCount < 0) nightCount = 0
-        console.log('night count:', nightCount);
         const totalPrice = this.calcTotalPrice(nightCount)
-        console.log('total price:', totalPrice);
         this.setState({ order: { ...this.state.order, startDate, endDate, nightCount, totalPrice } })
     }
 

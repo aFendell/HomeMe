@@ -3,6 +3,7 @@ import { ReviewsList } from './ReviewsList'
 import { ReviewsModal } from './ReviewsModal'
 // import { ReviewsStats } from './ReviewsStats'
 import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
+import { LoadingSpinner } from './LoadingSpinner';
 
 
 export class StayReviews extends React.Component {
@@ -48,7 +49,7 @@ export class StayReviews extends React.Component {
     render() {
         const {stay} = this.state
         // console.log(stay)
-        if  (!stay) return <div>Loading...</div>
+        if  (!stay) return <LoadingSpinner/>
         return (
             <div className="stay-reviews">
                 {/* <ReviewsStats reviews={stay.reviews} reviewsAvg={this.reviewsAvg} /> */}

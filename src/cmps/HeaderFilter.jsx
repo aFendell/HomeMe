@@ -8,7 +8,7 @@ import { useDispatch, useSelector } from 'react-redux'
 
 export const HeaderFilter = () => {
     const dispatch = useDispatch()
-    const { stays, filterBy } = useSelector(state => state.stayModule)
+    const {filterBy } = useSelector(state => state.stayModule)
 
     useEffect(() => {
         dispatch(loadStays(filterBy))

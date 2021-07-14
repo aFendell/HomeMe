@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 // import { Link } from 'react-router-dom';
 import { ReactComponent as AngleLeft } from '../assets/img/icons/angle-left.svg'
 import { ReactComponent as AngleRight } from '../assets/img/icons/angle-right.svg'
+import { LoadingSpinner } from './LoadingSpinner';
 
 
 export function ImgsCarousel({ imgUrls }) {
@@ -34,7 +35,7 @@ export function ImgsCarousel({ imgUrls }) {
 
     // imgUrls.style.transform = `translateX(${translateX}px)` //
 
-    if (!imgUrls || imgUrls <= 0) return <div>Loading</div> 
+    if (!imgUrls || imgUrls <= 0) return <LoadingSpinner/>
     return (
 
         <div className="slider">

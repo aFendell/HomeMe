@@ -23,7 +23,6 @@ class _BookingTable extends React.Component {
     async componentDidMount() {
         await this.props.loadOrders()
         const { orders } = this.props
-        console.log(orders);
         const ordersToDisplay = orders.filter(order => order.stay._id === this.props.stayId)
         this.setState({ ordersToDisplay })
     }

@@ -1,7 +1,6 @@
 import { stayService } from '../../services/stay.service.js'
 
 export function loadStays(filterBy) { // Action Creator
-  console.log('filterBy at actions:', filterBy);
   return async dispatch => {
         try {
             const stays = await stayService.query(filterBy)

@@ -40,7 +40,8 @@ export default function SimpleMenu({loggedInUser}) {
                       
                 <MenuItem onClick={handleClose}><Link to="/user">Profile</Link></MenuItem>
                 <MenuItem onClick={handleClose}>My account</MenuItem>
-                <MenuItem onClick={handleClose}><NavLink to="/login">Logout</NavLink></MenuItem>
+                {!loggedInUser && <MenuItem onClick={handleClose}><NavLink to="/login">Login</NavLink></MenuItem>}
+                {loggedInUser && <MenuItem onClick={handleClose}><NavLink to="/">Logout</NavLink></MenuItem>}
             </Menu>
         </div>
     );

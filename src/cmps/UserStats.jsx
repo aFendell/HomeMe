@@ -1,7 +1,7 @@
-import { UserStaysList } from "./UserStaysList";
+// import { UserStaysList } from "./UserStaysList";
 
-export function UserStats() {
-    return (
-        <UserStaysList />
-    )
-}
+// export function UserStats() {
+//     return (
+//         <UserStaysList />
+//     )
+// }

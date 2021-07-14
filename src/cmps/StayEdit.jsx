@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import React from 'react';
 import { Link } from 'react-router-dom'
 import { saveStay, setSelectedStay } from '../store/actions/stay.actions.js'
+import { LoadingSpinner } from './LoadingSpinner.jsx';
 
 class _StayEdit extends React.Component {
     state = {
@@ -39,14 +40,14 @@ class _StayEdit extends React.Component {
     render() {
         const { stayToShow, isLoading, err } = this.props
         const { handleChange } = this
-        if (!stayToShow) return <p>Loading...</p>
+        if (!stayToShow) return <LoadingSpinner/>
         return (
             <section className="stay-edit flex column w-75">
                 {isLoading && <p>Loading...</p>}
                 {err && <p>ERROR: {err}</p>}
                 <img src={stayToShow.img} alt="img" />
                 <h2>name: <input type="text" name="name" defaultValue={stayToShow.name} onChange={handleChange}/></h2>
-                <p>Price: <input type="nuber" name="price" defaultValue={stayToShow.price} onChange={handleChange} /></p>
+                <p>Price: <input type="number" name="price" defaultValue={stayToShow.price} onChange={handleChange} /></p>
                 <p>Date Added: {new Date(stayToShow.createdAt).toLocaleDateString("en-GB")}</p>
                 <p>Updated date: {new Date(stayToShow.updatedAt).toLocaleDateString("en-GB")}</p>
                 <input type="radio" id="inStock" name="inStock" value={true} defaultChecked={this.state.stay.inStock} onChange={handleChange}/>

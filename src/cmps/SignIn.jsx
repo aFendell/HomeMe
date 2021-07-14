@@ -52,7 +52,7 @@ function _SignIn(props) {
   function handleChanges(ev) {
     user[ev.target.name] = ev.target.value
   }
-  
+
   function doLogin(ev) {
     ev.preventDefault()
     ev.stopPropagation()
@@ -124,7 +124,7 @@ function _SignIn(props) {
           </Grid>
         </form>
       </div>
-    
+
     </Container>
   );
 }
