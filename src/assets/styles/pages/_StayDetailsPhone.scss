@@ -117,22 +117,23 @@
                 margin-top: 24px;
                 margin-bottom: 24px;
 
-                .order-top {
-                    .price {
-                        .price-num {}
-                    }
-                }
+                // .order-top {
+                //     .price {
+                //         // .price-num {}
+                //     }
+                // }
             }
         }
 
         .reviews {
             padding-top: 24px;
             padding-bottom: 24px;
+
             .reviews-rate {
                 margin-bottom: 0px;
 
             }
-            
+
             .rev-layout {
                 padding-bottom: 24px;
                 display: flex;
@@ -144,6 +145,7 @@
                     .rev-subj {
                         width: 35%;
                     }
+
                     .meter-container {
                         width: 65%;
                         justify-content: flex-end;
@@ -156,11 +158,37 @@
 
         .map-container {
             padding-top: 24px;
-            
+
         }
     }
 }
 
 .makeStyles-paper-5 {
     width: 75%;
+}
+
+.krapppp .main-header {
+        &.active {
+            background-color: white;
+    visibility: visible;
+    transition: all 0.2s;
+        }
+    .header-expends {
+
+
+        .header-nav {
+            justify-content: flex-end;
+             .avatar-icon {
+                color: gray;
+            }
+        }
+
+        .hidden2 {
+            display: none;
+        }
+    }
+}
+
+main section {
+    margin: 0px;
 }
