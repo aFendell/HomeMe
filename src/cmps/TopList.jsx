@@ -10,7 +10,7 @@ class _TopList extends React.Component {
     }
 
     async componentDidMount() {
-        await this.props.loadStays()
+        await this.props.loadStays(this.props.filterBy)
         this.topReviews()
     }
 
@@ -41,10 +41,10 @@ class _TopList extends React.Component {
         // console.log(topRated);
         return (
 
-            <section className="top-rated">
+            <div className="top-rated">
                 {staysToDisplay.map(stay => <StayPreview key={stay._id}
                     stay={stay} />)}
-            </section>
+            </div>
         )
     }
 
@@ -53,6 +53,7 @@ class _TopList extends React.Component {
 function mapStateToProps(state) {
     return {
         stays: state.stayModule.stays,
+        filterBy: state.stayModule.filterBy,
     }
 }
 const mapDispatchToProps = {

@@ -56,7 +56,7 @@ async function login(userCred) {
     // const user = users.find(user => user.username === userCred.username)
     // return _saveLocalUser(user)
     const user = await httpService.post(`auth/login`, userCred)
-    console.log(userCred)
+    // console.log(userCred)
     if (user) return _saveLocalUser(user)
 }
 

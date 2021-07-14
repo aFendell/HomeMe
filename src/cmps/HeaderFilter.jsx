@@ -5,10 +5,14 @@ import { StayFilterSearch } from './StayFilterSearch.jsx'
 import { loadStays, setFilter } from '../store/actions/stay.actions.js'
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux'
+import { useHistory } from 'react-router-dom'
+
 
 export const HeaderFilter = () => {
     const dispatch = useDispatch()
-    const { stays, filterBy } = useSelector(state => state.stayModule)
+    const history = useHistory()
+
+    const { filterBy } = useSelector(state => state.stayModule)
 
     useEffect(() => {
         dispatch(loadStays(filterBy))
@@ -63,7 +67,7 @@ export const HeaderFilter = () => {
                             </div>
                         </div>
                         <div className="_w64aej">
-                            <button className="_sxfp92z" aria-expanded="false" type="button" data-testid="structured-search-input-search-button">
+                            <button onClick={() => history.push('/stay')} className="_sxfp92z" aria-expanded="false" type="button" data-testid="structured-search-input-search-button">
                                 <div className="_1hb5o3s">
                                     <div className="_14lk9e14">
                                         {/* <SearchIcon/> */}

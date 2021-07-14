@@ -4,10 +4,13 @@ import newYorkImg from '../assets/img/new-york.jpg'
 import rioImg from '../assets/img/rio.jpg'
 import sydneyImg from '../assets/img/sydney.jpg'
 import { TopList } from '../cmps/TopList';
+import {Header} from  '../cmps/Header'
+
 
 export function Home() {
     return (
         <div className="home main-layout.full">
+            <Header/>
             {/* <h1 className="mb-4">Welcome to HomeME</h1> */}
             <div className="hero main-layout">
 
@@ -19,7 +22,7 @@ export function Home() {
             {/* <h3 className="mb-4">
                 <Link to="/stay">Explore HomeME</Link>
             </h3> */}
-            <div className="main-layout">
+            <div className="home-places main-layout">
 
 
                 <h1>Popular Destinations</h1>
@@ -38,9 +41,9 @@ export function Home() {
                     </div>
                 </div>
                 <h1>Top Rated</h1>
-                <section>
+                {/* <section> */}
                     <TopList/>
-                </section>
+                {/* </section> */}
                 {/* <div className="popular-destinations">
                     <div className="new-york">
                         <img src={newYorkImg} alt="" />
@@ -57,10 +60,11 @@ export function Home() {
                 </div> */}
                 <div className="explore-banner">
                     <p>Home is where you'll be</p>
-                    <button><Link to="/stay">Explore</Link></button>
+                    <button><Link  to="/stay">Explore</Link></button>
                 </div>
             </div>
         </div>
+        
     )
 }
 

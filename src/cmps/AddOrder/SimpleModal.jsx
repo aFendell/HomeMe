@@ -45,7 +45,7 @@ export default function SimpleModal({loggedInUser}) {
 
   const body = (
     <div style={modalStyle} className={classes.paper}>
-      <h2 id="simple-modal-title"></h2>
+      <h2 id="simple-modal-title"> </h2>
       <p id="simple-modal-description">
         {loggedInUser && <span>Your order was submitted successfully!</span>}
         {!loggedInUser && <span>Please Login first</span>}

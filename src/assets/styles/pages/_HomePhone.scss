@@ -1,0 +1,142 @@
+@media (max-width: 480px) {
+
+    .home {
+
+        h1 {
+            align-self: center;
+            font-size: 30px;
+            align-self: flex-start;
+        }
+
+        .main-header {
+            &.no-bcg {
+
+                width: 100vw;
+                margin-top: 20px
+
+            }
+
+            &.active {
+
+                width: 100vw;
+
+            }
+
+            .header-expends {
+
+                // width: 100vw;
+
+                .header-nav>*:not(:last-child) {
+                    margin-inline-end: 0px;
+                }
+                .hidden2 {
+                    display: none;
+                }   
+                .nav-container{
+                    .header-nav {
+                        .host {
+                            display: block;
+                        }
+                    }
+                }
+                // .search-container {
+
+                // }
+                .main-search-bar {
+                    display: block;
+                    margin-top: 0px;
+                    margin-right: 10px;
+                    margin-left: 10px;
+
+                    ._1l6jpwo {
+                        display: none;
+                     }
+
+                     ._37ivfdq {
+                         display:none;
+                     }
+                     ._1yulsurh{
+                         flex: 0 0 auto;
+                     }
+                }
+               
+            }
+        }
+
+        .hero {
+            // width: 100vw;
+
+
+            .hero-txt {
+                font-size: 3rem;
+                width: 90%;
+                margin-top: 27rem;
+                margin-left: 10px;
+            }
+        }
+
+        .home-places {
+
+            h1 {
+
+                font-size: 30px;
+                align-self: flex-start;
+                margin-left: 10px;
+            }
+
+            .popular-destinations {
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                // grid-gap: 1rem;
+                gap: 2rem;
+                // margin-bottom: 10px;
+
+                img {
+                    width: 100%;
+                    // height: 300px;
+                    border-radius: 0px !important;
+                    margin-bottom: 10px;
+                }
+            }
+            
+            .top-rated {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 2rem;
+                
+                
+                img {
+                    width: 100%;
+                    // height: 300px;
+                    border-radius: 0px !important;
+                    margin-bottom: 10px;
+                }
+            }
+
+            .explore-banner {
+                flex-direction: column;
+                height: 50vh;
+                margin-left: 10px;
+                margin-right: 10px;
+                align-items: center;
+
+                p {
+                    width: 80%;
+                    font-size: 2rem;
+                }
+
+
+                button {
+                    object-fit: contain;
+                    // width: 100px;
+                    margin-right: 1rem;
+                    margin-bottom: 1rem;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
