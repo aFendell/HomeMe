@@ -197,9 +197,9 @@
             // }
             
             .hidden2 {
-                visibility: hidden;
+                // visibility: hidden;
+                display: none;
                 transition: all 0.2s;
-            
                 transform: translateY(-100%)
             }
 
