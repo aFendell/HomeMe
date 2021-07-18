@@ -1,80 +1,153 @@
-import { connect } from 'react-redux'
-
-import React from 'react';
+import { useDispatch, useSelector } from 'react-redux'
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom'
+
 import { saveStay, setSelectedStay } from '../store/actions/stay.actions.js'
 import { LoadingSpinner } from './LoadingSpinner.jsx';
+import { useForm } from '../services/customHooks.js';
+import { stayService } from '../services/stay.service.js';
+import { Upload } from './Upload';
 
-class _StayEdit extends React.Component {
-    state = {
-        stay: {
-            _id: this.props.stayToShow._id,
-            name: this.props.stayToShow.name,
-            type: this.props.stayToShow.type,
-            price: this.props.stayToShow.price,
-            inStock: this.props.stayToShow.inStock,
-            createdAt: this.props.stayToShow.createdAt
+
+export const StayEdit = ({ stayId }) => {
+    const [stay, setStay] = useState(stayService.getEmptyStay)
+    const { loggedInUser } = useSelector(state => state.userModule)
+    const dispatch = useDispatch()
+
+    useEffect(() => {
+        loadStay()
+    }, [])
+
+    const loadStay = async () => {
+        
+        if (stayId) {
+            const stayToEdit = setSelectedStay(stayId)
+            // const stayToEdit = await stayService.getById(id)
+            setStay(stayToEdit)
+        } else {
+            const host = { _id: loggedInUser._id, fullname: loggedInUser.fullname, imgUrl: loggedInUser.imgUrl }
+            setStay(prevStay => ({ ...prevStay, host }))
         }
     }
-    componentWillUnmount() {
-        //this.props.setSelectedStay()
+
+    const handleChange = ({ target }) => {
+        const { name, value } = target
+        setStay(prevStay => ({ ...prevStay, [name]: value }))
     }
 
-    onUpdateStay = () => {
-        const { saveStay, history } = this.props
-        const { stay } = this.state
-        saveStay(stay)
-            .then(() => {
-                history.push('/stay')
-            })
+    const toggleCheckbox = ({ target }) => {
+        const { name, checked } = target
+        const { amenities } = stay
+        if (checked === true) amenities.push(name)
+        else {
+            const idx = amenities.indexOf(name)
+            amenities.splice(idx, 1)
+        }
+        console.log(amenities);
+        setStay(prevStay => ({ ...prevStay, amenities }))
     }
 
-    handleChange = ({ target }) => {
-        const field = target.name
-        let value = target.type === 'number' ? +target.value : target.value
-        if(value === "true") value = true;
-        else if(value === "false") value = false;
-        this.setState({ stay: { ...this.state.stay, [field]: value } })
+    const getImgUrl = (imgUrl) => {
+        console.log('cloudeUrl', imgUrl);
+        stay.imgUrls.push(imgUrl)
     }
 
-    render() {
-        const { stayToShow, isLoading, err } = this.props
-        const { handleChange } = this
-        if (!stayToShow) return <LoadingSpinner/>
-        return (
-            <section className="stay-edit flex column w-75">
-                {isLoading && <p>Loading...</p>}
-                {err && <p>ERROR: {err}</p>}
-                <img src={stayToShow.img} alt="img" />
-                <h2>name: <input type="text" name="name" defaultValue={stayToShow.name} onChange={handleChange}/></h2>
-                <p>Price: <input type="number" name="price" defaultValue={stayToShow.price} onChange={handleChange} /></p>
-                <p>Date Added: {new Date(stayToShow.createdAt).toLocaleDateString("en-GB")}</p>
-                <p>Updated date: {new Date(stayToShow.updatedAt).toLocaleDateString("en-GB")}</p>
-                <input type="radio" id="inStock" name="inStock" value={true} defaultChecked={this.state.stay.inStock} onChange={handleChange}/>
-                <label htmlFor="inStock">in Stock</label>
-                <input type="radio" id="outStock" name="inStock" value={false} defaultChecked={!this.state.stay.inStock} onChange={handleChange}/>
-                <label htmlFor="outStock">out of Stock</label>
-                <div className="controler flex space-around">
-                    <button onClick={this.onUpdateStay}>Update!</button>
-                    <Link to="/stay">Back</Link>
+    const handleAdressChange = ({ target }) => {
+        const { name, value } = target
+        console.log('name:', name, 'value:', value);
+        setStay( prevStay => ({ ...prevStay, loc: { ...stay.loc, [name]: value }} ) )
+        // setStay({ stay: { ...stay, loc: { ...stay.loc, [name]: value } } })
+    }
+
+    const onGetLoc = async () => {
+        const { address } = stay.loc
+        console.log('address', address);
+        const res = await stayService.locFromAddress(address)
+        console.log(res)
+        // this.setState({ stay: { ...this.state.stay, loc.lat: res.lat } })
+        setStay(prevStay => ({ ...prevStay, loc: { ...stay.loc, lat: res.lat, lng: res.lng } } ))
+    }
+
+    const onAddStay = async (ev) => {
+        ev.preventDefault()
+        await onGetLoc()
+        console.log(stay);
+        dispatch(saveStay(stay))
+        //CLEAN-UP
+        setStay(stayService.getEmptyStay())
+    }
+
+    const { name, loc, type, price, capacity, summary } = stay
+    return (
+        <div >
+            <form className="add-form" onSubmit={(ev) => onAddStay(ev)}>
+                <Upload getImgUrl={getImgUrl} />
+                <input type="text" name="name" placeholder="Name"
+                    value={name} onChange={handleChange} required />
+                <input type="text" name="address" placeholder="Address"
+                    value={loc.address} onChange={handleAdressChange} />
+
+                <div className="primary-details">
+                    <select name="type" value={type} onChange={handleChange} required>
+                        <option value="" disabled selected>Listing type</option>
+                        <option value="Apartment">Apartment</option>
+                        <option value="Entire-House">Entire House</option>
+                        <option value="Villa">Villa</option>
+                        <option value="Duplex">Duplex</option>
+                        <option value="Caravan">Caravan</option>
+                        <option value="Hideaway">Hideaway</option>
+                    </select>
+                    <input className="input-capacity" type="number" placeholder="Capacity"
+                        name="capacity" value={capacity} onChange={handleChange} />
+                    <input className="input-price" type="number" placeholder="Price / night"
+                        name="price" value={price} onChange={handleChange} />
                 </div>
-                <hr />
-            </section>
-        )
-    }
-}
 
-function mapStateToProps(state) {
-    return {
-        isLoading: state.stayModule.isLoading,
-        err: state.stayModule.err,
-        stayToShow: state.stayModule.selectedStay,
-    }
+                <div>
+                    <p>Amenities</p>
+                    <div className="amenities">
+                        <span>
+                            <input type="checkbox" name="wifi" checked={null} value={true}
+                                onChange={toggleCheckbox} />
+                            <label htmlFor="wifi">Wifi</label>
+                        </span>
+                        <span>
+                            <input type="checkbox" name="TV" checked={null} value={true}
+                                onChange={toggleCheckbox} />
+                            <label htmlFor="TV">TV</label>
+                        </span>
+                        <span>
+                            <input type="checkbox" name="Pool" checked={null} value={true}
+                                onChange={toggleCheckbox} />
+                            <label htmlFor="Pool">Pool</label>
+                        </span>
+                        <span>
+                            <input type="checkbox" name="Kitchen" checked={null} value={true}
+                                onChange={toggleCheckbox} />
+                            <label htmlFor="Kitchen">Kitchen</label>
+                        </span>
+                        <span>
+                            <input type="checkbox" name="Air Conditioning" checked={null} value={true}
+                                onChange={toggleCheckbox} />
+                            <label htmlFor="Air Conditioning">Air Conditioning</label>
+                        </span>
+                        <span>
+                            <input type="checkbox" name="Pets Allowed" checked={null} value={true}
+                                onChange={toggleCheckbox} />
+                            <label htmlFor="Pets Allowed">Pets Allowed</label>
+                        </span>
+                    </div>
+                </div>
+                <div className="add-summary">
+                    <textarea placeholder="Summary" name="summary" maxLength="250"
+                        value={summary} onChange={handleChange}>
+                    </textarea>
+                </div>
+                <div className="form-controlls">
+                    <button>Save</button>
+                    <a href="/">cancel</a>
+                </div>
+            </form>
+        </div>
+    )
 }
-const mapDispatchToProps = {
-    saveStay,
-    setSelectedStay,
-}
-
-
-export const StayEdit = connect(mapStateToProps, mapDispatchToProps)(_StayEdit)

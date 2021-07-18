@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 // import { NavLink, Route, Switch } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import { StayAdd } from '../cmps/StayAdd'
+import { StayEdit } from '../cmps/StayEdit'
 import { UserInbox } from '../cmps/UserInbox'
-import { UserStats } from '../cmps/UserStats'
 import { UserStaysList } from '../cmps/UserStaysList'
 // import { StayStatistics } from '../cmps/StayStatistics'
 import { Header } from '../cmps/Header'
@@ -38,12 +38,12 @@ export const UserProfile = () => {
 
                     {component === 'inbox' && <UserInbox />}
                     {component === 'myStays' && <UserStaysList />}
-                    {component === 'add' && <StayAdd />}
+                    {component === 'add' && <StayEdit />}
+                    {/* {component === 'add' && <StayAdd />} */}
                     {/* {component === 'Statistics' && <StayStatistics />} */}
 
                 </div>
             </div>
         </div>
     )
-
 }

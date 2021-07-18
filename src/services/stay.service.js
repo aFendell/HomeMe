@@ -8,7 +8,7 @@ import { httpService } from './http.service.js'
 // let gStays = data.stay
 window.storageService = storageService;
 
-Geocode.setApiKey("AIzaSyBicrFlwKD-lW0_kqfkTRcJI1O2YrTS1GQ");
+Geocode.setApiKey("AIzaSyBbTZyN_EMhg5_KqY2QPa6StarWQzJ2zp0");
 // const STOR
 
 // const axios = require('axios');
@@ -21,7 +21,8 @@ export const stayService = {
     getById,
     save,
     remove,
-    locFromAddress
+    locFromAddress,
+    getEmptyStay
 }
 
 // const BASE_URL = process.env.NODE_ENV === 'production' ? '/api/' : 'http://localhost:3030/api/stay'
@@ -61,6 +62,29 @@ async function save(stay) {
         return await httpService.post(`stay`, stay)
         // return storageService.post(STORAGE_KEY, stay)
         // return axios.post(`${BASE_URL}`, stay).then(res => res.data)
+    }
+}
+
+function getEmptyStay() {
+    return {
+        name: '',
+        type: '',
+        imgUrls: [],
+        price: '',
+        summary: '',
+        capacity: '',
+        amenities: [],
+        // TODO: get from user service
+        host: {
+            _id: '',
+            fullname: '',
+            imgUrl: '',
+        },
+        loc: {
+            address: '',
+            lat: '',
+            lng: ''
+        }
     }
 }
 
