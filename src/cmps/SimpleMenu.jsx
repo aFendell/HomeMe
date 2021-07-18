@@ -48,7 +48,8 @@ export default function SimpleMenu({loggedInUser}) {
                 onClose={handleClose}
             >
                       
-                <MenuItem onClick={handleClose}><Link to="/user">Profile</Link></MenuItem>
+                {!loggedInUser && <MenuItem onClick={handleClose}><Link to="/">Profile</Link></MenuItem>}
+                {loggedInUser && <MenuItem onClick={handleClose}><Link to="/user">Profile</Link></MenuItem>}
                 <MenuItem onClick={handleClose}>My account</MenuItem>
                 {!loggedInUser && <MenuItem onClick={handleClose}><NavLink to="/login">Login</NavLink></MenuItem>}
                 {loggedInUser && <MenuItem onClick={handleClose, onLogout}><NavLink to="/login">Logout</NavLink></MenuItem>}

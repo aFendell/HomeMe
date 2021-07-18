@@ -338,11 +338,7 @@
 }
 
 .krapppp {
-    .main-layout {
-
-        // grid-column: 1 / -1;
-        // display: flex;
-    }
+    
 
     .main-header {
         z-index: 50;
@@ -487,6 +483,8 @@
                     padding: 2px 2px 2px 8px;
                     font-size: 0;
                     border: 1px solid #dddddd;
+                   
+                    color: gray;
 
                     &:hover {
                         box-shadow: 0px 2px 4px rgb(0 0 0 / 18%);
