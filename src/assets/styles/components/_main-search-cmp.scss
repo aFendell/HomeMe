@@ -155,6 +155,21 @@
     position: relative;
 }
 
+._j8gg2a2 {
+    align-items: center;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex: 1 0 0%;
+    -ms-flex: 1 0 0%;
+    flex: 1 0 0%;
+    margin: -1px;
+    min-width: 0px;
+    position: relative;
+}
+
 ._1akb2mdw {
     appearance: none;
     background: transparent;
@@ -190,6 +205,15 @@
     white-space: nowrap;
     width: 100%;
     z-index: 1;
+
+    .guests-modal {
+        position: fixed;
+        margin-top: 20px;
+        border-radius: 10px;
+        background-color: white;
+        box-shadow: rgb(0 0 0 / 15%) 0px 16px 32px, rgb(0 0 0 / 10%) 0px 3px 8px;
+
+    }
 }
 
 ._wtz1co {
@@ -386,7 +410,7 @@
 
 .main-search-bar {
     margin-top: 15px;
-    
+
 }
 
 .hidden {
@@ -408,7 +432,7 @@
     .main-search-bar {
         display: none;
     }
-    
+
     .hidden {
         display: none;
 

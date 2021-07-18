@@ -161,34 +161,54 @@
 
         }
     }
-}
-
-.makeStyles-paper-5 {
-    width: 75%;
-}
-
-.krapppp .main-header {
-        &.active {
-            background-color: white;
-    visibility: visible;
-    transition: all 0.2s;
-        }
-    .header-expends {
 
 
-        .header-nav {
-            justify-content: flex-end;
-             .avatar-icon {
-                color: gray;
+    
+
+    .krapppp {
+
+        .main-header {
+            
+
+            &.active {
+                
+                position: fixed;
+                z-index: 2;
+            }
+            
+            &.no-bcg {
+                background-color: transparent;
+                
+            }
+
+            .header-expends {
+
+
+                .header-nav {
+                    justify-content: space-between;
+
+                    .avatar-icon {
+                        color: gray;
+                    }
+
+                    .explore .wht {
+                        color: black;
+                    }
+                }
+
+                .main-search-bar {
+                    display: none;
+                }
+
+                .hidden2 {
+                    display: none;
+                }
             }
         }
 
-        .hidden2 {
-            display: none;
-        }
     }
-}
 
-main section {
-    margin: 0px;
+    main section {
+        margin: 0px;
+    }
 }

@@ -129,3 +129,19 @@
     // }
 
 }
+
+@media (max-width: 480px) {
+    .add-form {
+        padding-right: 10px;
+        padding-left: 10px;
+        .primary-details { 
+            flex-direction: column;
+        }
+        .amenities {
+            flex-wrap: nowrap;
+            flex-direction: column;
+            justify-content:flex-start;
+
+        }
+    }
+}

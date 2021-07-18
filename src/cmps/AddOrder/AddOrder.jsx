@@ -19,7 +19,7 @@ export class _AddOrder extends React.Component {
         isModalOpen: false,
         isModalCheckOpen: false,
         order: {
-            hostId: this.props.stay.host._id,
+            hostId: this.props.stay?.host._id,
             createdAt: new Date(Date.now()),
             buyer: {
                 _id: (!this.props.loggedInUser) ? '' : this.props.loggedInUser._id,
@@ -34,9 +34,9 @@ export class _AddOrder extends React.Component {
                 kids: 0
             },
             stay: {
-                _id: this.props.stay._id,
-                name: this.props.stay.name,
-                price: this.props.stay.price
+                _id: this.props.stay?._id,
+                name: this.props.stay?.name,
+                price: this.props.stay?.price
             },
             status: 'Pending'
         }
@@ -50,7 +50,7 @@ export class _AddOrder extends React.Component {
     }
 
     calcTotalPrice = (nightCount) => {
-        const nightPrice = this.props.stay.price
+        const nightPrice = this.props.stay?.price
         const totalPrice = nightPrice * nightCount
         return totalPrice
     }
@@ -81,7 +81,7 @@ export class _AddOrder extends React.Component {
 
     onSaveOrder = (ev) => {
         ev.preventDefault();
-        // console.log('savedOrder',!this.props.loggedInUser)
+        console.log('savedOrder',this.state.order)
         if (this.props.loggedInUser) {
 
             
@@ -117,8 +117,8 @@ export class _AddOrder extends React.Component {
         // const { stays } = this.props
         // const startDate = this.state.stay?.order.startDate
         // const endDate = this.state.stay?.order.endDate
-        const price = this.props.stay.price
-        const loggedInUser = this.props.loggedInUser
+        const price = this.props.stay?.price
+        const loggedInUser = this.props?.loggedInUser
         const { startDate, endDate, nightCount, totalPrice } = this.state.order
         return (
             <section>
