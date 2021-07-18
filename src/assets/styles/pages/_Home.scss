@@ -4,11 +4,34 @@
     // font-family: circular-medium;
     grid-column: 1 / -1;
 
+    .react-datepicker__tab-loop {
+        position: fixed;
+    }
     h1 {
         // font-family: circular-medium;
         color: $clr1;
     }
 
+    ._wtz1co {
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 800;
+        letter-spacing: 0.04em;
+        padding-bottom: 2px;
+        // color: #717171;
+    }
+
+    ._wtz1co2 {
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 800;
+        letter-spacing: 0.04em;
+        padding-bottom: 2px;
+        // color: #717171;
+
+        border-left: 1px solid #DDDDDD;
+       padding-left: 10px;
+    }
 
 
     .hero {
@@ -52,16 +75,16 @@
         // justify-content: space-between;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 8rem;
+        // gap: 8rem;
         margin-bottom: 60px;
 
         // max-width: 1280px !important;
         // padding-left: 80px !important;
         // padding-right: 80px !important;
         img {
-            min-width: 150;
-            max-width: 350px;
-            height: 250px;
+            min-width: 150px;
+            max-width: 420px;
+            // height: 250px;
             border-radius: 10px;
         }
 
@@ -75,14 +98,31 @@
         // justify-content: space-between;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 8rem;
+        // gap: 8rem;
         margin-bottom: 60px;
 
-        img {
-            min-width: 150;
-            max-width: 350px;
-            height: 250px;
-            border-radius: 10px;
+        .stay-preview {
+            .slider {
+                display: flex;
+
+                .imgs {
+                    .slide {
+
+
+                        img {
+                            min-width: 150px;
+                            max-width: 420px;
+                            border-radius: 10px;
+                            height: 280px;
+                        }
+                    }
+                }
+
+                .indicators {
+                    align-self: flex-end;
+                    margin-bottom: 10px;
+                }
+            }
         }
 
         p {
@@ -195,7 +235,7 @@
             //     max-width: 44ch;
             //     margin: 0 0 1em;
             // }
-            
+
             .hidden2 {
                 // visibility: hidden;
                 display: none;
@@ -215,7 +255,7 @@
                 border: 1px solid lightgray;
                 border-radius: 999px;
                 cursor: pointer;
-                
+
 
                 .navbar-search-btn {
                     border: none;
@@ -346,6 +386,92 @@
             }
         }
     }
+
+   
+
+    .btn-btn-save {
+        display: none !important;
+    }
+
+    ._1l6jpwo {
+        ._j8gg2a {
+            ._1akb2mdw {
+
+                ._seuyf {
+
+                    .checks {
+                        width: 100%;
+
+                        ._wtz1co {
+                            width: 50%;
+                            // border-right: 1px solid #DDDDDD;
+                            // margin-right: 10px;
+
+                        }
+
+
+                    }
+
+                    .home-order {
+                        section {
+                            display: flex;
+                            justify-content: flex-end;
+                            margin: 0px;
+
+                            .trip-form {
+
+                                .date-picker {
+                                    width: fit-content;
+
+                                    
+                                    .react-datepicker__input-container {
+                                        width: fit-content;
+
+
+
+                                        .start-date {
+                                            width: 41%;
+                                            border: none;
+                                            height: 100%;
+
+
+                                        }
+
+                                        .end-date {
+                                            // display: none;
+                                            width: 45%;
+                                            border: none;
+                                            height: 100%;
+                                            margin-left: 9px;
+                                            padding-left: 10px;
+
+                                            border-left: 1px solid #DDDDDD!important;
+                                            border-top-right-radius: 0px;
+                                            // border-left: none !important;
+
+                                        }
+                                    }
+
+                                    .react-datepicker__tab-loop {
+                                        color: yellow;
+                                        position: fixed;
+
+
+                                    }
+                                }
+
+                                .guests-btn {
+                                    display: none;
+                                }
+
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
 }
 
 .header-modal {
@@ -390,7 +516,7 @@
     background-color: #FF385C !important;
 
 }
- 
+
 .search-waka {
     // padding: 0 0 0 2rem;
     color: #1e1e1e;

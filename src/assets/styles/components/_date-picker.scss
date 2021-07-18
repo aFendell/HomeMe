@@ -20,7 +20,7 @@
     .react-datepicker__input-container {
 
         .end-date { 
-            width: 100% !important;
+            width: 100% ;
             height: 50px;
             box-shadow: unset;
             text-align: center;
@@ -32,7 +32,7 @@
         .start-date {
             // border-right: 1px solid #717171 !important;
             // border-top-right-radius: 8px;
-            width: 100% !important;
+            width: 100% ;
 
             height: 50px;
             // padding: 6px 10px;
@@ -41,7 +41,7 @@
             box-shadow: unset;
             text-align: center;
             cursor: pointer;
-            border: 1px solid #b0b0b0 !important;
+            border: 1px solid #b0b0b0;
             border-top-left-radius: 8px;
 
         }
@@ -55,6 +55,10 @@
     // display: none;
     :first-child {}
 
+}
+
+.react-datepicker-popper {
+    
 }
 
 .add-guests {

@@ -129,7 +129,7 @@ class _Header extends Component {
                     </div>
 
                         <div className={this.state.forFilter ? "main-search-bar" : "hidden"}>
-                            <HeaderFilter />
+                            <HeaderFilter /> 
                         </div>
                 </div>
             </header>

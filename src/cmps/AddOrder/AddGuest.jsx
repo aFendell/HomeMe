@@ -37,7 +37,7 @@ export class AddGuest extends Component {
         }, () => {
             this.props.setGuests(this.state.guests)
         });
-        // console.log('adults', this.state.guests.adults)
+        console.log('adults', this.state.guests.adults)
     };
     incrementCountKids = (ev) => {
         ev.stopPropagation()
