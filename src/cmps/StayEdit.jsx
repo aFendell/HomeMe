@@ -89,7 +89,7 @@ export const StayEdit = ({ stayId }) => {
 
                 <div className="primary-details">
                     <select name="type" value={type} onChange={handleChange} required>
-                        <option value="" disabled selected>Listing type</option>
+                        <option value="" disabled>Listing type</option>
                         <option value="Apartment">Apartment</option>
                         <option value="Entire-House">Entire House</option>
                         <option value="Villa">Villa</option>

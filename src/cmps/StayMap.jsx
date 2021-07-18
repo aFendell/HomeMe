@@ -9,9 +9,9 @@ class _GoogleMap extends Component {
     }
 
     onMapClicked = (props, map, ev) => {
-        console.log("_GoogleMap ~ ev", ev)
-        console.log("_GoogleMap ~ map", map)
-        console.log("_GoogleMap ~ props", props)
+        // console.log("_GoogleMap ~ ev", ev)
+        // console.log("_GoogleMap ~ map", map)
+        // console.log("_GoogleMap ~ props", props)
         this.setState({ lat: ev.latLng.lat(), lng: ev.latLng.lng() })
     }
 
