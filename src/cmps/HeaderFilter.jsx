@@ -5,7 +5,7 @@ import { StayFilterSearch } from './StayFilterSearch.jsx'
 import { loadStays, setFilter } from '../store/actions/stay.actions.js'
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux'
-import { useHistory } from 'react-router-dom'
+import { useHistory, useLocation } from 'react-router-dom'
 
 import { GuestsModal } from './AddOrder/GuestsModal.jsx'
 
@@ -14,40 +14,57 @@ import { GuestsModal } from './AddOrder/GuestsModal.jsx'
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
-
-
 export const HeaderFilter = () => {
+
+    const location = useLocation()
+    const searchParams = new URLSearchParams(location.search);
+    const searchTxt = searchParams.get('searchTxt')
+    // const searchAll = searchParams.getAll('searchTxt')
+    // console.log('searchAll', searchAll)
+    // console.log('searchTxt', searchTxt)
+
     const dispatch = useDispatch()
     const history = useHistory()
-    
+
     const [startDate, setStartDate] = useState(new Date());
     const [endDate, setEndDate] = useState(new Date());
 
     const [open, setOpen] = useState(false);
 
     const [guests, setGuests] = useState({})
-    
+
     const handleOpen = () => {
         setOpen(true);
-      };
-    
-      const closeModal = () => {
+    };
+
+    const closeModal = () => {
         setOpen(false);
-      };
-    
+    };
+
     const { filterBy, stay } = useSelector(state => state.stayModule)
 
     useEffect(() => {
+        if (searchTxt) {
+            console.log('update the filter');
+            // dispatch(setFilter(filterBy => ({...filterBy, searchTxt})))
+
+        } 
         dispatch(loadStays(filterBy))
     }, [filterBy])
 
-    
+    const onSubmitSearch = (ev) => {
+        ev.stopPropagation()
+        history.push(`/stay?searchTxt=${filterBy.searchTxt}&type=${filterBy.type}&sortBy=${filterBy.sortBy}`)
+        // console.log('submit search', filterBy);
+    }
 
-
+    const onSetFilter = (filterBy) => {
+        dispatch(setFilter(filterBy))
+    }
 
     return (
-        
-        <form className="_1keztfl" action="/s/all" method="get" role="search">
+        // <form className="_1keztfl" action="/s/all" method="get" role="search">
+        <form className="_1keztfl" role="search">
             <div className="_1sx4f1vv" data-panel-bounds="true">
                 <div className="_1c7nvmy">
                     <div className="_1jkbosm7">
@@ -56,7 +73,7 @@ export const HeaderFilter = () => {
                                 <label className="_koumzdh">
                                     <div className="_gor68n">
                                         <div className="_1i9tpqw">Location</div>
-                                        <StayFilterSearch className="_1xq16jy" onSetFilter={(filterBy) => dispatch(setFilter(filterBy))} />
+                                        <StayFilterSearch className="_1xq16jy" onSetFilter={onSetFilter} />
                                     </div>
                                 </label>
                                 <span id="Koan-query__description" className="_krjbj">Navigate forward to access suggested results</span>
@@ -115,7 +132,7 @@ export const HeaderFilter = () => {
                             </div>
                         </div>
                         <div className="_w64aej">
-                            <button className="_sxfp92z" aria-expanded="false" type="button" data-testid="structured-search-input-search-button">
+                            <button onClick={onSubmitSearch} className="_sxfp92z" aria-expanded="false" type="button" data-testid="structured-search-input-search-button">
                                 <div className="_1hb5o3s">
                                     <div className="_14lk9e14">
                                         <svg className="_svg-search" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" >
@@ -123,7 +140,7 @@ export const HeaderFilter = () => {
                                             </g>
                                         </svg>
                                     </div>
-                                    <div className="_c5qlo1f">Search</div>
+                                    <div className="_c5qlo1f" >Search</div>
                                 </div>
                             </button>
                         </div>

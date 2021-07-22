@@ -11,7 +11,7 @@ export const UserStaysList = () => {
 
     useEffect(() => {
         currentUserStays()
-    }, [])
+    }, [stays])
 
     const currentUserStays = () => {
         const staysToDisplay = stays.filter(stay => stay.host._id === loggedInUser._id)
@@ -23,7 +23,6 @@ export const UserStaysList = () => {
         <div className="stays-info">
             <section className="host-chart">
                 <StayStatistics />
-
             </section>
             <section className="user-stays">
                 {staysToDisplay.map(stay => <UserStayPreview key={stay._id} stay={stay} />)}

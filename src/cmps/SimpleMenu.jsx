@@ -5,7 +5,7 @@ import MenuItem from '@material-ui/core/MenuItem';
 import MenuIcon from '@material-ui/icons/Menu';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import { Link, NavLink } from 'react-router-dom'
-import { useDispatch, useSelector } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { logout } from '../store/actions/user.actions.js'
 
 
@@ -48,7 +48,7 @@ export default function SimpleMenu({loggedInUser}) {
                 onClose={handleClose}
             >
                       
-                {!loggedInUser && <MenuItem onClick={handleClose}><Link to="/">Profile</Link></MenuItem>}
+                {!loggedInUser && <MenuItem onClick={handleClose}><Link to="/login">Profile</Link></MenuItem>}
                 {loggedInUser && <MenuItem onClick={handleClose}><Link to="/user">Profile</Link></MenuItem>}
                 <MenuItem onClick={handleClose}>My account</MenuItem>
                 {!loggedInUser && <MenuItem onClick={handleClose}><NavLink to="/login">Login</NavLink></MenuItem>}
