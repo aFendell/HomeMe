@@ -29,10 +29,11 @@ export const stayService = {
 
 
 function query(filterBy) {
-    // var queryStr = (!filterBy) ? '' : `?searchTxt=${filterBy.searchTxt}&type=${filterBy.type}&price=${filterBy.price}&sortBy=${filterBy.sortBy}`
-    // return httpService.get(`stay/${queryStr}`)
+    
+    var queryStr = (!filterBy) ? '' : `searchTxt=${filterBy.searchTxt}&type=${filterBy.type}&sortBy=${filterBy.sortBy}`
+    return httpService.get(`stay?${queryStr}`, queryStr)
     // console.log('filterBy in FE service:', filterBy);
-    return httpService.get(`stay`, filterBy)
+    // return httpService.get(`stay`, filterBy)
 
     // return storageService.query(STORAGE_KEY).then(stays => {
     //     if (!stays || !stays.length) stays = gStays
