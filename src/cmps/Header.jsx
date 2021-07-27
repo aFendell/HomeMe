@@ -124,7 +124,7 @@ class _Header extends Component {
                         <NavLink to="/login">Login</NavLink>
                     </div>} */}
                     </div> 
-                    <div className="main-search-bar">
+                    <div className={this.state.forFilter ? "hidden3" : "main-search-bar" }>
                     {isHeaderFilterOpen && <HeaderFilter />}    
                     </div>
 

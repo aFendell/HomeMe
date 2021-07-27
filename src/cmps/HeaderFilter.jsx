@@ -5,7 +5,7 @@ import { StayFilterSearch } from './StayFilterSearch.jsx'
 import { loadStays, setFilter } from '../store/actions/stay.actions.js'
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux'
-import { useHistory } from 'react-router-dom'
+import { useHistory, useLocation } from 'react-router-dom'
 
 import { GuestsModal } from './AddOrder/GuestsModal.jsx'
 
@@ -28,6 +28,8 @@ export const HeaderFilter = () => {
     const [guests, setGuests] = useState({})
     
     const handleOpen = () => {
+
+        // setOpen(prevOpen => ({...prevOpen, open: true }));
         setOpen(true);
       };
     
@@ -36,13 +38,18 @@ export const HeaderFilter = () => {
       };
     
     const { filterBy, stay } = useSelector(state => state.stayModule)
-
+    
     useEffect(() => {
         dispatch(loadStays(filterBy))
     }, [filterBy])
 
-    
-
+    let location = useLocation()
+    const searchParams = new URLSearchParams(location.search);
+    const searchTxt = searchParams.get('searchTxt')
+    console.log('searchTxt', searchTxt)
+    // for (let p of searchParams) {
+    //     console.log(p[0], '=' , p[1]);
+    //   }
 
 
     return (

@@ -133,6 +133,8 @@
     .main-footer {
         padding: 10px;
         height: fit-content;
+        position: static;
+        bottom: 0;
         .logo {
             display: none;
         }
