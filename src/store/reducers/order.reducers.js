@@ -11,16 +11,16 @@ export function orderReducer(state = initialState, action) {
             return {
                 ...state, orders: action.orders, isLoading: false
             }
-            case 'ORDER_ERR':
-                return {
-                    ...state, err: action.err, isLoading: false
-                }
-                case 'ADD_ORDER':
-                    return {
-                        ...state, orders: [...state.orders, action.order]
-                    }
+        case 'ORDER_ERR':
+            return {
+                ...state, err: action.err, isLoading: false
+            }
+        case 'ADD_ORDER':
+            return {
+                ...state, orders: [...state.orders, action.order]
+            }
 
-                    default:
-                        return state
+        default:
+            return state
     }
 }

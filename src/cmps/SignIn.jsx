@@ -114,7 +114,7 @@ function _SignIn(props) {
           >
             Sign In
           </Button>
-          {/* <Grid container>
+          <Grid container>
             <Grid item xs>
               <Link href="#" variant="body2">
                 Forgot password?
@@ -125,7 +125,7 @@ function _SignIn(props) {
                 {"Don't have an account? Sign Up"}
               </Link>
             </Grid>
-          </Grid> */}
+          </Grid>
         </form>
       </div>
 

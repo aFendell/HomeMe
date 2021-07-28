@@ -17,12 +17,12 @@ export const StayApp = () => {
     const { stays, filterBy } = useSelector(state => state.stayModule)
 
     useEffect(() => {
-        dispatch(loadStays(filterBy))
+        // dispatch(loadStays(filterBy))
         // history.push(`/stay?searchTxt=${filterBy.searchTxt}&type=${filterBy.type}&price=${filterBy.price}&sortBy=${filterBy.sortBy}`)
     }, [filterBy])
 
     const onSetFilter = (filterBy) => {
-        dispatch(setFilter(filterBy))
+        // dispatch(setFilter(filterBy))
     }
 
     return (

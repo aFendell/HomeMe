@@ -35,13 +35,9 @@ export default function SimpleModal({loggedInUser}) {
   const [modalStyle] = React.useState(getModalStyle);
   const [open, setOpen] = React.useState(false);
 
-  const handleOpen = () => {
-    setOpen(true);
-  };
-
-  const handleClose = () => {
-    setOpen(false);
-  };
+  const toggleOpen = () => {
+    setOpen(!open)
+  }
 
   const body = (
     <div style={modalStyle} className={classes.paper}>
@@ -57,12 +53,12 @@ export default function SimpleModal({loggedInUser}) {
 
   return (
     <div>
-      <button className="btn-btn-save" onClick={handleOpen}>
+      <button className="btn-btn-save" onClick={toggleOpen}>
         <h2>Reserve</h2>
       </button>
       <Modal
         open={open}
-        onClose={handleClose}
+        onClose={toggleOpen}
         aria-labelledby="simple-modal-title"
         aria-describedby="simple-modal-description"
       >
