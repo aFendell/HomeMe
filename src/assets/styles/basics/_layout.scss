@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns:
         minmax(2rem, 1fr)
-        minmax(auto, 1300px)
+        minmax(auto, $normal-breakpoint)
         minmax(2rem, 1fr);
 
     > * {
@@ -13,6 +13,10 @@
         }
     }
 
+
+    // grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    
+
     @include for-narrow-layout {
         grid-template-columns:
             minmax(2rem, 1fr)
@@ -22,7 +26,7 @@
     @include for-normal-layout {
         grid-template-columns:
             minmax(2rem, 1fr)
-            minmax(auto, $narrow-breakpoint)
+            minmax(auto, 1000px)
             minmax(2rem, 1fr);
     }
     @include for-wide-layout {
@@ -33,6 +37,14 @@
     }
 }
 
+@media (max-width: 1025px) {
+
+    .main-layout {
+        display: flex;
+        flex-direction: column;
+
+    }
+}
 @media (max-width: 480px) {
 
     .main-layout {

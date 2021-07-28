@@ -27,7 +27,7 @@ export function Home() {
 
                 <h1>Popular Destinations</h1>
                 <div className="popular-destinations">
-                    <Link to="/stay?searchTxt=New+York">
+                    <Link to="/stay?searchTxt=new%20york">
                         <div className="new-york">
                             <img src={newYorkImg} alt="" />
                             <p>New York</p>
@@ -39,7 +39,7 @@ export function Home() {
                             <p>Sydney</p>
                         </div>
                     </Link>
-                    <Link to="/stay?searchTxt=Rio de Janeiro">
+                    <Link to="/stay?searchTxt=rio%20de%20janeiro">
                         <div className="rio">
                             <img src={rioImg} alt="" />
                             <p>Rio de Janeiro</p>

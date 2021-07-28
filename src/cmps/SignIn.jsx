@@ -64,57 +64,66 @@ function _SignIn(props) {
 
   return (
     <div className="krapppp">
-    <Header />
-    <Container component="main" maxWidth="xs" onSubmit={doLogin}>
-      <CssBaseline />
-      <div className={classes.paper}>
-        <Avatar className={classes.avatar}>
-          <LockOutlinedIcon />
-        </Avatar>
-        <Typography component="h1" variant="h3" >
-          Sign in
-        </Typography>
-        <form className={classes.form} noValidate>
-          <TextField
-            variant="outlined"
-            margin="normal"
-            color="secondary"
-            required
-            fullWidth
-            id="username"
-            label="User name"
-            name="username"
-            autoComplete="username"
-            onChange={handleChanges}
-            autoFocus
-          />
-          <TextField
-            variant="outlined"
-            margin="normal"
-            color="secondary"
-            required
-            fullWidth
-            name="password"
-            label="Password"
-            type="password"
-            id="password"
-            autoComplete="current-password"
-            onChange={handleChanges}
-          />
-          <FormControlLabel
-            control={<Checkbox value="remember" color="primary" />}
-            label="Remember me"
-          />
-          <Button
-            type="submit"
-            fullWidth
-            variant="contained"
-            color="secondary"
-            className={classes.submit}
-          >
-            Sign In
-          </Button>
-          {/* <Grid container>
+      <Header />
+      <Container component="main" maxWidth="xs" onSubmit={doLogin}>
+        <CssBaseline />
+        <div className={classes.paper}>
+          <Avatar className={classes.avatar}>
+            <LockOutlinedIcon />
+          </Avatar>
+          <Typography component="h1" variant="h3" >
+            Sign in
+          </Typography>
+          <form className={classes.form} noValidate>
+            <TextField
+              select
+              variant="outlined"
+              margin="normal"
+              color="secondary"
+              required
+              fullWidth
+              id="username"
+              // label="Select User"
+              name="username"
+              autoComplete="username"
+              onChange={handleChanges}
+              // value={user}
+              // autoFocus
+              SelectProps={{ native: true }}
+            >
+              <option value="">Select User</option>
+              <option value="aylam1">User1</option>
+              <option value="assaf1">Host1</option>
+              {/* {this.props.users && this.props.users.map(user => <option key={user._id} value={user.username}>{user.fullname}</option>)} */}
+
+            </TextField>
+            {/* <TextField
+              variant="outlined"
+              margin="normal"
+              color="secondary"
+              required
+              fullWidth
+              name="password"
+              label="Password"
+              type="password"
+              id="password"
+              autoComplete="current-password"
+              onChange={handleChanges}
+            /> */}
+            <FormControlLabel
+              control={<Checkbox value="remember" color="primary" />}
+              label="Remember me"
+            />
+            <Button
+              type="submit"
+              fullWidth
+              variant="contained"
+              color="secondary"
+              className={classes.submit}
+            >
+              Sign In
+            </Button>
+            {/* <Grid container>
             <Grid item xs>
               <Link href="#" variant="body2">
                 Forgot password?
@@ -126,11 +135,11 @@ function _SignIn(props) {
               </Link>
             </Grid>
           </Grid> */}
-        </form>
-      </div>
+          </form>
+        </div>
 
-    </Container>
-      </div>
+      </Container>
+    </div >
   );
 }
 
