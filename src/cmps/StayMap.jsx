@@ -7,14 +7,18 @@ class _GoogleMap extends Component {
         lat: this.props.stay.loc.lat,
         lng: this.props.stay.loc.lng
     }
+    
+    componentDidMount() {
+        console.log('lat', this.props.stay.loc.lat )
 
+    }
     onMapClicked = (props, map, ev) => {
         // console.log("_GoogleMap ~ ev", ev)
         // console.log("_GoogleMap ~ map", map)
         // console.log("_GoogleMap ~ props", props)
         this.setState({ lat: ev.latLng.lat(), lng: ev.latLng.lng() })
     }
-
+    
     render() {
         return (
             <div>
@@ -38,14 +42,14 @@ class _GoogleMap extends Component {
                             position={this.state}
                             name={'Current location'} />
 
-                        <InfoWindow
+                        {/* <InfoWindow
                             visible={true}
                             position={this.state}
                         >
                             <div className="marker">
                                 <h1>{"$" + this.props.stay.price}</h1>
                             </div>
-                        </InfoWindow>
+                        </InfoWindow> */}
                     </Map>
                 </div>
             </div>

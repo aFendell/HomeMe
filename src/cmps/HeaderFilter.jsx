@@ -34,6 +34,8 @@ export const HeaderFilter = () => {
     const [guests, setGuests] = useState({})
 
     const handleOpen = () => {
+
+        // setOpen(prevOpen => ({...prevOpen, open: true }));
         setOpen(true);
     };
 
@@ -42,7 +44,7 @@ export const HeaderFilter = () => {
     };
     // const [localFilter, setLocalFilter] = useState(initialState)
     const { filterBy, stay } = useSelector(state => state.stayModule)
-
+    
     useEffect(() => {
         if (searchTxt) {
             console.log('update the filter');

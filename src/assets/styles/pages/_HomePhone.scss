@@ -110,14 +110,23 @@
                 gap: 2rem;
                 padding-left: 10px;
                 padding-right: 10px;
-                
-                
-                img {
-                    width: 100%;
-                    // height: 300px;
-                    border-radius: 0px !important;
-                    // margin-bottom: 10px;
+                .stay-preview {
+                    .slider {
+                        .imgs {
+                            .slide{
+
+                                img {
+                                    width: 100%;
+                                    // height: 300px;
+                                    border-radius: 0px !important;
+                                    // margin-bottom: 10px;
+                                }
+                            }
+                        }
+                    }
                 }
+                
+                
             }
 
             .explore-banner {

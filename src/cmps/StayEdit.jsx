@@ -54,7 +54,7 @@ export const StayEdit = ({ stayId }) => {
 
     const handleAdressChange = ({ target }) => {
         const { name, value } = target
-        console.log('name:', name, 'value:', value);
+        // console.log('name:', name, 'value:', value);
         setStay( prevStay => ({ ...prevStay, loc: { ...stay.loc, [name]: value }} ) )
         // setStay({ stay: { ...stay, loc: { ...stay.loc, [name]: value } } })
     }
@@ -63,14 +63,14 @@ export const StayEdit = ({ stayId }) => {
         const { address } = stay.loc
         console.log('address', address);
         const res = await stayService.locFromAddress(address)
-        console.log(res)
+        console.log(res.lat)
         // this.setState({ stay: { ...this.state.stay, loc.lat: res.lat } })
         setStay(prevStay => ({ ...prevStay, loc: { ...stay.loc, lat: res.lat, lng: res.lng } } ))
     }
 
-    const onAddStay = async (ev) => {
+    const onAddStay =  (ev) => {
         ev.preventDefault()
-        await onGetLoc()
+        onGetLoc()
         console.log(stay);
         dispatch(saveStay(stay))
         //CLEAN-UP

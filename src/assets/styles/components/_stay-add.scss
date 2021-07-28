@@ -94,19 +94,19 @@
         gap: 8px;
         margin-bottom: 20px;
         padding: 0;
-    }
-
-    .upload-preview {
-        grid-column: 1/span 2;
-        grid-row: 1/span 2;
-        // border-top-left-radius: 15px;
-        // border-bottom-left-radius: 15px;
-        border-radius: 10px;
-        height: 100%;
-        width: 100%;
-        background-size: cover;
-        background-position: center;
-       
+        
+        .upload-preview {
+            grid-column: 1/span 2;
+            grid-row: 1/span 2;
+            // border-top-left-radius: 15px;
+            // border-bottom-left-radius: 15px;
+            border-radius: 10px;
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+            
+        }
        
     }
 
