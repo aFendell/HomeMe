@@ -17,17 +17,17 @@
     // grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
     
 
-    @include for-narrow-layout {
-        grid-template-columns:
-            minmax(2rem, 1fr)
-            minmax(auto, $mobile-breakpoint)
-            minmax(2rem, 1fr);
-    }
+    // @include for-narrow-layout {
+    //     grid-template-columns:
+    //         minmax(2rem, 1fr)
+    //         minmax(auto, $mobile-breakpoint)
+    //         minmax(2rem, 1fr);
+    // }
     @include for-normal-layout {
         grid-template-columns:
-            minmax(2rem, 1fr)
-            minmax(auto, 1000px)
-            minmax(2rem, 1fr);
+            minmax(1rem, 1fr)
+            minmax(auto, 980px)
+            minmax(1rem, 1fr);
     }
     @include for-wide-layout {
         grid-template-columns:
@@ -37,14 +37,14 @@
     }
 }
 
-@media (max-width: 1025px) {
+// @media (max-width: 1025px) {
 
-    .main-layout {
-        display: flex;
-        flex-direction: column;
+//     .main-layout {
+//         display: flex;
+//         flex-direction: column;
 
-    }
-}
+//     }
+// }
 @media (max-width: 480px) {
 
     .main-layout {

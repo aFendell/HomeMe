@@ -9,7 +9,7 @@ import ScrollToTop from './cmps/ScrollToTop';
 // import {Header} from  './cmps/Header'
 
 
-export class App extends Component { 
+export class App extends Component {  
 
   render() {
     return (

@@ -1,3 +1,21 @@
+@media (max-width: 1024px) {
+
+    .home {
+        .top-rated .stay-preview .slider .imgs .slide img {
+            width: 310px;
+            height: 206px;
+
+        }
+
+        .hero .hero-txt {
+
+            margin-top: 25rem;
+
+
+        }
+    }
+}
+
 @media (max-width: 480px) {
 
     .home {
@@ -13,7 +31,6 @@
 
                 width: 100vw;
                 margin-top: 20px
-
             }
 
             &.active {
@@ -29,16 +46,19 @@
                 .header-nav>*:not(:last-child) {
                     margin-inline-end: 0px;
                 }
+
                 .hidden2 {
                     display: none;
-                }   
-                .nav-container{
+                }
+
+                .nav-container {
                     .header-nav {
                         .host {
                             display: block;
                         }
                     }
                 }
+
                 // .search-container {
 
                 // }
@@ -50,16 +70,17 @@
 
                     ._1l6jpwo {
                         display: none;
-                     }
+                    }
 
-                     ._37ivfdq {
-                         display:none;
-                     }
-                     ._1yulsurh{
-                         flex: 0 0 auto;
-                     }
+                    ._37ivfdq {
+                        display: none;
+                    }
+
+                    ._1yulsurh {
+                        flex: 0 0 auto;
+                    }
                 }
-               
+
             }
         }
 
@@ -89,11 +110,11 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                
+
                 padding-left: 10px;
                 padding-right: 10px;
                 gap: 2rem;
-                
+
 
                 img {
                     width: 100%;
@@ -102,7 +123,7 @@
                     padding-bottom: 10px;
                 }
             }
-            
+
             .top-rated {
                 display: flex;
                 flex-direction: column;
@@ -110,10 +131,11 @@
                 gap: 2rem;
                 padding-left: 10px;
                 padding-right: 10px;
+
                 .stay-preview {
                     .slider {
                         .imgs {
-                            .slide{
+                            .slide {
 
                                 img {
                                     width: 100%;
@@ -125,8 +147,8 @@
                         }
                     }
                 }
-                
-                
+
+
             }
 
             .explore-banner {

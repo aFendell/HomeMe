@@ -1,3 +1,30 @@
+@media (max-width: 1025px) {
+
+    .order-container {
+
+        .order-top {
+            .price {
+                width: 50%;
+
+                .price-num {
+
+                    font-size: 100%;
+                }
+
+            }
+
+            .reviews-stats {
+                width: 50%;
+                justify-content: center;
+
+                .reviews-count {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 480px) {
 
 
@@ -163,22 +190,22 @@
     }
 
 
-    
+
 
     .krapppp {
 
         .main-header {
-            
+
 
             &.active {
-                
+
                 position: fixed;
                 z-index: 2;
             }
-            
+
             &.no-bcg {
                 background-color: transparent;
-                
+
             }
 
             .header-expends {
