@@ -13,10 +13,15 @@ export function loadStays(filterBy) { // Action Creator
 }
 
 export function setFilter(filterBy) {
-  return (dispatch) => dispatch(_setFilter(filterBy))
+  return (dispatch) => dispatch({ type: 'SET_FILTER', filterBy })
 }
 
-const _setFilter = (filterBy) => ({ type: 'SET_FILTER', filterBy });
+
+// export function setFilter(filterBy) {
+//   return (dispatch) => dispatch(_setFilter(filterBy))
+// }
+
+// const _setFilter = (filterBy) => ({ type: 'SET_FILTER', filterBy });
 
 export function saveStay(stay) { // Action Creator
   console.log('actions stay:', stay);

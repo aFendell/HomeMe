@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import React from 'react';
 
 import { saveOrder } from '../../store/actions/order.actions.js'
+import { socketService } from '../../services/socketService.js';
 import TableDatePicker from './DatePicker.jsx'
 import { ChecksModal } from './ChecksModal.jsx'
 import { GuestsModal } from './GuestsModal'
@@ -39,14 +40,18 @@ export class _AddOrder extends React.Component {
                 price: this.props.stay?.price
             },
             status: 'Pending'
-        }
+        },
+        msg: { txt: '' },
+        msgs: [],
+        topic: 'Love',
+        isBotMode: true
     }
 
-    
+
     componentDidMount() {
         // this.props.saveOrder()
         // console.log('do we det stays', this.props.stay.price)
-        
+
     }
 
     calcTotalPrice = (nightCount) => {
@@ -79,15 +84,30 @@ export class _AddOrder extends React.Component {
         }));
     };
 
+    startNewChat = () => {
+        socketService.setup()
+        socketService.emit('chat topic', this.state.order.stay.name)
+        socketService.on('chat addMsg', this.addMsg)
+
+        const from = this.state.order.buyer.fullname || 'MyBot'
+        socketService.emit('chat newMsg', { from, txt: `You have a new pandding order from ${from}` })
+    }
+
+    addMsg = newMsg => {
+        this.setState(prevState => ({ msgs: [...prevState.msgs, newMsg] }))
+        if (this.state.isBotMode) this.sendBotResponse();
+    }
+
     onSaveOrder = (ev) => {
         ev.preventDefault();
-        console.log('savedOrder',this.state.order)
         if (this.props.loggedInUser) {
+            // this.props.saveOrder(this.state.order);
+            console.log('savedOrder', this.state.order)
+            this.startNewChat()
 
-            
-            this.props.saveOrder(this.state.order);
-            this.setState({ order: { ...this.state.order, startDate: '', endDate: '' } })
-            this.setGuests({ order: { ...this.state.order, guests: { adults: 0, kids: 0 } } })
+
+            this.setState({ order: { ...this.state.order, startDate: '', endDate: '' }, guests: { adults: 0, kids: 0 } })
+            // this.setGuests({ order: { ...this.state.order, guests: { adults: 0, kids: 0 } } })
         } else {
             return;
         }

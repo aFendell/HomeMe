@@ -42,25 +42,26 @@ export const HeaderFilter = () => {
     const closeModal = () => {
         setOpen(false);
     };
-
+    // const [localFilter, setLocalFilter] = useState(initialState)
     const { filterBy, stay } = useSelector(state => state.stayModule)
     
     useEffect(() => {
         if (searchTxt) {
             console.log('update the filter');
-            // dispatch(setFilter(filterBy => ({...filterBy, searchTxt})))
-
+            
         } 
         dispatch(loadStays(filterBy))
     }, [filterBy])
 
     const onSubmitSearch = (ev) => {
-        ev.stopPropagation()
+        ev.preventDefault()
         history.push(`/stay?searchTxt=${filterBy.searchTxt}&type=${filterBy.type}&sortBy=${filterBy.sortBy}`)
+        dispatch(setFilter(filterBy => ({...filterBy, searchTxt})))
         // console.log('submit search', filterBy);
     }
 
     const onSetFilter = (filterBy) => {
+        console.log('filter:', filterBy);
         dispatch(setFilter(filterBy))
     }
 
