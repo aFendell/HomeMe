@@ -6,7 +6,7 @@ import { StayEdit } from '../cmps/StayEdit'
 import { UserInbox } from '../cmps/UserInbox'
 import { UserStaysList } from '../cmps/UserStaysList'
 // import { StayStatistics } from '../cmps/StayStatistics'
-import { Header } from '../cmps/Header'
+// import { Header } from '../cmps/Header' 
 
 
 export const UserProfile = () => {
@@ -22,7 +22,7 @@ export const UserProfile = () => {
 
     return (
         <div className="krapppp">
-            <Header />
+            {/* <Header /> */}
             <div className="profile-container">
                 <nav className="profile-nav  flex" >
                     <button value="myStays" onClick={handleChange}>My Stays</button>

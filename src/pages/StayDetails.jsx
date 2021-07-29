@@ -9,7 +9,7 @@ import { StayMap } from '../cmps/StayMap'
 import { StayReviews } from '../cmps/StayReviews'
 import { AddOrder } from '../cmps/AddOrder/AddOrder.jsx'
 // import { Divider } from '@material-ui/core';
-import { Header } from '../cmps/Header'
+// import { Header } from '../cmps/Header' 
 
 
 import { faWifi, faTv, faSnowflake, faSmoking, faPaw, faUtensils, faBed, faRecycle, faMusic } from '@fortawesome/free-solid-svg-icons'
@@ -76,7 +76,7 @@ export const StayDetails = ({ match }) => {
     return (
         <div>
             <div className="krapppp">
-                <Header />
+                {/* <Header /> */}
             </div>
 
             <div className="stay-details flex column">

@@ -13,7 +13,7 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import { connect } from 'react-redux'
-import { Header } from '../cmps/Header'
+// import { Header } from '../cmps/Header' 
 
 
 import {
@@ -64,7 +64,7 @@ function _SignIn(props) {
 
   return (
     <div className="krapppp">
-      <Header />
+      {/* <Header /> */}
       <Container component="main" maxWidth="xs" onSubmit={doLogin}>
         <CssBaseline />
         <div className={classes.paper}>
