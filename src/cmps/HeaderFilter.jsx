@@ -135,7 +135,7 @@ export const HeaderFilter = () => {
                             </div>
                         </div>
                         <div className="_w64aej">
-                            <button onClick={onSubmitSearch} className="_sxfp92z" aria-expanded="false" type="button" data-testid="structured-search-input-search-button">
+                            <button onClick={onSubmitSearch} className="_sxfp92z" aria-expanded="false" type="submit" data-testid="structured-search-input-search-button">
                                 <div className="_1hb5o3s">
                                     <div className="_14lk9e14">
                                         <svg className="_svg-search" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" >
