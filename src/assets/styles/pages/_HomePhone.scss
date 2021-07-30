@@ -1,16 +1,47 @@
 @media (max-width: 1024px) {
 
     .home {
-        .top-rated .stay-preview .slider .imgs .slide img {
-            width: 310px;
-            height: 206px;
 
+        .main-header { 
+            .header-expends {
+                .search-container {
+                    border: none;
+                    .navbar-search-btn {
+                        display: none;
+                    }
+                }
+            }
         }
 
+        .top-rated {
+
+            width: 98vw;  
+            .stay-preview .slider .imgs .slide img {
+                width: 30vw;
+                height: 160px;
+                
+            }
+            
+        } 
         .hero .hero-txt {
 
             margin-top: 25rem;
 
+
+        }
+
+        .popular-destinations {
+            width: 98vw;
+            padding-right: 10px;
+        }
+        
+        .explore-banner {
+            margin-right: 10px;
+            width: 96vw;
+
+            button {
+                margin-right: 3rem;
+            }
 
         }
     }
