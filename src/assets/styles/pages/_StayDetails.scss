@@ -349,13 +349,11 @@
 
 
         &.active {
-            // grid-column: 1 / -1;
-            // position: fixed;
-            background-color: white;
-            // position: fixed;
-            z-index: 2;
-            display: flex;
-            max-width: 1300px;
+            
+            background-color: transparent;
+            
+            // display: flex;
+            background-color:white;
 
         }
 

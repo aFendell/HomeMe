@@ -54,6 +54,19 @@
 
             max-width: 100vw;
             margin: 0px !important;
+
+            .slider {
+
+                .imgs img {
+                    width: 100%;
+                    border-radius: 0px;
+                }
+                .indicators {
+                    align-self: flex-end;
+                    padding-bottom: 10px;
+                    
+                }
+            }
         }
 
         .details-stay-name {
