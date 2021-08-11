@@ -6,7 +6,6 @@ import "react-datepicker/dist/react-datepicker.css";
 export default function TableDatePicker(props) {
   const [startDate, setStartDate] = useState(props.startDate || new Date());
   const [endDate, setEndDate] = useState(props.endDate || new Date());
-  // console.log(props)
 
   useEffect(() => {
     props.setDates(startDate, endDate);
@@ -22,7 +21,6 @@ export default function TableDatePicker(props) {
           endDate={endDate}
           onChange={(date) => {
             setStartDate(date)
-            console.log('starts',date)
           }} />
       
 
@@ -34,7 +32,6 @@ export default function TableDatePicker(props) {
           minDate={startDate}
           onChange={(date) => {
             setEndDate(date)
-            console.log('end' ,date)
           }} />
     
     </div>

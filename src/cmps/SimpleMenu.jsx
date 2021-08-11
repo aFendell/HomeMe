@@ -1,5 +1,4 @@
-import React from 'react';
-// import Button from '@material-ui/core/Button';
+import React, {useState} from 'react';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import MenuIcon from '@material-ui/icons/Menu';
@@ -16,7 +15,7 @@ import { logout } from '../store/actions/user.actions.js'
 export default function SimpleMenu({loggedInUser}) {
     const dispatch = useDispatch()
 
-    const [anchorEl, setAnchorEl] = React.useState(null);
+    const [anchorEl, setAnchorEl] = useState(null);
 
     const handleClick = (event) => {
         setAnchorEl(event.currentTarget);
@@ -32,9 +31,6 @@ export default function SimpleMenu({loggedInUser}) {
 
     return (
         <div className="simple-menu-css">
-            {/* <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
-        Open Menu
-      </Button> */}
             <div onClick={handleClick} className="avatar-icon">
                 <MenuIcon />
                 {!loggedInUser && <AccountCircleIcon />}
@@ -50,9 +46,11 @@ export default function SimpleMenu({loggedInUser}) {
                       
                 {!loggedInUser && <MenuItem onClick={handleClose}><Link to="/login">Profile</Link></MenuItem>}
                 {loggedInUser && <MenuItem onClick={handleClose}><Link to="/user">Profile</Link></MenuItem>}
-                <MenuItem onClick={handleClose}>My account</MenuItem>
+               
+                <MenuItem onClick={handleClose}><Link to="/about">About Us</Link></MenuItem>
+               
                 {!loggedInUser && <MenuItem onClick={handleClose}><NavLink to="/login">Login</NavLink></MenuItem>}
-                {loggedInUser && <MenuItem onClick={handleClose, onLogout}><NavLink to="/login">Logout</NavLink></MenuItem>}
+                {loggedInUser && <MenuItem onClick={handleClose && onLogout}><NavLink to="/login">Logout</NavLink></MenuItem>}
             </Menu>
         </div>
     );

@@ -2,7 +2,7 @@ const initialState = {
     err : null,
     isLoading: false,
     stays: [],
-    filterBy: { searchTxt: '', price: 'all', type: 'all',sortBy: 'all' },
+    filterBy: { searchTxt: '', type: 'all',sortBy: 'all' },
     selectedStay: null,
     shoppingCart: []
 }

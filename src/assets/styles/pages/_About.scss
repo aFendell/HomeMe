@@ -1,0 +1,173 @@
+@font-face {
+    font-family: brands;
+    src: url(../../fonts/awsome/fa-brands-400.ttf)
+}
+
+.about-page {
+
+    margin-top: 40px;
+    height: 85vh;
+
+    h4 {
+        margin-top: 20px;
+        font-size: 20px;
+
+    }
+
+
+    h3 {
+        margin-top: 30px;
+        font-size: 32px;
+    }
+
+    .us-container {
+        width: 100%;
+        justify-content: space-between;
+
+        img {
+            width: 240px;
+            height: 240px;
+            border-radius: 10px;
+        }
+
+        h4 {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .kasps {
+            width: 33%;
+            margin-bottom: 20px;
+
+            .a-fendell {
+
+                width: 240px;
+                height: 240px;
+                border-radius: 10px;
+
+                background-image: url(../../img/afen.jpg);
+                background-size: cover;
+            }
+
+            .a-baron {
+                width: 240px;
+                height: 240px;
+                border-radius: 10px;
+
+                background-image: url(../../img/abo.jpg);
+                background-size: cover;
+            }
+
+            .social-nav {
+                display: flex;
+                margin-bottom: 10px;
+            }
+        
+            .social-nav>a {
+                display: flex;
+                color: #fff;
+                background-color: #e5e5e5;
+                align-items: center;
+                text-decoration: none;
+            }
+        
+            .social-nav>a:not(:last-child) {
+                margin-inline-end: 1rem;
+            }
+        
+            .fa {
+                font-family: brands;
+            }
+            .fa.github {
+                height: 30px;
+                width: 30px;
+                justify-content: center;
+                // background-color: black;
+                // content: "\f39e";
+            }
+            .fa.github::before {
+                content: "\f09b";
+            }
+        
+            .fa.github:hover {
+                background-color: black;
+            }
+            .fa.linkedin {
+                height: 30px;
+                width: 30px;
+                justify-content: center;
+                // background-color: black;
+                // content: "\f39e";
+            }
+            .fa.linkedin::before {
+                content: "\f08c";
+            }
+        
+            .fa.linkedin:hover {
+                background-color: #0e76a8;
+            }
+        //     .gmail {
+        //         height: 30px;
+        //         width: 30px;
+        //         justify-content: center;
+        //         padding: 5px;
+        //         content: url("../../img/icons/envelope-regular.svg");
+        //         content-visibility: none;
+        //     }
+           
+        
+        //     .gmail:hover {
+        //         background-color: red;
+        //     }
+        }
+    }
+
+    .about-us {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 13;
+        width: 100%;
+
+        p {
+
+            margin-top: 20px;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+    }
+}
+
+
+@media (max-width: 480px) {
+    .about-page {
+
+        h4,
+        p {
+            padding-left: 10px;
+            padding-right: 10px;
+            text-align: center;
+        }
+
+
+        .us-container {
+            padding-left: 10px;
+            padding-right: 10px;
+
+
+            .kasps {
+                width: 100%;
+
+                .a-baron {
+                    height: 150px;
+                    width: 150px;
+                }
+
+                .a-fendell {
+                    height: 150px;
+                    width: 150px;
+                }
+            }
+        }
+    }
+}

@@ -1,4 +1,4 @@
-import { Map, InfoWindow, Marker, GoogleApiWrapper } from 'google-maps-react';
+import { Map, Marker, GoogleApiWrapper } from 'google-maps-react';
 import { Component } from 'react';
 
 class _GoogleMap extends Component {
@@ -8,14 +8,8 @@ class _GoogleMap extends Component {
         lng: this.props.stay.loc.lng
     }
     
-    componentDidMount() {
-        console.log('lat', this.props.stay.loc.lat )
 
-    }
     onMapClicked = (props, map, ev) => {
-        // console.log("_GoogleMap ~ ev", ev)
-        // console.log("_GoogleMap ~ map", map)
-        // console.log("_GoogleMap ~ props", props)
         this.setState({ lat: ev.latLng.lat(), lng: ev.latLng.lng() })
     }
     
@@ -28,7 +22,6 @@ class _GoogleMap extends Component {
                         zoom={12}
 
 
-                        // {console.log('loc: ', this.props.stay.loc.lat, this.props.stay.loc.lng)}
                         initialCenter={{
 
                             lat: this.props.stay.loc.lat,
@@ -59,5 +52,4 @@ class _GoogleMap extends Component {
 
 export const StayMap = GoogleApiWrapper({
     apiKey: ('AIzaSyBbTZyN_EMhg5_KqY2QPa6StarWQzJ2zp0')
-    // apiKey: ('AIzaSyCkGXo73iO3SNrjIp9hxptFfE5duOCgKk4')
 })(_GoogleMap)

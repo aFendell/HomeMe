@@ -1,12 +1,8 @@
-// import { faTimes } from '@fortawesome/free-solid-svg-icons'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import SimpleModal from './SimpleModal.jsx'
 
 
 
 export function ChecksModal({price, nightCount, totalPrice, loggedInUser}) {
-    // if (!guests || guests?.length) return <div>Loading...</div>
-    // console.log(price)
     return (
         <div className="guests-modal">
             <div className="checks-modal-header">

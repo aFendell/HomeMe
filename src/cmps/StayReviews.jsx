@@ -1,7 +1,6 @@
 import React from 'react';
 import { ReviewsList } from './ReviewsList'
 import { ReviewsModal } from './ReviewsModal'
-// import { ReviewsStats } from './ReviewsStats'
 import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 import { LoadingSpinner } from './LoadingSpinner';
 
@@ -18,7 +17,6 @@ export class StayReviews extends React.Component {
     
 
     componentDidMount() {
-        // console.log(this.targetRef)
         const {stay} = this.props
         this.setState({ stay },()=>{
             this.targetRef = React.forwardRef(() => <ReviewsModal ref={this.targetRef} reviews={this.state.stay.reviews} reviewsAvg={this.reviewsAvg} closeModal={this.closeModal}/>);
@@ -33,7 +31,6 @@ export class StayReviews extends React.Component {
     onOpenReviewModal = () => {
         this.setState({...this.state, isModalOpen:true})
         disableBodyScroll(this.targetElement);
-        // return <ReviewsModal reviews={stay.reviews} reviewsAvg={reviewsAvg} />
     }
     
     closeModal =()=>{
@@ -48,11 +45,9 @@ export class StayReviews extends React.Component {
 
     render() {
         const {stay} = this.state
-        // console.log(stay)
         if  (!stay) return <LoadingSpinner/>
         return (
             <div className="stay-reviews">
-                {/* <ReviewsStats reviews={stay.reviews} reviewsAvg={this.reviewsAvg} /> */}
                 <ReviewsList reviews={stay.reviews} onOpenReviewModal={this.onOpenReviewModal}/>
                 {this.state.isModalOpen && <ReviewsModal ref={this.targetRef} reviews={stay.reviews} reviewsAvg={this.reviewsAvg} closeModal={this.closeModal}/>}
                 <button className="show-all-rev-btn" onClick={this.onOpenReviewModal}>Show all {stay.reviews.length} reviews</button>

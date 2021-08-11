@@ -14,17 +14,14 @@ export class _StayAdd extends React.Component {
             summary: '',
             capacity: '',
             amenities: [],
-            // TODO: get from user service
             host: {
                 _id: this.props.loggedinUser._id,
                 fullname: this.props.loggedinUser.fullname,
                 imgUrl: this.props.loggedinUser.imgUrl,
             },
             loc: {
-                // country: 'Portugal',
-                // countryCode: 'PT', // TODO: country code service
                 address: '',
-                lat: '', // TODO: location service
+                lat: '', 
                 lng: ''
             }
         }
@@ -53,7 +50,6 @@ export class _StayAdd extends React.Component {
 
     handleAdressChange = ({ target }) => {
         const { name, value } = target
-        // console.log('name:', name, 'value:', value);
         this.setState({ stay: { ...this.state.stay, loc: { ...this.state.stay.loc, [name]: value } } })
     }
 
@@ -62,7 +58,6 @@ export class _StayAdd extends React.Component {
         console.log('address', address);
         const res = await stayService.locFromAddress(address)
         console.log(res)
-        // this.setState({ stay: { ...this.state.stay, loc.lat: res.lat } })
         this.setState({ stay: { ...this.state.stay, loc: { ...this.state.stay.loc, lat: res.lat, lng: res.lng } } })
     }
 
@@ -71,7 +66,6 @@ export class _StayAdd extends React.Component {
         await this.onGetLoc()
         console.log(this.state.stay);
         this.props.saveStay(this.state.stay)
-        //CLEAN-UP
         this.setState({
             stay: {
                 name: '',
@@ -81,7 +75,6 @@ export class _StayAdd extends React.Component {
                 summary: '',
                 capacity: '',
                 amenities: [],
-                // TODO: get from service
                 host: {
                 },
                 loc: {
@@ -154,11 +147,6 @@ export class _StayAdd extends React.Component {
                         </div>
                     </div>
 
-                    {/* <input type="checkbox" name="inStock"
-                        checked={inStock}
-                        value={inStock} onChange={() => {
-                            this.setState({ toy: { ...this.state.toy, inStock: !this.state.toy.inStock } })
-                        }} /> */}
 
 
                     <div className="add-summary">
@@ -178,7 +166,6 @@ export class _StayAdd extends React.Component {
 
 function mapStateToProps(state) {
     return {
-        // stays: state.stayModule.stays,
         loggedinUser: state.appModule.loggedinUser
     }
 }

@@ -13,7 +13,7 @@ export class App extends Component{
 
 
   Header1 = (location) => {
-    console.log(location.location)
+    // console.log(location.location)
     return <div className={location.location === '/' ? "home" : "appp"}><Header/> </div>
   }
   Header2 = () => {
@@ -22,15 +22,14 @@ export class App extends Component{
   
   
   render() {
-    const currentLocation = this.props.location;
-    console.log("location", currentLocation);
+    
     return (
       <div className="app-screen">
         <Router>
           <ScrollToTop />
           {/* <Header/> */}
           <Switch>
-            <Route exact path={['/stay/:stayId', '/user', '/login']} render={() => <this.Header2 />} />
+            <Route exact path={['/stay/:stayId', '/user', '/login', '/about']} render={() => <this.Header2 />} />
             <Route path={['/', '/stay']} render={(path) =>  <this.Header1 location={path.location.pathname}/>} />
           </Switch>
           <main className="main-container main-layout">

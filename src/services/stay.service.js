@@ -4,6 +4,9 @@ import Geocode from "react-geocode";
 import { httpService } from './http.service.js'
 
 
+var location = window.location.search;
+const searchParams = new URLSearchParams(location);
+const searchTxt = searchParams.get('searchTxt')
 // const data = require('../data/stays.json')
 // let gStays = data.stay
 window.storageService = storageService;
@@ -30,7 +33,9 @@ export const stayService = {
 
 function query(filterBy) {
     
-    var queryStr = (!filterBy) ? '' : `searchTxt=${filterBy.searchTxt}&type=${filterBy.type}&sortBy=${filterBy.sortBy}`
+    var queryStr = (!filterBy) ? '' : `searchTxt=${searchTxt || filterBy.searchTxt}&type=${filterBy.type}&sortBy=${filterBy.sortBy}`
+    // console.log('filter service:', filterBy);
+
     return httpService.get(`stay?${queryStr}`, queryStr)
     // console.log('filterBy in FE service:', filterBy);
     // return httpService.get(`stay`, filterBy)

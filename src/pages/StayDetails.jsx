@@ -1,15 +1,10 @@
 import React, { useState, useEffect } from 'react';
-// import { Link } from 'react-router-dom'
-// import { removeStay, saveStay, setSelectedStay, /*onAddToCart*/ } from '../store/actions/stay.actions.js'
 import { stayService } from '../services/stay.service.js'
 import { ReviewsStats } from '../cmps/ReviewsStats'
 import { ImgsCarousel } from '../cmps/ImgsCarousel'
-// import {StaticDateRangePickerDemo} from '../cmps/AddOrder/DatePicker2.jsx' 
 import { StayMap } from '../cmps/StayMap'
 import { StayReviews } from '../cmps/StayReviews'
 import { AddOrder } from '../cmps/AddOrder/AddOrder.jsx'
-// import { Divider } from '@material-ui/core';
-// import { Header } from '../cmps/Header' 
 
 
 import { faWifi, faTv, faSnowflake, faSmoking, faPaw, faUtensils, faBed, faRecycle, faMusic } from '@fortawesome/free-solid-svg-icons'
@@ -17,8 +12,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { LoadingSpinner } from '../cmps/LoadingSpinner.jsx';
 
 export const StayDetails = ({ match }) => {
-    // const dispatch = useDispatch()
-    // const { selectedStay } = useSelector(state => state.stayModule)
     const [stay, setStay] = useState(null)
 
 
@@ -34,50 +27,15 @@ export const StayDetails = ({ match }) => {
     }, [match.params.id])
 
 
-    // handleChange = ({ target }) => {
-    //     const { name } = target
-    //     const { value } = target
-    //     this.setState({ stay: { ...this.state.stay, [name]: value } })
-    // }
-
-    // onUpdateStay = () => {
-    //     this.props.updateStay(this.state.stay)
-    //     this.toggleEditMode()
-    // }
-
-
-    // toggleEditMode = () => {
-    //     this.setState({ isEditMode: !this.state.isEditMode })
-    // }
-
-    const loadPic = (imgUrls) => {
-        for (var i = 0; i < 5; i++) {
-            return <img src={imgUrls[i]} alt="" />
-        }
-    }
     const reviewsAvg = () => {
         const avg = stay.reviews.reduce((acc, review) => acc += review.rate, 0) / stay.reviews.length
         return avg.toFixed(1)
     }
 
-
-    // onRemoveStay = () => {
-    //     const { removeStay, stayToShow, history } = this.props
-    //     removeStay(stayToShow._id)
-    //         .then(() => {
-    //             history.push('/stay')
-    //         })
-    // }
-
-
-    // const { user, stayToShow, isLoading, err } = this.props
-    // const { stay } = this.state
     if (!stay) return <LoadingSpinner />
     return (
         <div>
-            <div className="krapppp">
-                {/* <Header /> */}
-            </div>
+        
 
             <div className="stay-details flex column">
                 <section className="phone-stay-imgs full" hidden>

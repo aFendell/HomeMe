@@ -8,10 +8,6 @@ import TableDatePicker from './DatePicker.jsx'
 import { ChecksModal } from './ChecksModal.jsx'
 import { GuestsModal } from './GuestsModal'
 
-// import SimpleModal from './SimpleModal.jsx'
-// import FaildModal from './FaildModal.jsx'
-// import { GroupedSelect } from './AddGuest.jsx'
-// import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 
 
 
@@ -48,11 +44,7 @@ export class _AddOrder extends React.Component {
     }
 
 
-    componentDidMount() {
-        // this.props.saveOrder()
-        // console.log('do we det stays', this.props.stay.price)
-
-    }
+   
 
     calcTotalPrice = (nightCount) => {
         const nightPrice = this.props.stay?.price
@@ -84,36 +76,32 @@ export class _AddOrder extends React.Component {
         }));
     };
 
-    startNewChat = () => {
-        socketService.setup()
-        socketService.emit('chat topic', this.state.order.stay.name)
-        socketService.on('chat addMsg', this.addMsg)
+    // startNewChat = () => {
+    //     socketService.setup()
+    //     socketService.emit('chat topic', this.state.order.stay.name)
+    //     socketService.on('chat addMsg', this.addMsg)
 
-        const from = this.state.order.buyer.fullname || 'MyBot'
-        socketService.emit('chat newMsg', { from, txt: `You have a new pandding order from ${from}` })
-    }
+    //     const from = this.state.order.buyer.fullname || 'MyBot'
+    //     socketService.emit('chat newMsg', { from, txt: `You have a new pandding order from ${from}` })
+    // }
 
-    addMsg = newMsg => {
-        this.setState(prevState => ({ msgs: [...prevState.msgs, newMsg] }))
-        if (this.state.isBotMode) this.sendBotResponse();
-    }
+    // addMsg = newMsg => {
+    //     this.setState(prevState => ({ msgs: [...prevState.msgs, newMsg] }))
+    //     if (this.state.isBotMode) this.sendBotResponse();
+    // }
 
     onSaveOrder = (ev) => {
         ev.preventDefault();
         if (this.props.loggedInUser) {
-            // this.props.saveOrder(this.state.order);
             console.log('savedOrder', this.state.order)
-            this.startNewChat()
+            // this.startNewChat()
 
 
             this.setState({ order: { ...this.state.order, startDate: '', endDate: '' }, guests: { adults: 0, kids: 0 } })
-            // this.setGuests({ order: { ...this.state.order, guests: { adults: 0, kids: 0 } } })
         } else {
             return;
         }
-        // console.log(this.state.order)
-        // this.props.loadOrders();
-        // this.props.history.push('/stay');
+        
     }
 
     setGuests = (guests) => {
@@ -134,9 +122,7 @@ export class _AddOrder extends React.Component {
     }
 
     render() {
-        // const { stays } = this.props
-        // const startDate = this.state.stay?.order.startDate
-        // const endDate = this.state.stay?.order.endDate
+        
         const price = this.props.stay?.price
         const loggedInUser = this.props?.loggedInUser
         const { startDate, endDate, nightCount, totalPrice } = this.state.order
@@ -144,16 +130,12 @@ export class _AddOrder extends React.Component {
             <section>
                 <form className="trip-form" onSubmit={this.onSaveOrder}>
                     <TableDatePicker setDates={this.setDates} startDate={startDate} endDate={endDate} />
-                    {/* <GroupedSelect setGuests={this.setGuests} /> */}
                     <button type="button" className="guests-btn" onClick={this.onOpenGuestsModal}>Guests</button>
                     {this.state.isModalOpen && <GuestsModal setGuests={this.setGuests} closeModal={this.closeModal} />}
-                    {/* <div className={this.state.isModalOpen ? "overlay active" : "overlay"} id="overlay" onClick={this.closeModal}></div> */}
 
                     <button type="button" className="btn-btn-save" onClick={this.onOpenCheckModal} style={{ display: !this.state.isModalCheckOpen ? 'block' : 'none' }}><h2>Check availability</h2></button>
                     {this.state.isModalCheckOpen && <ChecksModal loggedInUser={loggedInUser} price={price} nightCount={nightCount} totalPrice={totalPrice} />}
-                    {/* {console.log(price)} */}
 
-                    {/* <SimpleModal className="btn-btn-save" /> */}
                 </form>
             </section>
         )

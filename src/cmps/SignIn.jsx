@@ -5,23 +5,16 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import TextField from '@material-ui/core/TextField';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';
-import Link from '@material-ui/core/Link';
-import Grid from '@material-ui/core/Grid';
-// import Box from '@material-ui/core/Box';
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import { connect } from 'react-redux'
-// import { Header } from '../cmps/Header' 
 
 
 import {
-  // loadUsers,
-  // removeUser,
   login,
   logout,
-  // signup
 } from '../store/actions/user.actions'
 
 
@@ -64,7 +57,6 @@ function _SignIn(props) {
 
   return (
     <div className="krapppp">
-      {/* <Header /> */}
       <Container component="main" maxWidth="xs" onSubmit={doLogin}>
         <CssBaseline />
         <div className={classes.paper}>
@@ -83,33 +75,17 @@ function _SignIn(props) {
               required
               fullWidth
               id="username"
-              // label="Select User"
               name="username"
               autoComplete="username"
               onChange={handleChanges}
-              // value={user}
-              // autoFocus
               SelectProps={{ native: true }}
             >
               <option value="">Select User</option>
               <option value="aylam1">User1</option>
               <option value="assaf1">Host1</option>
-              {/* {this.props.users && this.props.users.map(user => <option key={user._id} value={user.username}>{user.fullname}</option>)} */}
 
             </TextField>
-            {/* <TextField
-              variant="outlined"
-              margin="normal"
-              color="secondary"
-              required
-              fullWidth
-              name="password"
-              label="Password"
-              type="password"
-              id="password"
-              autoComplete="current-password"
-              onChange={handleChanges}
-            /> */}
+            
             <FormControlLabel
               control={<Checkbox value="remember" color="primary" />}
               label="Remember me"
@@ -123,18 +99,7 @@ function _SignIn(props) {
             >
               Sign In
             </Button>
-            {/* <Grid container>
-            <Grid item xs>
-              <Link href="#" variant="body2">
-                Forgot password?
-              </Link>
-            </Grid>
-            <Grid item>
-              <Link href="#" variant="body2">
-                {"Don't have an account? Sign Up"}
-              </Link>
-            </Grid>
-          </Grid> */}
+            
           </form>
         </div>
 
@@ -147,15 +112,11 @@ const mapStateToProps = state => {
   return {
     users: state.userModule.users,
     loggedInUser: state.userModule.loggedInUser,
-    // isLoading: state.systemModule.isLoading
   }
 }
 const mapDispatchToProps = {
   login,
   logout,
-  // signup,
-  // removeUser,
-  // loadUsers
 }
 
 export const SignIn = connect(mapStateToProps, mapDispatchToProps)(_SignIn)

@@ -1,15 +1,9 @@
 import { Link } from 'react-router-dom'
 import { BookingTable } from './BookingTable.jsx'
 import { LoadingSpinner } from './LoadingSpinner.jsx'
-// import { ImgsCarousel } from './ImgsCarousel'
-// import { ReviewsStats } from './ReviewsStats'
 
 export function UserStayPreview({ stay }) {
 
-    // function reviewsAvg() {
-    //     const avg = stay.reviews.reduce((acc, review) => acc += review.rate, 0) / stay.reviews.length
-    //     return avg.toFixed(1)
-    // }
 
     if (!stay) return <LoadingSpinner />
 

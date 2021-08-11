@@ -31,7 +31,6 @@ const useStyles = makeStyles((theme) => ({
 
 export default function FaildModal() {
   const classes = useStyles();
-  // getModalStyle is not a pure function, we roll the style only on the first render
   const [modalStyle] = React.useState(getModalStyle);
   const [open, setOpen] = React.useState(false);
 
@@ -49,7 +48,6 @@ export default function FaildModal() {
       <p id="simple-modal-description">
       Please Login first
       </p>
-      {/* <SimpleModal /> */}
       <IconAlerts />
     </div>
   );

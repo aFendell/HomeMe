@@ -1,5 +1,5 @@
-import { connect, useDispatch, useSelector } from 'react-redux'
-import React, { useState, useEffect } from 'react';
+import { connect} from 'react-redux'
+import React from 'react';
 import { loadStays } from '../store/actions/stay.actions.js'
 import { StayPreview } from './StayPreview'
 import { LoadingSpinner } from './LoadingSpinner.jsx';

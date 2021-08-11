@@ -14,7 +14,6 @@ export class GeoCode extends React.Component {
 
     handleAdressChange = ({ target }) => {
         const { name, value } = target
-        // console.log('name:', name, 'value:', value);
         this.setState({ stay: { ...this.state.stay, loc: { ...this.state.stay.loc, [name]: value } } })
     }
 

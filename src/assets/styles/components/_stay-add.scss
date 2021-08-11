@@ -42,10 +42,12 @@
     }
 
     .amenities {
-        width: 70%;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        flex-direction: column;
+        height: 200px;
+        margin-top: 10px;
+
     }
 
     input[type=checkbox] {
@@ -138,18 +140,12 @@
 
 @media (max-width: 480px) {
     .add-form {
+        height: 100%;
         padding-right: 10px;
         padding-left: 10px;
 
         .primary-details {
             flex-direction: column;
-        }
-
-        .amenities {
-            flex-wrap: nowrap;
-            flex-direction: column;
-            justify-content: flex-start;
-
         }
     }
 }

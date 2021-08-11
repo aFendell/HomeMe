@@ -51,7 +51,6 @@ export function signup(userCreds) {
 }
 
 export function logout() {
-  console.log('waka')
   return async dispatch => {
     try {
       await userService.logout()

@@ -29,12 +29,10 @@ export class Upload extends Component {
       // width: 100,
       // height: 100,
     }
-    // const {imgUrl} = this.state
     return (
       <div className="upload-container">
        {imgUrl && <div className="upload-grid">
           <div className="upload-preview" style={previewStyle}>
-            {/* <img src="" alt="" /> */}
           </div>
         </div>}
         <div>

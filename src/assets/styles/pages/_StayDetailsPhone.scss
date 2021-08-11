@@ -58,7 +58,8 @@
             .slider {
 
                 .imgs img {
-                    width: 100%;
+                    width: 100vw;
+                    height: 280px;
                     border-radius: 0px;
                 }
                 .indicators {
@@ -217,7 +218,7 @@
             }
 
             &.no-bcg {
-                background-color: transparent;
+                background-color: white;
 
             }
 

@@ -1,10 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux'
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom'
 
 import { saveStay, setSelectedStay } from '../store/actions/stay.actions.js'
-import { LoadingSpinner } from './LoadingSpinner.jsx';
-import { useForm } from '../services/customHooks.js';
 import { stayService } from '../services/stay.service.js';
 import { Upload } from './Upload';
 
@@ -22,7 +19,6 @@ export const StayEdit = ({ stayId }) => {
         
         if (stayId) {
             const stayToEdit = setSelectedStay(stayId)
-            // const stayToEdit = await stayService.getById(id)
             setStay(stayToEdit)
         } else {
             const host = { _id: loggedInUser._id, fullname: loggedInUser.fullname, imgUrl: loggedInUser.imgUrl }
@@ -54,9 +50,7 @@ export const StayEdit = ({ stayId }) => {
 
     const handleAdressChange = ({ target }) => {
         const { name, value } = target
-        // console.log('name:', name, 'value:', value);
         setStay( prevStay => ({ ...prevStay, loc: { ...stay.loc, [name]: value }} ) )
-        // setStay({ stay: { ...stay, loc: { ...stay.loc, [name]: value } } })
     }
 
     const onGetLoc = async () => {
@@ -64,7 +58,6 @@ export const StayEdit = ({ stayId }) => {
         console.log('address', address);
         const res = await stayService.locFromAddress(address)
         console.log(res.lat)
-        // this.setState({ stay: { ...this.state.stay, loc.lat: res.lat } })
         setStay(prevStay => ({ ...prevStay, loc: { ...stay.loc, lat: res.lat, lng: res.lng } } ))
     }
 

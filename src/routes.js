@@ -1,7 +1,7 @@
 import { SignIn } from './cmps/SignIn.jsx'
 // import { StayAdd } from './cmps/StayAdd.jsx'
 import { Home } from './pages/Home.jsx'
-// import { About } from './pages/About.jsx'
+import { About } from './pages/About.jsx'
 import { StayApp } from './pages/StayApp.jsx'
 import { StayDetails } from './pages/StayDetails.jsx'
 import { UserProfile } from './pages/UserProfile.jsx'
@@ -27,8 +27,8 @@ export const routes = [
         path: '/login',
         component: SignIn,
     },
-    // {
-    //     path: '/about',
-    //     component: About,
-    // }
+    {
+        path: '/about',
+        component: About,
+    }
 ]

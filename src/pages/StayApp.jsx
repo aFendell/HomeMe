@@ -1,39 +1,42 @@
-import { useDispatch, useSelector } from 'react-redux'
-import React, { useEffect } from 'react';
-// import { useHistory, useLocation, useParams } from 'react-router-dom'
+import { useSelector } from 'react-redux'
+import React from 'react';
 import { StayList } from '../cmps/StayList'
 import { StayFilterSort } from '../cmps/StayFilterSort.jsx'
-// import { StayFilterSearch } from '../cmps/StayFilterSearch.jsx'
-// import { loadStays, setFilter } from '../store/actions/stay.actions.js'
-// import { Header } from '../cmps/Header'
 
 export const StayApp = () => {
-    // const location = useLocation()
-    // const searchParams = new URLSearchParams(location.search);
-    // const searchTxt = searchParams.get('searchTxt')
-    // console.log('searchTxt', searchTxt)
-    // const history = useHistory()
-    const dispatch = useDispatch()
-    const { stays, filterBy } = useSelector(state => state.stayModule)
 
-    useEffect(() => {
-        // dispatch(loadStays(filterBy))
-        // history.push(`/stay?searchTxt=${filterBy.searchTxt}&type=${filterBy.type}&price=${filterBy.price}&sortBy=${filterBy.sortBy}`)
-    }, [filterBy])
 
-    const onSetFilter = (filterBy) => {
-        // dispatch(setFilter(filterBy))
-    }
-
+    const { stays } = useSelector(state => state.stayModule)
+    
     return (
         <div className="appp main-layout">
-            {/* <Header /> */}
             <section className="stay-app">
-                {/* <StayFilterSort onSetFilter={(filterBy) => dispatch(loadStays(filterBy))}/> */}
-                <StayFilterSort onSetFilter={onSetFilter} />
+                <StayFilterSort/>
                 <StayList stays={stays} />
             </section>
         </div>
     )
 
 }
+
+
+
+// const location = useLocation()
+    // const searchParams = new URLSearchParams(location.search);
+    // let searchTxts = searchParams.get('searchTxt')
+
+    // const history = useHistory()
+    // const dispatch = useDispatch()
+
+    // useEffect(() => {
+    //     dispatch(loadStays(filterBy))
+    //     history.push(`/stay?searchTxt=${filterBy.searchTxt}&type=${filterBy.type}&sortBy=${filterBy.sortBy}`)
+    // }, [filterBy])
+
+    // const onSetFilter = (filterBy) => {
+    //     history.push(`/stay?searchTxt=${searchTxts}&type=${type}&sortBy=${sortBy}`)
+    //     dispatch(setFilter(filterBy))
+    //     dispatch(loadStays({...filterBy , type, sortBy}))
+    // }
+    
+    // const { type, sortBy, searchTxt } = filterBy
