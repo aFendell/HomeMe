@@ -1,41 +1,58 @@
 import io from 'socket.io-client'
+import {httpService} from './http.service'
+
+export const SOCKET_EMIT_USER_WATCH = 'user-watch';
+export const SOCKET_EVENT_USER_UPDATED = 'user-updated';
+export const SOCKET_EVENT_REVIEW_ADDED = 'review-added';
+
 
 const baseUrl = (process.env.NODE_ENV === 'production')? '' : '//localhost:3030'
 export const socketService = createSocketService()
 // export const socketService = createDummySocketService()
 
 window.socketService = socketService
+
+var socketIsReady = false;
 // socketService.setup()
 
-
+ 
 function createSocketService() {
-  var socket
+  var socket = null;
   const socketService = {
-    setup() {
-      socket = io(baseUrl)
-    },
-    on(eventName, cb) {
+    async setup() {
+      if (socket) return
+      await httpService.get('setup-session')
+      socket = io(baseUrl, { reconnection: false})
+      socketIsReady = true;
+    }, 
+    async on(eventName, cb) { 
+      if (!socket) await socketService.setup()
+      // console.log('eventName', eventName, 'cb', cb)
       socket.on(eventName, cb)
-      console.log('new conection front');
     },
-    off(eventName, cb) {
-      socket.off(eventName, cb)
+    async off(eventName, cb=null) {
+      if (!socket) await socketService.setup()
+      if (!cb) socket.removeAllListeners(eventName)
+      else socket.off(eventName, cb)
     },
-    emit(eventName, data) {
+    async emit(eventName, data) {
+      if (!socket) await socketService.setup()
+      // console.log('eventName', eventName, 'data', data);
       socket.emit(eventName, data)
-      console.log('emitted (front): event-', eventName, 'data-', data);
     },
-    terminate() {
+    async terminate() {
       socket = null
+      socketIsReady = false
     }
   }
   return socketService
 }
 
-
+// eslint-disable-next-line
 function createDummySocketService() {
   var listenersMap = {}
   const socketService = {
+    listenersMap,
     setup() {
       listenersMap = {}
     },
@@ -47,14 +64,11 @@ function createDummySocketService() {
     },
     off(eventName, cb) {
       if (!listenersMap[eventName]) return
-      listenersMap[eventName] = listenersMap[eventName].filter(l => l !== cb)
+      if (!cb) delete listenersMap[eventName]
+      else listenersMap[eventName] = listenersMap[eventName].filter(l => l !== cb)
     },
     emit(eventName, data) {
-      console.log('eventName:', eventName, 'data:', data);
-      if (!listenersMap[eventName]) {
-        console.log('!listenersMap[eventName]');
-        return
-      }
+      if (!listenersMap[eventName]) return
       listenersMap[eventName].forEach(listener => {
         listener(data)
       })
@@ -71,5 +85,6 @@ function createDummySocketService() {
 // function cb(x) {console.log(x)}
 // socketService.on('baba', cb)
 // socketService.on('mama', cb)
+// socketService.on('lala', cb)
 // socketService.emit('baba', 'DATA')
 // socketService.off('baba', cb)

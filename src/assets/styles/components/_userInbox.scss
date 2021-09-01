@@ -1,0 +1,117 @@
+.main-inbox {
+
+    .user-inbox {
+        display: flex;
+        flex-direction: row-reverse;
+        .panel-top {
+            // height: 80px;
+
+            span {
+                font-size: 15px;
+                font-weight: bold;
+            }
+        }
+        
+        .msg-panel {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-left: 10px;
+            width: 500px;
+            max-height: 500px;
+
+
+            .msg-board {
+                
+                .msg-list {
+                    
+                    max-height: 440px;
+                    overflow-x: hidden;
+                    overflow-y: scroll;
+
+                    .outgoing {
+                        background-color: #60c8c5;
+                    }
+                    .incoming {
+                        background-color: #A1E2D9;
+                     }
+                    ul {
+
+                        li {
+
+                            padding: 10px;
+
+                            h3 {
+                                color: #222222;
+                                font-weight: bold;
+                                margin-bottom: 5px;
+                            }
+                        }
+
+                    }
+                }
+
+                form {
+                    display: flex;
+
+                    input {
+                        width: 80%;
+                        resize: none;
+                        padding: 10px;
+                        line-height: 1.5;
+                        border-radius: 5px;
+                        border: 1px solid #000;
+                    }
+                }
+            }
+        }
+
+        .chat-list {
+
+            width: 260px;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            background-color: #be2e488a;
+            color: white;
+            height: 700px;
+
+            // &:hover {
+            //     background: white;
+            //     transition: all .3s ease-in-out;
+            //   }
+
+            .selected {
+                background-color: #1164a3;
+            }
+            ul {
+
+                li {
+                    
+
+                    padding: 10px;
+
+                    h6 {
+                        color: #222222;
+                        font-size: 14px;
+                        margin-bottom: 5px;
+
+                    }
+
+                    p {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .incoming-msgs {
+        height: 200px;
+        width: 200px;
+        background-color: #1164a3;
+    }
+}
+
+.selected {
+    background-color: #1164a3;
+}

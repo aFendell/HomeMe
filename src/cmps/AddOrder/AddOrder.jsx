@@ -17,6 +17,7 @@ export class _AddOrder extends React.Component {
         isModalCheckOpen: false,
         order: {
             hostId: this.props.stay?.host._id,
+            hostName: this.props.stay?.host.fullname,
             createdAt: new Date(Date.now()),
             buyer: {
                 _id: (!this.props.loggedInUser) ? '' : this.props.loggedInUser._id,
@@ -36,11 +37,7 @@ export class _AddOrder extends React.Component {
                 price: this.props.stay?.price
             },
             status: 'Pending'
-        },
-        msg: { txt: '' },
-        msgs: [],
-        topic: 'Love',
-        isBotMode: true
+        }
     }
 
 
@@ -76,26 +73,23 @@ export class _AddOrder extends React.Component {
         }));
     };
 
-    // startNewChat = () => {
-    //     socketService.setup()
-    //     socketService.emit('chat topic', this.state.order.stay.name)
-    //     socketService.on('chat addMsg', this.addMsg)
+    startNewChat = order => {
+        socketService.setup()
+        console.log("order", order );
+        socketService.emit('chat topic', order.buyer._id)
+        // socketService.on('chat newMsg', this.addMsg)
+        const from = order.buyer.fullname
+        const to = order.hostName
+        socketService.emit('chat newMsg', { from, to, txt: order, topic: order.buyer._id })
+    }
 
-    //     const from = this.state.order.buyer.fullname || 'MyBot'
-    //     socketService.emit('chat newMsg', { from, txt: `You have a new pandding order from ${from}` })
-    // }
-
-    // addMsg = newMsg => {
-    //     this.setState(prevState => ({ msgs: [...prevState.msgs, newMsg] }))
-    //     if (this.state.isBotMode) this.sendBotResponse();
-    // }
 
     onSaveOrder = (ev) => {
         ev.preventDefault();
         if (this.props.loggedInUser) {
-            console.log('savedOrder', this.state.order)
-            // this.startNewChat()
-
+            // console.log('savedOrder', this.state.order)
+            this.props.saveOrder(this.state.order)
+            this.startNewChat(this.state.order)
 
             this.setState({ order: { ...this.state.order, startDate: '', endDate: '' }, guests: { adults: 0, kids: 0 } })
         } else {
